@@ -387,5 +387,4 @@ MIT License - This project embodies the future of AI cognitive architectures.
 
 **TuringMCP: Where thinking meets doing. Intelligence meets action.** 🚀
 
-*"Sometimes it is the people no one expects anything from who do the things that no one can imagine."* — Alan Turing #   t u r i n g  
- 
+*"Sometimes it is the people no one expects anything from who do the things that no one can imagine."* — Alan Turing
