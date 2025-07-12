@@ -1,0 +1,26 @@
+# Smithery.ai Deployment Configuration for TuringMCP
+# This file specifies how to build and run the cognitive planner on Smithery's platform.
+
+# Use the "container" runtime for custom Docker deployments.
+runtime: "container"
+
+# Define the build process for the container.
+build:
+  # Path to the Dockerfile in the repository.
+  dockerfile: "Dockerfile"
+  # The context path for the Docker build.
+  dockerBuildPath: "."
+
+# Define the start command and server configuration.
+startCommand:
+  # The server type is "http" as it's a web server.
+  type: "http"
+  # Since TuringMCP's tools require no external API keys or configuration
+  # to be listed, we provide an empty schema. This aligns with Smithery's
+  # "lazy loading" best practice, allowing users to discover the server's
+  # capabilities without any initial setup.
+  configSchema:
+    type: "object"
+    properties: {}
+  # Example configuration is empty for the same reason.
+  exampleConfig: {} 
