@@ -1,0 +1,71 @@
+{
+  "slug": "terraforming-mars",
+  "name": "Terraforming Mars",
+  "kind": "board",
+  "publisher": "FryxGames / Stronghold Games",
+  "designer": "Jacob Fryxelius",
+  "players": {
+    "min": 1,
+    "max": 5,
+    "covered": [2, 3, 4, 5]
+  },
+  "edition": "Base game standard rules (FryxGames file TMRULESFINAL, no Corporate Era cards, 2-5 players); printing year not shown in the text",
+  "status": "complete",
+  "source": {
+    "title": "Terraforming Mars rulebook (FryxGames)",
+    "url": "https://fryxgames.se/wp-content/uploads/2023/04/TMRULESFINAL.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Starting terraform rating (TR)", "value": "20"},
+    {"label": "Global goals", "value": "Oxygen 14%, 9 oceans, temperature +8 C"},
+    {"label": "Research phase", "value": "Draw 4 cards, buy any for 3 M€ each"},
+    {"label": "Actions per turn", "value": "1 or 2"},
+    {"label": "Milestones / awards available", "value": "3 of 5 each; 5 VP for each"}
+  ],
+  "setup": [
+    {"text": "Put the board in the middle. Place the 9 ocean tiles on their reserved space, the temperature and oxygen markers at their starts, and the generation marker on 1 of the TR track.", "group": "table"},
+    {"text": "Put the resource cubes and remaining tiles within everyone's reach.", "group": "table"},
+    {"text": "Remove every Corporate Era card (red and white icon) from the project deck and the corporations. Shuffle the project deck and leave room for a discard pile.", "group": "table"},
+    {"text": "Take a colour, a player board and the matching markers. Put a marker on 1 of each of the six production tracks, and one on 20 of the TR track.", "group": "each player"},
+    {"text": "New players take a Beginner Corporation card (42 M€ and a starting hand of 10 project cards). Other players get 2 random corporations from the 10 standard ones, plus 10 project cards.", "group": "each player"},
+    {"text": "Each experienced player chooses 1 corporation and keeps any of the 10 project cards, then reveals in player order, takes the starting resources and production, and pays 3 M€ per kept card. Unkept cards go face down in the discard pile.", "group": "each player"},
+    {"text": "Give the first player marker to whoever most recently won a game.", "group": "to start"},
+    {"text": "Generation 1 skips the Player Order and Research phases. The first player goes straight to the Action phase.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Each generation has four phases. In the Action phase you take 1 or 2 actions per turn until everyone has passed.",
+    "steps": [
+      "Player Order: pass the first player marker clockwise and move the generation marker up. Skipped in generation 1.",
+      "Research: draw 4 cards, buy any number for 3 M€ each, discard the rest face down. There is no hand limit. Skipped in generation 1.",
+      "Action phase: on your turn take 1 or 2 actions from the list, or pass. Once you pass you are out for the generation. It ends when all have passed.",
+      "Actions: play a card; use a standard project; claim a milestone (8 M€); fund an award (8, 14 then 20 M€); use a blue card action (once per generation); convert 8 plants into a greenery tile; convert 8 heat into 1 temperature step.",
+      "Production: all at once. Turn all energy into heat, then gain M€ equal to TR plus M€ production, and every other resource equal to its production. Remove player markers from used card actions."
+    ]
+  },
+  "round_end": [
+    "After production, if the oxygen, ocean and temperature goals have all been reached, the game ends. Otherwise start the next generation."
+  ],
+  "end": "The game ends after the generation in which all three global parameters reach their goals, once production is done. Players then get one last chance, in player order, to convert plants into greenery. Then score.",
+  "scoring": [
+    {"text": "Start from your TR. Every step you raised counts 1 VP."},
+    {"text": "Awards: 5 VP for first place in each funded award, whoever funded it. Tied first places each get 5 VP and no second place is given.", "by_count": {"2": "No VP for second place.", "3": "2 VP for second place.", "4": "2 VP for second place.", "5": "2 VP for second place."}},
+    {"text": "Milestones: 5 VP for each you claimed."},
+    {"text": "Board: 1 VP per greenery tile. 1 VP per adjacent greenery (anyone's) for each city tile."},
+    {"text": "Cards: add VP on resource-holding cards first, then the VP on all your other cards, including played events."}
+  ],
+  "tiebreak": "The player with the most M€ wins.",
+  "missed": [
+    {"text": "You can play a card whose effect cannot fully happen if the only problem is a global parameter already at its goal, a resource you cannot collect, or a red-bordered removal you cannot or do not wish to do. Production changes you must do."},
+    {"text": "Steel pays only for building-tag cards (2 M€ each) and titanium only for space-tag cards (3 M€ each). You get no change if you overpay."},
+    {"text": "M€ production is the only production that can be negative, and never below -5. Your M€ income is your TR plus M€ production."},
+    {"text": "A greenery goes next to your own tile when possible, and a city may never touch another city. Ocean tiles only go on ocean-reserved areas, and any tile placed next to an ocean gives 2 M€ per ocean."},
+    {"text": "A parameter already at its goal gives no TR if you raise it again. Only 3 of the 5 milestones may be claimed in total, each by one player only."},
+    {"text": "Requirements on a card need only be met when you play it, not when you later use it. When a card removes plants from an opponent, all must come from the same player."}
+  ],
+  "not_covered": [
+    "Solo play, which the rulebook gives only as a Corporate Era variant.",
+    "Corporate Era cards, the Draft variant, and individual card text and symbol meanings."
+  ]
+}

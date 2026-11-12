@@ -27,6 +27,7 @@
     var min = Number(game.dataset.min);
     var max = Number(game.dataset.max);
     var covered = game.dataset.covered.split(",").map(Number);
+    var unplayable = (game.dataset.unplayable || "").split(",").filter(Boolean).map(Number);
     var help = game.querySelector(".count-help");
     var radios = game.querySelectorAll('input[name="players"]');
     var motionOk = !window.matchMedia || !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -69,7 +70,8 @@
       if (wanted !== null && !isNaN(wanted)) {
         var why = wanted < min || wanted > max
           ? "This game takes " + (min === max ? plural(min) : min + "–" + max + " players")
-          : (wanted === 1 ? "Solo play isn't covered yet" : "That count isn't covered yet");
+          : (unplayable.indexOf(wanted) !== -1 ? "This game can't be played with that number"
+            : (wanted === 1 ? "Solo play isn't covered yet" : "That count isn't covered yet"));
         help.textContent = "You last chose " + plural(wanted) + ". " + why + ", so every count is shown.";
       } else {
         help.textContent = "Showing every player count. Pick yours to see only what applies.";

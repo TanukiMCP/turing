@@ -1,0 +1,155 @@
+{
+  "slug": "stone-age",
+  "name": "Stone Age",
+  "kind": "board",
+  "publisher": "Z-Man Games / Hans im Gl\u00fcck",
+  "designer": "Bernd Brunnhofer",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "age": "10+",
+  "play_time": "60-90 minutes",
+  "edition": "Anniversary edition rulebook (2018), base game only; the Wild Animals, Igloos and Harsh Winter extras are left out",
+  "status": "complete",
+  "source": {
+    "title": "Stone Age Anniversary edition rulebook (2018), copy",
+    "url": "https://nastol.io/storage/games/files/stone_age_anniversary/660400/zm7267_rules_web.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Starting figures",
+      "value": "5"
+    },
+    {
+      "label": "Starting food",
+      "value": "12"
+    },
+    {
+      "label": "Civilization cards in the row",
+      "value": "4"
+    },
+    {
+      "label": "Building stacks used",
+      "value": {
+        "2": "2 stacks of 7",
+        "3": "3 stacks of 7",
+        "4": "4 stacks of 7"
+      }
+    },
+    {
+      "label": "Starvation penalty",
+      "value": "10 points"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the board in the middle. Stack the 63 food tiles on the hunting grounds and place the wood (30), clay (20), stone (15) and gold (15) on their locations.",
+      "group": "table"
+    },
+    {
+      "text": "Put the two piles of tools (values 1/2 and 3/4) on the toolmaker's hut. Keep the remaining figures, 7 dice and the cup as a general supply.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the 28 buildings into four stacks of 7. Place one random stack per player on the board and return the rest to the box.",
+      "group": "table",
+      "by_count": {
+        "2": "Use 2 building stacks.",
+        "3": "Use 3 building stacks.",
+        "4": "Use 4 building stacks."
+      }
+    },
+    {
+      "text": "Shuffle the 36 civilization cards face down. Turn 4 face up on the board, filling from left to right.",
+      "group": "table"
+    },
+    {
+      "text": "Pick a colour and put one figure on 0 of the scoring track and one on 0 of the agriculture track.",
+      "group": "each player"
+    },
+    {
+      "text": "Take a player board, 12 food, and 5 figures placed on the board.",
+      "group": "each player"
+    },
+    {
+      "text": "The youngest player takes the first player token.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Each round has three phases. Players take turns placing figures, then resolve their locations, then feed their tribes.",
+    "steps": [
+      "Phase 1, placing: from the starting player clockwise, place one or more figures on a single location per turn. You cannot place on a location again that round. Keep going until everyone is out of figures or cannot place.",
+      "Hunting grounds hold any number of figures. The village locations are the toolmaker (1 figure), family hut (exactly 2) and fields (1). Resource locations take up to 7. Each civilization card and building takes 1 figure.",
+      "Phase 2, actions: from the starting player, resolve each of your locations in any order, returning the figures to your board.",
+      "Hunting and resources: roll a die per figure, add tools if you like, then divide by 2 for food, 3 for wood, 4 for clay, 5 for stone, 6 for gold, rounding down.",
+      "Toolmaker gives a tool; family hut adds a figure; fields moves you up one on the agriculture track.",
+      "Civilization card: pay its position cost in any resources and take it. Building: pay its printed resources and score its points. Otherwise just return your figure.",
+      "Phase 3, feeding: take food equal to your agriculture position, then spend 1 food per figure. For each missing food you may spend 1 resource instead, or accept the penalty."
+    ]
+  },
+  "round_end": [
+    "Pass the first player token to the left.",
+    "Slide remaining civilization cards to the right and refill empty spaces from the deck.",
+    "Turn used tools back upright."
+  ],
+  "end": "The game ends at once if the civilization deck cannot refill the row. It also ends after the round, including feeding, in which any building stack is empty. Then do final scoring.",
+  "scoring": [
+    {
+      "text": "Buildings score their printed points when taken. Food penalty: lose exactly 10 points if any figure goes unfed, however many."
+    },
+    {
+      "text": "Each resource left on your board scores 1 point. Food scores nothing."
+    },
+    {
+      "text": "Grass-background civilization cards: count your different culture symbols and multiply that number by itself, then add a separate set for duplicates in the same way."
+    },
+    {
+      "text": "Sand-background cards: for each profession, multiply your icons by the matching track. Farmers by agriculture position, builders by buildings, shamans by figures, toolmakers by total tool value."
+    }
+  ],
+  "tiebreak": "Add agriculture position, tool values and number of figures. Highest total wins; if still tied, the victory is shared.",
+  "missed": [
+    {
+      "text": "You must place at least one figure on your turn while you can, and you cannot add figures to a location you already used this round."
+    },
+    {
+      "text": "The family hut needs exactly two figures placed at once."
+    },
+    {
+      "text": "Each tool can be used once per round and must be used in full. You can hold at most three tools, with a combined value of 12."
+    },
+    {
+      "text": "Starvation costs 10 points however many figures are unfed. Spending a resource can replace a missing food."
+    },
+    {
+      "text": "In a 2 or 3 player game, only two village locations can be used each round.",
+      "only": [
+        2,
+        3
+      ]
+    },
+    {
+      "text": "In a 3 player game, only two different players may use a resource location; in a 2 player game only one.",
+      "only": [
+        2,
+        3
+      ]
+    }
+  ],
+  "not_covered": [
+    "Civilization card effects and building point values, which are on a separate summary sheet that is not in the text",
+    "Wild Animals, Igloos and Harsh Winter extras"
+  ],
+  "unverified": [
+    "Exact point values and resource costs of each building, shown only on the summary sheet and tiles"
+  ]
+}

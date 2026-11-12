@@ -1,0 +1,101 @@
+{
+  "slug": "qwirkle",
+  "name": "Qwirkle",
+  "kind": "board",
+  "publisher": "MindWare",
+  "designer": "Susan McKinley Ross",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "age": "6+",
+  "play_time": "30-60 minutes",
+  "edition": "Colour-blind friendly edition rules, (c) 2023 MindWare",
+  "status": "complete",
+  "source": {
+    "title": "Qwirkle colour-blind friendly rules (2023), library-hosted copy",
+    "url": "https://lot.ahml.info/QwirkleCB.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Tiles in the game",
+      "value": "108 (3 of each)"
+    },
+    {
+      "label": "Tiles in hand",
+      "value": "6"
+    },
+    {
+      "label": "Qwirkle bonus",
+      "value": "+6 (12 in total)"
+    },
+    {
+      "label": "Going-out bonus",
+      "value": "+6"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put all 108 tiles in the bag and choose a scorekeeper with pen and paper.",
+      "group": "table"
+    },
+    {
+      "text": "Draw six tiles from the bag to make your hand.",
+      "group": "each player"
+    },
+    {
+      "text": "Check your hand for your biggest group of tiles sharing one inner shape/colour or one outer shape, with no duplicates, and say its size. The biggest plays those tiles to start. Ties go to the oldest player. Play goes clockwise.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Play tiles from your hand into one line, score, then draw back up to six. Or swap tiles instead.",
+    "steps": [
+      "Choose one or more tiles that all share one inner shape/colour or all share one outer shape, with no duplicates.",
+      "Place them all in one line, touching at least one tile already played. They need not touch each other, so you can add at both ends of a line.",
+      "Score one point for every tile in each line you made or added to. A tile can count in two lines.",
+      "Draw tiles to get back to six.",
+      "Alternative: instead of playing, trade any tiles. Set them aside, draw replacements, then put the set-aside tiles back in the bag. You score nothing and you cannot trade more tiles than remain in the bag."
+    ]
+  },
+  "end": "When the bag is empty, play on without drawing. The first player to use all their tiles scores 6 bonus points and the game ends.",
+  "scoring": [
+    {
+      "text": "One point per tile in each line you created or added to, counting existing tiles in that line."
+    },
+    {
+      "text": "A line of all six shapes or colours is a Qwirkle: 6 points for its tiles plus 6 bonus points, at least 12 in all."
+    },
+    {
+      "text": "The player who goes out first scores 6 bonus points."
+    }
+  ],
+  "tiebreak": "If tied for first place, the winners share the win.",
+  "missed": [
+    {
+      "text": "A line can hold at most six tiles and never repeats a tile."
+    },
+    {
+      "text": "A tile placed at a crossing counts once for each line it is in."
+    },
+    {
+      "text": "You score for the whole line, not only the tiles you added."
+    },
+    {
+      "text": "Trading uses your whole turn and scores nothing."
+    },
+    {
+      "text": "You may place tiles at both ends of one line in the same turn, as long as they are all in one line."
+    }
+  ],
+  "unverified": [
+    "The sheet is the colour-blind friendly edition, where colours are paired with inner shapes. It may differ in tile art from the standard box; the rules text was used as printed."
+  ]
+}

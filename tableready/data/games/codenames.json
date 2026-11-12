@@ -1,0 +1,64 @@
+{
+  "slug": "codenames",
+  "name": "Codenames",
+  "kind": "card",
+  "publisher": "Czech Games Edition",
+  "designer": "Vlaada Chvátil",
+  "players": {
+    "min": 4,
+    "max": 8,
+    "covered": [4, 5, 6, 7, 8]
+  },
+  "edition": "Base game, English rulebook with 2015-2025 copyright line (current core rules)",
+  "status": "complete",
+  "source": {
+    "title": "Codenames rulebook (English)",
+    "url": "https://filemanager.czechgames.com/storage/files/codenames/rules/CN%20rulebook%20EN%2030.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Words in the grid", "value": "25 (5 x 5)"},
+    {"label": "Agents to find", "value": "9 for the starting team, 8 for the other"},
+    {"label": "Bystanders / assassin", "value": "7 / 1"},
+    {"label": "Guesses per clue", "value": "at least 1, up to the clue number plus 1"}
+  ],
+  "setup": [
+    {"text": "Mix the word cards, choose 25 at random and lay them in a 5 x 5 grid.", "group": "table"},
+    {"text": "Spymasters draw a random key card and slide it into the stand between them. Any side can face up.", "group": "table"},
+    {"text": "Put the 8 red tiles before the red spymaster and the 8 blue tiles before the blue spymaster. The 7 bystander tiles and the assassin tile go in between.", "group": "table"},
+    {"text": "Split into two teams of roughly equal size, at least two players on each. Each team picks one spymaster; everyone else is an operative.", "group": "each player"},
+    {"text": "Seat the two spymasters on the same side of the table, each opposite their own operatives.", "group": "each player"},
+    {"text": "The triangles on the key card's edge show which team starts. Give that team the double agent tile, flipped to their colour, as their extra (9th) word.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "The spymaster gives one clue, then the operatives guess words until they err or choose to stop.",
+    "steps": [
+      "The spymaster says one word and one number. The word should relate to words of your colour; the number says how many.",
+      "The operatives discuss, then one touches a card. The spymaster covers it with the matching tile from the key.",
+      "If it is your colour, you may guess again. If it is a bystander, your turn ends. If it is the other team's colour, your turn ends and they gain a word. If it is the assassin, you lose at once.",
+      "You must make at least 1 guess. You may stop after any correct guess. You may guess up to one more than the clue number while you keep being right.",
+      "Then the other team takes its turn."
+    ]
+  },
+  "end": "The game ends when one team has had all of its words covered, or when a team guesses the assassin.",
+  "scoring": [
+    {"text": "There are no points. A team wins when all its words are revealed, even if the other team uncovered the last one."},
+    {"text": "A team that guesses the assassin loses immediately and the other team wins."}
+  ],
+  "missed": [
+    {"text": "The clue must be about meaning, not letters or position. You cannot say any form of a word still visible, nor part of a compound word on the table."},
+    {"text": "The extra guess (clue number plus 1) is for catching a word missed on an earlier clue. It is not needed on a first turn."},
+    {"text": "The other team's last word, guessed by you, wins them the game."},
+    {"text": "An invalid clue ends the team's turn with no guesses, and the opposing spymaster may cover one of their own team's words before the next clue. If nobody notices until later, the clue stands."},
+    {"text": "Clues in a foreign language are allowed only if your group would use that word in an English sentence."},
+    {"text": "Expert option: a clue number of 0 or 'unlimited' removes the guess limit, and with 0 it warns against the related word."}
+  ],
+  "not_covered": [
+    "Codenames Duet, Pictures and timed variants.",
+    "Teams of one: the rulebook only says to have at least two per team, so 2 and 3 players are left out."
+  ],
+  "unverified": [
+    "The upper limit of 8 players is not stated in the rulebook text, which sets no maximum team size. Treat 8 as a practical limit and check the box."
+  ]
+}

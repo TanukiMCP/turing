@@ -1,0 +1,54 @@
+{
+  "slug": "santorini",
+  "name": "Santorini",
+  "kind": "board",
+  "publisher": "Roxley Games",
+  "designer": "Gordon Hamilton",
+  "players": {"min": 2, "max": 4, "covered": [2]},
+  "edition": "Base game with god powers, Roxley rulesheet (2023 copyright, a living document)",
+  "status": "complete",
+  "source": {
+    "title": "Santorini base rulesheet (2023), Roxley file hosted on its store CDN, copy",
+    "url": "https://cdn.shopify.com/s/files/1/0246/2190/8043/files/Santorini_Rulebooks_Base.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Workers each", "value": "2"},
+    {"label": "Winning height", "value": "Move up onto level 3"},
+    {"label": "Max climb", "value": "1 level per move"},
+    {"label": "Neighbouring spaces", "value": "Up to 8"}
+  ],
+  "setup": [
+    {"text": "Fit the cliff pedestal onto the ocean board, then place the island board on top, matching the long and short tabs.", "group": "table"},
+    {"text": "Pick one matchup from the Odyssey scorecard, or use the challenger method: the challenger draws 6 god cards and picks 2, chooses which god starts, and the opponent takes the other.", "group": "table"},
+    {"text": "Take the god card for your side of the matchup. Both players should read each other's power before starting.", "group": "each player"},
+    {"text": "Take 2 workers of your colour. The player with the starting god places both on any empty spaces first, then the other player places theirs.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Pick one of your workers, move it, then build next to it. The player with the starting god goes first.",
+    "steps": [
+      "Move the chosen worker to one of up to eight neighbouring spaces that is unoccupied (no worker and no dome).",
+      "You may move along the same level, down any number of levels, or up by one level at most.",
+      "Build a block or a dome on an unoccupied space next to the worker you moved. Use the correct piece for the level: a dome only goes on top of a third level.",
+      "Your god power may change these steps. Follow the card's wording."
+    ]
+  },
+  "end": "The game ends the moment one player wins by climbing, or when a player cannot move and build and so loses.",
+  "scoring": [
+    {"text": "There are no points. Win by moving a worker up onto a level 3 tower during your turn."},
+    {"text": "You also win if your opponent cannot complete a move and then a build on their turn."},
+    {"text": "Some god powers add their own win conditions."}
+  ],
+  "missed": [
+    {"text": "You must move and then build every turn. If you cannot do both, you lose at once."},
+    {"text": "You win only by moving up onto level 3. Being forced there by a power, or moving between two level 3 spaces, does not win."},
+    {"text": "Domes are not blocks. A power that affects blocks does not affect domes."},
+    {"text": "A forced worker has not moved. A power that says you cannot or must do something is binding, and breaking it loses the game."},
+    {"text": "A complete tower is three blocks and a dome. If you run out of a block type, remove a complete tower and put a dome on the ground in its place."}
+  ],
+  "not_covered": [
+    "3 and 4 player games, which use mode cards that are not in the rulesheet text",
+    "Individual god powers, which are on the god cards"
+  ]
+}

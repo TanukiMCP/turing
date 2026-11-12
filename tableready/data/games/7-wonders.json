@@ -1,0 +1,76 @@
+{
+  "slug": "7-wonders",
+  "name": "7 Wonders",
+  "kind": "card",
+  "publisher": "Repos Production",
+  "designer": "Antoine Bauza",
+  "players": {
+    "min": 2,
+    "max": 7,
+    "covered": [3, 4, 5, 6, 7]
+  },
+  "edition": "Base game, original-style rulebook (49 Age I cards, 7 Wonder boards); printing year not shown in the text",
+  "status": "complete",
+  "source": {
+    "title": "7 Wonders rules (English), retailer-hosted copy",
+    "url": "https://world-of-board-games.com.sg/docs/7-Wonders.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Ages", "value": "3"},
+    {"label": "Cards per hand / turns per Age", "value": "7 cards dealt, 6 turns"},
+    {"label": "Starting coins", "value": "3"},
+    {"label": "Guilds in the Age III deck", "value": {"3": "5", "4": "6", "5": "7", "6": "8", "7": "9"}},
+    {"label": "Price of a bought resource", "value": "2 coins each"}
+  ],
+  "setup": [
+    {"text": "Make one deck per Age. Return to the box every card whose player-count mark is higher than your number of players, so only cards marked up to your count remain.", "group": "table", "by_count": {"3": "Keep only the 3+ cards.", "4": "Keep the 3+ and 4+ cards.", "5": "Keep the 3+, 4+ and 5+ cards.", "6": "Keep the 3+ to 6+ cards.", "7": "Keep every card, 3+ to 7+."}},
+    {"text": "For the Age III deck, take out the 10 Guilds (purple), secretly pick the number below at random, and shuffle those into the deck.", "group": "table", "by_count": {"3": "Keep 5 Guilds.", "4": "Keep 6 Guilds.", "5": "Keep 7 Guilds.", "6": "Keep 8 Guilds.", "7": "Keep 9 Guilds."}},
+    {"text": "Put the coins in a bank and the Conflict tokens in a reserve beside it.", "group": "table"},
+    {"text": "Shuffle the 7 Wonder cards and deal 1 face down to each player. The card shows which board and which side you use. Use side A for early games; the group may agree to choose boards instead.", "group": "each player"},
+    {"text": "Take 3 coins of value 1 and put them on your board.", "group": "each player"},
+    {"text": "Deal 7 cards from the Age I deck to each player. There is no first player, because everyone plays at the same time.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Each Age has 6 turns. Everyone picks one card in secret, all reveal together, then hands pass to a neighbour.",
+    "steps": [
+      "Look at your hand and place one card face down. Pass the rest to your neighbour once everyone has chosen.",
+      "Reveal together and do one action with that card: build the structure, build the next stage of your Wonder, or discard it for 3 coins.",
+      "Build a structure by producing its listed resources, paying its coin cost, or owning the earlier-Age structure that chains into it. You cannot build two structures with the same name.",
+      "Buy missing resources from the neighbour on either side for 2 coins each. Resources are never used up by your own builds.",
+      "Build a Wonder stage by paying the cost on your board, using any card as the marker, slid face down under the board. Stages go left to right and each can be built once.",
+      "Pass hands: left in Age I, right in Age II, left in Age III. On the sixth turn you receive 2 cards, play one, and discard the other face down.",
+      "At the end of each Age, compare military shields with both neighbours."
+    ]
+  },
+  "round_end": [
+    "Compare your shields (red cards) with each neighbour. More shields than a neighbour earns a Victory token: +1 in Age I, +3 in Age II, +5 in Age III. Fewer earns a -1 Defeat token. A tie earns nothing."
+  ],
+  "end": "The game ends after the third Age, once Conflict tokens have been handed out. Then everyone totals their points.",
+  "scoring": [
+    {"text": "1. Military: add your Victory and Defeat tokens. The total can be negative."},
+    {"text": "2. Coins: 1 point for every full 3 coins. Left-over coins score nothing."},
+    {"text": "3. Wonder: points printed on the stages you built."},
+    {"text": "4. Civilian structures (blue): the points shown on each card."},
+    {"text": "5. Science (green): for each symbol type, score the count squared (1, 4, 9, 16). Add 7 points for every set of 3 different symbols. Both methods are added together."},
+    {"text": "6. Commercial structures (yellow): some Age III cards award points as printed, such as 2 per grey card for the Chamber of Commerce."},
+    {"text": "7. Guilds (purple): points depend on your city and those of your two neighbours, as written on each Guild."}
+  ],
+  "tiebreak": "The player with the most coins wins. A tie on coins stands.",
+  "missed": [
+    {"text": "Coins you earn from selling resources cannot be spent that turn. You need the coins in hand at the start of the turn to buy resources."},
+    {"text": "Selling a resource to a neighbour never stops you using it yourself the same turn, and you cannot refuse to sell."},
+    {"text": "You can buy only raw and manufactured resources from neighbours. Resources from some yellow cards and some Wonder stages are reserved for their owner."},
+    {"text": "The sixth turn's discard gives no 3 coins. The card is just discarded face down."},
+    {"text": "A Wonder stage's card is only a marker, so it has no structure effect. Stages need not be tied to an Age, so you can build several in one Age or start in Age III."},
+    {"text": "If you cannot afford either the structure or the Wonder stage you chose, you must discard the card for 3 coins."}
+  ],
+  "not_covered": [
+    "The 2-player Expert variant with the Free city and Border cards.",
+    "Individual card effects, and Wonder side-B abilities beyond the board summaries in the rulebook."
+  ],
+  "unverified": [
+    "Edition year: the extracted text carries no printing date, so it may be the first edition rules or a later reprint of them."
+  ]
+}

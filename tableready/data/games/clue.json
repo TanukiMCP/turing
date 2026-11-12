@@ -1,0 +1,129 @@
+{
+  "slug": "clue",
+  "name": "Clue (Cluedo)",
+  "kind": "board",
+  "publisher": "Hasbro",
+  "players": {
+    "min": 2,
+    "max": 6,
+    "covered": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "age": "8+",
+  "edition": "Clue board game F6420, 2023 instruction sheet (Tudor Mansion, Boddy Black storyline)",
+  "status": "complete",
+  "source": {
+    "title": "Clue board game instructions F6420 (en-gb page)",
+    "url": "https://instructions.hasbro.com/api/download/F6420_en-gb_clue-board-game-mystery-games-for-2-6-players-family-games-for-kids-ages-8-and-up.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Cards in the solve envelope",
+      "value": "3 (character, weapon, room)"
+    },
+    {
+      "label": "Accusations each",
+      "value": "1 per game"
+    },
+    {
+      "label": "Clue cards",
+      "value": "29"
+    },
+    {
+      "label": "Cards face down in rooms",
+      "value": {
+        "2": "4",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0"
+      }
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put all six character tokens on their coloured spaces, even with fewer than six players.",
+      "group": "table"
+    },
+    {
+      "text": "Place each weapon in a different random room.",
+      "group": "table"
+    },
+    {
+      "text": "Set aside the 29 Clue cards, shuffle them and leave them face down by the board.",
+      "group": "table"
+    },
+    {
+      "text": "Split the other cards into character, weapon and room decks, and shuffle each. Slide the top card of each deck into the solve envelope unseen, and put the envelope in the centre.",
+      "group": "table"
+    },
+    {
+      "text": "Two players only: shuffle the leftover cards and place four face down in four different rooms (the corner rooms for a quicker game), then deal the rest as usual.",
+      "group": "table",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "Shuffle the leftover character, weapon and room cards together and deal them all out. Some players may get more than others.",
+      "group": "table"
+    },
+    {
+      "text": "Choose your character.",
+      "group": "each player"
+    },
+    {
+      "text": "Take one sheet of the notebook and a pen. Secretly look at your cards and mark them off, since they cannot be in the envelope.",
+      "group": "each player"
+    },
+    {
+      "text": "Roll one die to decide who goes first. Play passes to the left.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Roll, move toward a room, make a suggestion, and when sure, make your single accusation.",
+    "steps": [
+      "Roll the dice and move up to the number shown. The magnifying glass counts as 1.",
+      "You may not move diagonally, cross the same square twice, or end on or pass through a square holding another token, doorways included.",
+      "You can enter a room without an exact roll, through an unblocked door. If you start in a room you may stay put to make a suggestion, or use a secret passage.",
+      "On a magnifying glass, draw a Clue card, read it out and follow it, then put it on the bottom. Two icons still mean one card.",
+      "In a room, say: I suggest [any character], in [this room], with [any weapon]. Move that suspect and weapon into the room.",
+      "Starting left of you, each player in turn with a named card must show you one secretly. If several, they choose. Stop at the first card shown, and mark it on your sheet.",
+      "If nobody shows a card, your suggestion may be right. You may accuse straight away."
+    ]
+  },
+  "end": "The game ends when a player makes a correct accusation and wins. If everyone has accused wrongly, the murderer escapes.",
+  "scoring": [
+    {
+      "text": "There is no scoring. Make an accusation naming the right character, room and weapon to win."
+    },
+    {
+      "text": "Accuse by saying: I accuse [character], in [room], with [weapon]. Secretly check the envelope. If all three match you win; if not, return the cards unseen and you are out of turns."
+    }
+  ],
+  "missed": [
+    {
+      "text": "You get only one accusation per game. It must be on your turn, in any room, and the accused room need not be the one you are in."
+    },
+    {
+      "text": "A player who accuses wrongly keeps showing cards to others' suggestions and still reveals cards when named."
+    },
+    {
+      "text": "The suspect and weapon you name are moved into your room and stay there after your turn."
+    },
+    {
+      "text": "Any number of tokens and weapons can share a room."
+    },
+    {
+      "text": "After a suggestion, no one is made to show a card they do not hold. Cards you hold may be named in your own suggestion, to gain information or to mislead."
+    }
+  ]
+}

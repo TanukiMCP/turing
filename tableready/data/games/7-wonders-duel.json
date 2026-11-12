@@ -1,0 +1,134 @@
+{
+  "name": "7 Wonders Duel",
+  "kind": "board",
+  "publisher": "Repos Production",
+  "designer": "Antoine Bauza & Bruno Cathala",
+  "players": {
+    "min": 2,
+    "max": 2,
+    "covered": [
+      2
+    ]
+  },
+  "edition": "Base game, 2015 English (US) rulebook",
+  "status": "complete",
+  "source": {
+    "title": "7 Wonders Duel rules (US English)",
+    "url": "https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders-duel/en/7du-rules-us-15990558193s5I6.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Ages",
+      "value": "3"
+    },
+    {
+      "label": "Starting coins",
+      "value": "7"
+    },
+    {
+      "label": "Cards per Age layout",
+      "value": "20"
+    },
+    {
+      "label": "Wonders each",
+      "value": "4"
+    },
+    {
+      "label": "Different science symbols to win",
+      "value": "6 of 7"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Place the board between the players and the Conflict pawn on the neutral middle space.",
+      "group": "table"
+    },
+    {
+      "text": "Put the 4 Military tokens face up on their spaces.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the Progress tokens and place 5 face up on the board. Return the rest to the box.",
+      "group": "table"
+    },
+    {
+      "text": "Set one deck per Age. Return 3 cards of each Age to the box unseen, then add 3 random Guild cards to Age III.",
+      "group": "table"
+    },
+    {
+      "text": "Take 7 coins from the bank.",
+      "group": "each player"
+    },
+    {
+      "text": "Choose a first player.",
+      "group": "to start"
+    },
+    {
+      "text": "Shuffle the 12 Wonders and lay 4 face up. First player takes 1, second takes 2, first takes the last.",
+      "group": "to start"
+    },
+    {
+      "text": "Lay 4 more. This time the second player picks first, with the same 1-2-1 order. Each player now has 4 Wonders.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Take an accessible card from the structure and play it one of three ways, then reveal any newly uncovered cards.",
+    "steps": [
+      "Set up each Age's structure of 20 cards, some face up and some down, following the layout on the last page.",
+      "An accessible card is one not partly covered by another.",
+      "Construct the Building: pay its cost and add it to your city.",
+      "Or discard it for 2 coins plus 1 per yellow card you own.",
+      "Or construct a Wonder: pay its cost, then tuck the card facedown under it.",
+      "Missing resources are bought from the bank for 2 plus the opponent's matching brown and grey symbols.",
+      "Chain symbols let you build a later card free.",
+      "After playing, flip newly uncovered cards. Some Wonders give another turn."
+    ]
+  },
+  "round_end": [
+    "An Age ends when all 20 cards are played.",
+    "The player with the weaker military chooses who starts the next Age; if the pawn is central, the last active player chooses.",
+    "Only 7 Wonders get built. When the 7th is built, return the unbuilt one to the box."
+  ],
+  "end": "The game ends at once if a player wins by military or scientific supremacy. Otherwise it ends after Age III and the most victory points wins.",
+  "scoring": [
+    {
+      "text": "Military points depend on where the Conflict pawn is: 0, 2, 5 or 10."
+    },
+    {
+      "text": "Add points from your Buildings (blue, green, yellow, purple), your Wonders and your Progress tokens."
+    },
+    {
+      "text": "Each complete set of 3 coins in your treasury scores 1 point."
+    }
+  ],
+  "tiebreak": "Most points from blue Civilian buildings; if still tied, share the win.",
+  "missed": [
+    {
+      "text": "Resources are not spent; they can be used each turn, all game."
+    },
+    {
+      "text": "Resources from yellow cards and Wonders do not affect trading prices."
+    },
+    {
+      "text": "Military supremacy: the pawn entering your opponent's capital wins immediately."
+    },
+    {
+      "text": "Scientific supremacy: 6 different science symbols win immediately."
+    },
+    {
+      "text": "A matching pair of science symbols lets you take a Progress token."
+    },
+    {
+      "text": "A replay effect that would fall at the end of an Age, when the structure is empty, is lost."
+    }
+  ],
+  "unverified": [
+    "Which pawn zone gives 2, 5 or 10 points is shown on the board, not in the text.",
+    "Military token effects other than the 2 and 5 coin looting are shown as icons.",
+    "The card layout for each Age is a picture."
+  ],
+  "slug": "7-wonders-duel"
+}

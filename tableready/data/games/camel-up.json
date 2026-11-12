@@ -1,0 +1,152 @@
+{
+  "slug": "camel-up",
+  "name": "Camel Up",
+  "kind": "board",
+  "publisher": "Lookout Games",
+  "designer": "Steffen Bogen",
+  "players": {
+    "min": 3,
+    "max": 8,
+    "covered": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "edition": "Base game, rulebook copyright 2024 Lookout GmbH (second edition printing)",
+  "status": "complete",
+  "source": {
+    "title": "Camel Up rulebook (2024), library-hosted copy",
+    "url": "https://lot.ahml.info/CamelUp.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Starting money",
+      "value": "3 Egyptian Pounds"
+    },
+    {
+      "label": "Finish cards each",
+      "value": "5"
+    },
+    {
+      "label": "Betting tickets per camel",
+      "value": "4 (values 5, 3, 2, 2)"
+    },
+    {
+      "label": "Dice out to end a leg",
+      "value": "5 of 6"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the board in the middle. Make a stack of the 4 tickets of each colour (2, 2 at the bottom, then 3, then 5 on top) on its tent.",
+      "group": "table"
+    },
+    {
+      "text": "Stack the 5 pyramid tickets on their space. Sort the coins into a bank.",
+      "group": "table"
+    },
+    {
+      "text": "Roll the 5 racing dice and put each camel on the space shown (1, 2 or 3), stacking camels that share a space.",
+      "group": "table"
+    },
+    {
+      "text": "Roll the grey die for each crazy camel (black, white) and place it on space 16 minus the roll (grey 1 = space 16, 2 = 15, 3 = 14), facing counterclockwise. A second camel on the same space goes on top.",
+      "group": "table"
+    },
+    {
+      "text": "Drop all 6 dice into the pyramid and put it on its space.",
+      "group": "table"
+    },
+    {
+      "text": "Take 3 Egyptian Pounds.",
+      "group": "each player"
+    },
+    {
+      "text": "Take the 5 finish cards and the spectator tile of one character. Keep cards hidden.",
+      "group": "each player"
+    },
+    {
+      "text": "With fewer than 6 players leave the partnership cards in the box.",
+      "group": "each player",
+      "only": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "text": "Also take your character's partnership card, available side up.",
+      "group": "each player",
+      "only": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "text": "The youngest player gets the starting player marker.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Take one of four actions (five with 6 or more players). Play runs clockwise.",
+    "steps": [
+      "Take the top betting ticket of any colour, backing that camel to lead at the end of the leg.",
+      "Place or move your spectator tile on an empty space that is not space 1 and not next to another tile, cheering or booing side up.",
+      "Take a pyramid ticket, shake the pyramid, reveal one die and move that camel. Put the die on a dice tent. Grey moves a crazy camel.",
+      "Put one finish card face down on the overall winner or overall loser betting space.",
+      "With 6 or more players: swap partnership cards with another player who is available, to be betting partners for the rest of the leg."
+    ]
+  },
+  "round_end": [
+    "A leg ends when the last pyramid ticket is taken. Reveal and move that die first, then score the leg.",
+    "Give the starting marker to the left of whoever took the last ticket.",
+    "Return the tickets, pyramid tickets and spectator tiles, and put the revealed dice back in the pyramid. Start the next leg."
+  ],
+  "end": "The game ends immediately when any camel crosses the finish line, even a crazy camel going the other way. Score a final leg, then the overall winner and loser bets.",
+  "scoring": [
+    {
+      "text": "Leg: each ticket on the leading camel pays its printed value (5, 3 or 2). Each ticket on the second camel pays 1. Tickets on other camels cost 1. Each pyramid ticket pays 1."
+    },
+    {
+      "text": "Overall winner and loser: flip each deck so the first card placed is on top. For cards showing the true winner (or loser), the first pays 8, then 5, 3, 2, and 1 each for the rest. Each card showing another camel costs 1."
+    },
+    {
+      "text": "With 6 or more players, each player may copy one of their partner's tickets and add its reward to their own."
+    },
+    {
+      "text": "The most money wins."
+    }
+  ],
+  "tiebreak": "The victory is shared.",
+  "missed": [
+    {
+      "text": "A camel higher in a stack counts as ahead of those below it. Crazy camels are ignored for ranking."
+    },
+    {
+      "text": "A moving camel carries every camel on top of it, but not those beneath."
+    },
+    {
+      "text": "A camel unit landing on a camel unit jumps on top. A booing tile sends it back 1, underneath."
+    },
+    {
+      "text": "The owner of a spectator tile gains 1 EP whenever a camel stops on it."
+    },
+    {
+      "text": "You cannot go below 0 EP. If you cannot pay, you pay nothing."
+    },
+    {
+      "text": "You can only play a finish card as your action; placed cards cannot be changed."
+    }
+  ],
+  "unverified": [
+    "Crazy camel start spaces: the dice faces are icons, so the mapping of grey roll to space (1 to 16, 2 to 15, 3 to 14) is inferred from the order printed",
+    "The 3–8 player range is the one printed on the box; the rulebook text does not state it."
+  ]
+}

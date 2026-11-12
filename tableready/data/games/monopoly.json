@@ -1,0 +1,61 @@
+{
+  "slug": "monopoly",
+  "name": "Monopoly",
+  "kind": "board",
+  "publisher": "Hasbro",
+  "players": {"min": 2, "max": 6, "covered": [2, 3, 4, 5, 6]},
+  "age": "8+",
+  "edition": "Classic edition G0009, 2025 instruction sheet",
+  "status": "complete",
+  "source": {
+    "title": "Monopoly Classic instruction sheet G0009 (2025)",
+    "url": "https://assets-us-01.kc-usercontent.com:443/500e0a65-283d-00ef-33b2-7f1f20488fe2/12890f7d-e57c-47f5-9d25-288b2fa5c397/G0009GA01_INST_MONOPOLY_CLASSIC_REFRESH_FAR.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Starting money", "value": "1,500 each"},
+    {"label": "Collected for passing GO", "value": "200"},
+    {"label": "Cost to leave Jail", "value": "50"},
+    {"label": "Auction opening bid", "value": "10, raised in steps of 1 or more"},
+    {"label": "Buildings", "value": "32 Houses and 12 Hotels"}
+  ],
+  "setup": [
+    {"text": "Choose a Banker. They look after the bank's money, Houses, Hotels, Title Deeds and auctions. The Banker may play but keeps personal money apart.", "group": "table"},
+    {"text": "Shuffle the Community Chest cards and place them face down on their board space.", "group": "table"},
+    {"text": "Shuffle the Chance cards and place them face down on their board space.", "group": "table"},
+    {"text": "Put the dice beside the board.", "group": "table"},
+    {"text": "The Banker gives each player a starting stake of 1,500.", "group": "each player"},
+    {"text": "Choose a token and place it on GO.", "group": "each player"},
+    {"text": "Everyone rolls both dice. The highest roller starts and play passes to the left.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Roll, move clockwise, deal with the space you land on, then pass the dice. Doubles give you another go.",
+    "steps": [
+      "Roll both dice and move your token clockwise that many spaces.",
+      "Carry out the space you landed on. Unowned property must be bought or auctioned. Pay rent on owned property when the owner asks. Take a Chance or Community Chest card and obey it, then return it to the bottom.",
+      "Rolling doubles earns another roll. A third double in a row sends you straight to Jail without moving.",
+      "Pass the dice to your left when your turn ends.",
+      "Whenever you have a full colour set you can build Houses, even off your own turn, evenly across the set; after 4 Houses on every street in the set you can upgrade to a Hotel."
+    ]
+  },
+  "end": "The game ends when every player but one has gone bankrupt.",
+  "scoring": [
+    {"text": "There are no points. Be the last player left with money to win."},
+    {"text": "Go bankrupt if you cannot pay after selling buildings and mortgaging properties. Hand everything to the player you owe, or to the Bank, which then auctions every property."}
+  ],
+  "missed": [
+    {"text": "Free Parking pays nothing and nothing happens there. Never put money in the middle of the board."},
+    {"text": "If you land on unowned property and do not buy it, it must go to auction. All players may bid, with no need to follow turn order."},
+    {"text": "Rent is only owed if the owner asks before the next player rolls."},
+    {"text": "You must build evenly and sell evenly, and you cannot build on a street if any street in its set is mortgaged. You cannot sell or trade buildings to other players."},
+    {"text": "To mortgage a property, first sell every building in its colour set back to the Bank at half price."},
+    {"text": "To leave Jail, pay 50 at the start of your turn, use a Get Out of Jail Free card, or roll doubles. After three turns of failing, pay 50 and move."},
+    {"text": "While in Jail you can still collect rent, bid, build, mortgage and trade."},
+    {"text": "The owner of one utility charges 4 times the dice roll; owning both utilities makes it 10 times."}
+  ],
+  "unverified": [
+    "The make-up of the 1,500 in notes by denomination, which is printed as icons",
+    "Rents, prices and Title Deed values, which are on the cards and board"
+  ]
+}

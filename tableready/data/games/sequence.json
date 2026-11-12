@@ -1,0 +1,153 @@
+{
+  "slug": "sequence",
+  "name": "Sequence",
+  "kind": "board",
+  "publisher": "Goliath (Pressman Toy)",
+  "players": {
+    "min": 2,
+    "max": 12,
+    "covered": [
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      10,
+      12
+    ],
+    "not_playable": [
+      5,
+      7,
+      11
+    ]
+  },
+  "edition": "Sequence instruction sheet, no year printed",
+  "status": "complete",
+  "source": {
+    "title": "Sequence game instructions, copy hosted on a retailer CDN",
+    "url": "https://cdn.shopify.com/s/files/1/1144/4282/files/Sequence_Game_Instructions_PDF.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Cards dealt each",
+      "value": {
+        "2": "7",
+        "3": "6",
+        "4": "6",
+        "6": "5",
+        "8": "4",
+        "9": "4",
+        "10": "3",
+        "12": "3"
+      }
+    },
+    {
+      "label": "Sequences needed to win",
+      "value": {
+        "2": "2",
+        "3": "1",
+        "4": "2 (two teams)",
+        "6": "2 with two teams, 1 with three",
+        "8": "2 (two teams)",
+        "9": "1 (three teams)",
+        "10": "2 (two teams)",
+        "12": "2 with two teams, 1 with three"
+      }
+    },
+    {
+      "label": "Chips in a sequence",
+      "value": "5 (4 using a corner)"
+    },
+    {
+      "label": "Jokers",
+      "value": "None used"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Place the board flat with room for the draw deck, chips and each player's discards. Use the 104 cards; jokers are not used.",
+      "group": "table"
+    },
+    {
+      "text": "With two players or teams use blue and green chips. Red chips are used only when there is a third player or team.",
+      "group": "table"
+    },
+    {
+      "text": "Teams must be even: two teams of equal size, or three teams of equal size. Team members sit alternately with opponents (every third seat with three teams) and share one chip colour.",
+      "group": "table",
+      "only": [
+        4,
+        6,
+        8,
+        9,
+        10,
+        12
+      ]
+    },
+    {
+      "text": "Players cut cards and the lowest (aces high) deals. Shuffle and deal every player the same number of cards.",
+      "group": "each player",
+      "by_count": {
+        "2": "Deal 7 cards.",
+        "3": "Deal 6 cards.",
+        "4": "Deal 6 cards.",
+        "6": "Deal 5 cards.",
+        "8": "Deal 4 cards.",
+        "9": "Deal 4 cards.",
+        "10": "Deal 3 cards.",
+        "12": "Deal 3 cards."
+      }
+    },
+    {
+      "text": "The player left of the dealer goes first. Play is clockwise.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Play a card from your hand, put a chip on a matching space, then draw.",
+    "steps": [
+      "Choose a card from your hand and place it face up on your own discard pile.",
+      "Put one of your chips on a free board space showing that card. Each card is on the board twice, so either space will do.",
+      "Draw a replacement card before the next player takes their turn.",
+      "A two-eyed jack is wild: put a chip on any open space. A one-eyed jack removes one opposing chip from the board, and you cannot place on that space this turn."
+    ]
+  },
+  "end": "The game ends as soon as one player or team makes the required number of sequences. The corner spaces count as your chip.",
+  "scoring": [
+    {
+      "text": "A sequence is five of your chips in a connected line, across, up and down, or diagonally. A corner counts as a chip for everyone, so a sequence using a corner needs only four of your chips."
+    },
+    {
+      "text": "Two sides: first to make two sequences wins. Three sides: first to make one sequence wins."
+    },
+    {
+      "text": "In the two-sequence game, the second sequence may share one space with the first."
+    }
+  ],
+  "missed": [
+    {
+      "text": "You cannot remove a chip that is already part of a completed sequence."
+    },
+    {
+      "text": "A dead card (both board spaces covered) can be swapped: discard it, say so and take a new card, once per turn, then play normally."
+    },
+    {
+      "text": "If you do not draw before the next player has played and drawn, you lose the right and must play on with fewer cards."
+    },
+    {
+      "text": "No table talk or coaching teammates. If it happens, each member of that team must discard a card of their choice."
+    },
+    {
+      "text": "If the draw deck runs out, shuffle all the discard piles to make a new deck."
+    },
+    {
+      "text": "Jacks do not appear on the board."
+    }
+  ],
+  "unverified": [
+    "Publisher name (Goliath / Pressman) is taken from the host of the copy; the sheet text names no publisher. No age or year is printed in the text, so the age is left as reference only."
+  ]
+}

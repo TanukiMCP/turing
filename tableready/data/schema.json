@@ -7,12 +7,12 @@
   "properties": {
     "slug": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
     "name": {"type": "string"},
-    "kind": {"enum": ["board", "card"]},
+    "kind": {"enum": ["board", "card", "dice"]},
     "publisher": {"type": "string"},
     "designer": {"type": "string"},
     "players": {
       "type": "object", "required": ["min", "max", "covered"], "additionalProperties": false,
-      "properties": {"min": {"type": "integer", "minimum": 1}, "max": {"type": "integer"}, "covered": {"type": "array", "items": {"type": "integer"}, "minItems": 1}}
+      "properties": {"min": {"type": "integer", "minimum": 1}, "max": {"type": "integer"}, "covered": {"type": "array", "items": {"type": "integer"}, "minItems": 1}, "not_playable": {"type": "array", "items": {"type": "integer"}, "minItems": 1}}
     },
     "age": {"type": "string"},
     "play_time": {"type": "string"},

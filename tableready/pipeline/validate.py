@@ -73,6 +73,9 @@ def consistency(game, path, errors):
         for n in covered:
             if not lo <= n <= hi:
                 errors.append(f"{path}: covered count {n} is outside {lo}-{hi}")
+    for n in players.get("not_playable", []):
+        if n in covered or not (isinstance(lo, int) and isinstance(hi, int) and lo <= n <= hi):
+            errors.append(f"{path}: not_playable count {n} must be inside the range and not covered")
     if path.stem != game.get("slug"):
         errors.append(f"{path}: file name must match slug '{game.get('slug')}'")
 

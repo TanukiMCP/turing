@@ -1,0 +1,110 @@
+{
+  "slug": "rummikub",
+  "name": "Rummikub",
+  "kind": "board",
+  "publisher": "Pressman Toy",
+  "designer": "Ephraim Hertzano",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "age": "8+",
+  "edition": "Pressman instructions, (c) 2009 (code 0400-0710)",
+  "status": "complete",
+  "source": {
+    "title": "Rummikub instructions (Pressman, 2009), copy hosted on a retailer CDN",
+    "url": "https://cdn.shopify.com/s/files/1/1144/4282/files/Rummikub_Game_Instructions_PDF.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Tiles dealt",
+      "value": "14"
+    },
+    {
+      "label": "Tiles in the game",
+      "value": "106 (incl. 2 jokers)"
+    },
+    {
+      "label": "Opening play",
+      "value": "30 points from your rack"
+    },
+    {
+      "label": "Turn time limit",
+      "value": "2 minutes"
+    },
+    {
+      "label": "Joker penalty",
+      "value": "30 points"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put all 106 tiles in the pouch and mix them.",
+      "group": "table"
+    },
+    {
+      "text": "Decide how many points will end the game.",
+      "group": "table"
+    },
+    {
+      "text": "Each player takes a tile. Highest number goes first. Return the tiles to the pouch and mix again.",
+      "group": "to start"
+    },
+    {
+      "text": "Each player takes 14 tiles and puts them on their rack.",
+      "group": "each player"
+    }
+  ],
+  "turn": {
+    "summary": "Lay sets from your rack, or draw a tile if you cannot. Play goes clockwise.",
+    "steps": [
+      "Your first play must be one or more sets worth at least 30 points in total, all from your own rack. A tile counts its face value and a joker counts as the tile it stands for. Otherwise draw a tile and end your turn.",
+      "After opening, you may lay sets and add to or rearrange sets on the table, using tiles from your rack. Everything on the table must be a legitimate set when you finish, with no loose tiles.",
+      "A group is 3 or 4 tiles of one number in different colours. A run is 3 or more consecutive numbers of one colour; 1 is always low and does not follow 13.",
+      "If you cannot add anything, draw a tile from the pouch and your turn ends. You cannot play a tile you just drew until your next turn.",
+      "Call 'Rummikub' when your rack is empty. That ends the round."
+    ]
+  },
+  "round_end": [
+    "Losers add up the tiles left on their racks as a negative score. The winner scores the sum of all the losers' points as a positive. Return all tiles to the pouch for the next round."
+  ],
+  "end": "The game ends when the points target chosen at the start is reached, and the player with the highest total score wins.",
+  "scoring": [
+    {
+      "text": "Tiles on your rack count face value, and a joker counts 30."
+    },
+    {
+      "text": "The round winner scores plus the total of all losers' penalty points, so every round adds up to zero."
+    },
+    {
+      "text": "If the pouch empties and nobody can play, the lowest rack wins the round. Each loser's total minus the winner's total is their penalty, and the winner scores the sum of those."
+    }
+  ],
+  "missed": [
+    {
+      "text": "Your opening 30 points must come from your own rack, not from tiles already on the table."
+    },
+    {
+      "text": "You cannot take a joker from the table before you have made your opening play."
+    },
+    {
+      "text": "A joker you take from the table must be played again in the same turn, in a set of at least 3 using tiles from your rack or others you rearrange."
+    },
+    {
+      "text": "The tile that replaces a joker must come from your rack, not from the table."
+    },
+    {
+      "text": "If you muddle a rearrangement, put the tiles back as they were, take back the tiles you played and draw three tiles."
+    },
+    {
+      "text": "Going over the 2-minute turn time means you draw a tile and your turn ends."
+    }
+  ]
+}

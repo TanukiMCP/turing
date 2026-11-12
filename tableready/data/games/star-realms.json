@@ -1,0 +1,71 @@
+{
+  "slug": "star-realms",
+  "name": "Star Realms",
+  "kind": "card",
+  "publisher": "Wise Wizard Games",
+  "players": {"min": 1, "max": 4, "covered": [2, 3, 4]},
+  "edition": "Base box set, rulebook 1.1E (2021 copyright)",
+  "status": "complete",
+  "source": {
+    "title": "Star Realms box rulebook 1.1E",
+    "url": "https://files.wisewizardgames.com/wwg/rules/SRBOX_Rulebook_1.1E_WEB.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Starting Authority", "value": "50"},
+    {"label": "Personal deck", "value": "10 cards (8 Scouts, 2 Vipers)"},
+    {"label": "Trade Row size", "value": "5 cards, always kept full"},
+    {"label": "Starting hand", "value": {
+      "2": "First player 3 cards, second player 5",
+      "3": "3, 4 and 5 cards in turn order",
+      "4": "3, 4, 5 and 5 cards in turn order"}},
+    {"label": "Hand drawn at end of turn", "value": "5"}
+  ],
+  "setup": [
+    {"text": "Put the Explorer cards in their own face-up pile.", "group": "table"},
+    {"text": "Shuffle the Trade Deck (the faction cards plus the 3 Merc Cruisers) and place it face down. Leave room beside it for the Scrap Heap.", "group": "table"},
+    {"text": "Turn the top 5 Trade Deck cards face up to form the Trade Row.", "group": "table"},
+    {"text": "Leave the silver-bordered Gambit cards and the oversized challenge cards in the box for a first game.", "group": "table"},
+    {"text": "Take a Personal Deck of 8 Scouts and 2 Vipers, shuffle it and put it face down with room beside it for a discard pile.", "group": "each player"},
+    {"text": "Start on 50 Authority. Track it with the score cards, pen and paper or anything else you like.", "group": "each player"},
+    {"text": "Choose the first player at random. The first player draws a short starting hand; the others draw more.", "group": "to start",
+     "by_count": {
+       "2": "First player draws 3 cards; the second player draws 5.",
+       "3": "First player draws 3 cards, the next player 4, the last player 5.",
+       "4": "First player draws 3 cards, the next player 4, the other two players 5 each."}}
+  ],
+  "turn": {
+    "summary": "Each turn has three phases: Main, Discard, then Draw. Play everything useful in your hand, buy cards, attack, then refill to five.",
+    "steps": [
+      "Main phase, in any order and as often as you like: play cards from hand (free), use Base abilities, use Ally and Scrap abilities, spend Trade to buy, and spend Combat to attack.",
+      "Playing a ship triggers its main ability at once. Each other ability can be used once per turn.",
+      "An Ally ability is available once you have another card of the same faction in play. Order of play does not matter.",
+      "To buy, spend Trade equal to the card's cost and put it in your discard pile. Replace a bought Trade Row card straight away. Explorers can be bought too.",
+      "To attack, spend Combat from your pool: lower an opponent's Authority by any amount, or destroy a Base by spending its Defense.",
+      "Discard phase: unused Trade and Combat vanish; ships in play and any cards left in hand go to your discard pile. Bases stay in play.",
+      "Draw phase: draw 5 cards, reshuffling your discard pile into a new deck whenever your deck runs out mid-draw."
+    ]
+  },
+  "end": "The game ends when only one player still has Authority above zero. In a free-for-all, a player at zero or below is out and all their cards go to the Scrap Heap.",
+  "scoring": [
+    {"text": "There are no points. Authority is your life total and starts at 50."},
+    {"text": "Authority gain from cards is added at once and may take you above 50."},
+    {"text": "The last player left above zero Authority wins."}
+  ],
+  "missed": [
+    {"text": "If an opponent has an Outpost in play, you cannot attack them or target their other Bases until every Outpost is destroyed."},
+    {"text": "Damage to a Base that does not destroy it disappears at the end of the turn, so deal it all in one turn."},
+    {"text": "A card that says destroy target Base destroys it without spending Combat."},
+    {"text": "Buying a card does not play it. It goes to your discard pile and none of its abilities fire."},
+    {"text": "A card scrapped any way other than its own Scrap ability gives no Scrap effect. A scrapped Explorer goes back to the Explorer pile."},
+    {"text": "Ally abilities and Scrap abilities can be used in addition to a card's main ability, and the Scrap can be used before or after the other effects."},
+    {"text": "If you cannot do all of an ability, do as much as you can in the order written."}
+  ],
+  "not_covered": [
+    "Solo and cooperative challenge play (Nemesis Beast, Pirates of the Dark Star)",
+    "Team and variant formats: Hunter, Hunter First Blood, Hydra, Emperor and Raid",
+    "Gambit cards and their handicap rules",
+    "5 and 6 player games, which need a second set"
+  ]
+}

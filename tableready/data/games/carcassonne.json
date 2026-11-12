@@ -1,0 +1,67 @@
+{
+  "slug": "carcassonne",
+  "name": "Carcassonne",
+  "kind": "board",
+  "publisher": "Hans im Glück / Z-Man Games",
+  "designer": "Klaus-Jürgen Wrede",
+  "players": {
+    "min": 2,
+    "max": 5,
+    "covered": [2, 3, 4, 5]
+  },
+  "edition": "20th Anniversary Edition (2021) rulebook; core rules only, fields and farmers are in a separate supplemental sheet",
+  "status": "partial",
+  "source": {
+    "title": "Carcassonne 20th Anniversary rules (Asmodee / Z-Man)",
+    "url": "https://shop.asmodee.ca/img/product/description/EN-CARCASSONNE-20TH-RULES.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Meeple in your supply", "value": "7 (the 8th sits on the score track at 0)"},
+    {"label": "Road", "value": "1 point per tile"},
+    {"label": "City", "value": "2 points per tile and per coat of arms"},
+    {"label": "Monastery", "value": "9 points (1 + 8 neighbours)"}
+  ],
+  "setup": [
+    {"text": "Put the start tile (darker back) in the middle of the table.", "group": "table"},
+    {"text": "Shuffle the other tiles and place them face down in several stacks that everyone can reach. For a first game, leave out the 17 river tiles and the 15 anniversary mini-expansion tiles.", "group": "table"},
+    {"text": "Put the scoreboard beside the play area. Return unused meeple colours to the box, and for a first game the 5 abbots too.", "group": "table"},
+    {"text": "Choose a colour. Take 7 meeple of it as your supply, and put the 8th on the 0 space of the scoreboard.", "group": "each player"},
+    {"text": "The youngest player goes first. Play clockwise.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Place a tile, optionally place one meeple on it, then score anything you completed.",
+    "steps": [
+      "Draw 1 face-down tile and place it face up touching a tile already on the table, so roads, cities and fields continue.",
+      "You may place 1 meeple from your supply on the tile you just placed, as a traveller on a road, knight in a city or monk on a monastery, if no meeple is already anywhere on that connected feature.",
+      "Score every feature your tile completed. Move your scoring marker forward and return the meeple of each scored feature to its owner's supply.",
+      "If you cannot legally place the drawn tile, return it to the box and draw another."
+    ]
+  },
+  "end": "The game ends when all tiles are placed and a player cannot draw and place one on their turn. Then do final scoring of incomplete features.",
+  "scoring": [
+    {"text": "Completed road (both ends closed, or looped): 1 point per tile in it."},
+    {"text": "Completed city (fully walled with no gaps): 2 points per tile and 2 more per coat of arms."},
+    {"text": "Completed monastery (all 8 neighbours placed): 9 points."},
+    {"text": "With several meeple on a scored feature, the player with most meeple takes all points. Tied players each take the full points."},
+    {"text": "End of game, incomplete road: 1 point per tile. Incomplete city: 1 point per tile and per coat of arms. Incomplete monastery: 1 point per tile including itself and the surrounding tiles."},
+    {"text": "End of game, each field scores 3 points per completed city next to it. Fields and farmers are explained only in the supplemental sheet."}
+  ],
+  "tiebreak": "None is given: the player with the most points wins.",
+  "missed": [
+    {"text": "You may only place a meeple on the tile you just placed, never on an older one."},
+    {"text": "You cannot place a meeple on a feature that already has any meeple on it, even if it is far along the same road or city. Two meeple can end up together when a later tile joins two separate features."},
+    {"text": "A completed feature scored by someone else's tile still scores for you. Only features completed on the current tile are scored on that turn."},
+    {"text": "Meeple leave the board only when their feature is scored. A meeple on an unfinished feature stays, and does not return to your supply."},
+    {"text": "Monasteries are in the centre of a tile, so a monastery tile must continue the surrounding landscape like any other."},
+    {"text": "Incomplete cities score half at the end: only 1 point per tile and shield, not 2."}
+  ],
+  "not_covered": [
+    "Fields and farmers: placing and scoring are in the supplemental rulesheet, which was not read.",
+    "River tiles, abbots and the 20th anniversary mini-expansion."
+  ],
+  "unverified": [
+    "Player count 2 to 5: the rulebook text only shows 5 meeple colours and does not print a player range."
+  ]
+}

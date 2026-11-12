@@ -1,0 +1,158 @@
+{
+  "slug": "bohnanza",
+  "name": "Bohnanza",
+  "kind": "card",
+  "publisher": "Rio Grande Games / AMIGO",
+  "designer": "Uwe Rosenberg",
+  "players": {
+    "min": 2,
+    "max": 7,
+    "covered": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "age": "12+",
+  "play_time": "45 minutes",
+  "edition": "English rule booklet, 2000 printing (154 bean cards, 7 third-field cards)",
+  "status": "complete",
+  "source": {
+    "title": "Bohnanza rule booklet (2000), university library copy",
+    "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Bohnanza.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Starting hand",
+      "value": {
+        "3": "5",
+        "4": "5",
+        "5": "5",
+        "6": "3 / 4 / 5, then 6",
+        "7": "3 / 4 / 5, then 6"
+      }
+    },
+    {
+      "label": "Cards drawn at end of turn",
+      "value": {
+        "3": "3",
+        "4": "3",
+        "5": "3",
+        "6": "4",
+        "7": "4"
+      }
+    },
+    {
+      "label": "Cost of 3rd field (gold)",
+      "value": {
+        "3": "Already owned",
+        "4": "3",
+        "5": "3",
+        "6": "2",
+        "7": "2"
+      }
+    },
+    {
+      "label": "Game ends when the draw deck runs out",
+      "value": {
+        "3": "2nd time",
+        "4": "3rd time",
+        "5": "3rd time",
+        "6": "3rd time",
+        "7": "3rd time"
+      }
+    }
+  ],
+  "setup": [
+    {
+      "text": "Remove the varieties listed for your player count from the game.",
+      "group": "table",
+      "by_count": {
+        "3": "Remove the Cocoa Beans.",
+        "4": "Remove the Coffee Beans.",
+        "5": "Remove the Coffee Beans.",
+        "6": "Remove the Cocoa and Garden Beans.",
+        "7": "Remove the Cocoa and Garden Beans."
+      }
+    },
+    {
+      "text": "Put the 3rd bean field cards in the box, except at 3 players where each player takes one now.",
+      "group": "table"
+    },
+    {
+      "text": "Each player has two bean fields. Each holds only one variety at a time.",
+      "group": "each player"
+    },
+    {
+      "text": "The oldest player shuffles and deals face-down hands. Never reorder your hand.",
+      "group": "each player",
+      "by_count": {
+        "3": "Deal 5 cards each. You also start with a 3rd field.",
+        "4": "Deal 5 cards each.",
+        "5": "Deal 5 cards each.",
+        "6": "Deal 3 to the starting player, 4 to the next clockwise, 5 to the next, and 6 to everyone else.",
+        "7": "Deal 3 to the starting player, 4 to the next clockwise, 5 to the next, and 6 to everyone else."
+      }
+    },
+    {
+      "text": "Put the remaining cards face down as the draw deck, coin side up, leaving room for a discard pile.",
+      "group": "table"
+    },
+    {
+      "text": "The player to the left of the dealer starts.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Plant, draw two and trade or donate, plant what you received, then draw new cards to the back of your hand.",
+    "steps": [
+      "Plant the first card of your hand into a field. You may then plant the next card too, but never a third. If a card matches no field and none is empty, you must harvest a field first.",
+      "Draw the top two cards face up. Keep, trade or donate these and any cards from your hand. Trades and donations must involve you; other players may not trade among themselves.",
+      "Cards you receive or keep from the draw must be planted now. Planting order is yours, but all must be planted. Harvest when needed.",
+      "Draw cards one at a time and put each at the back of your hand, then end your turn. When the draw deck empties, shuffle the discard pile into a new one."
+    ]
+  },
+  "end": "The game ends when the draw deck runs out for the required time. If that happens in step 2, the active player finishes through step 3, drawing just one card if only one is left. If it happens in step 4, the game ends at once.",
+  "scoring": [
+    {
+      "text": "At the end, set aside your hand and harvest every field."
+    },
+    {
+      "text": "Selling beans: harvest a whole field, count its cards and check the beanometer on the cards. Turn that many to coin side and keep them; discard the rest."
+    },
+    {
+      "text": "The player with the most gold coins wins."
+    }
+  ],
+  "tiebreak": "Among tied players, the one with the most cards in hand wins.",
+  "missed": [
+    {
+      "text": "Never sort your hand or change the order of cards in it."
+    },
+    {
+      "text": "You may harvest at any time, even when it is not your turn."
+    },
+    {
+      "text": "Cards received in trades or donations cannot go to your hand or be traded again; they must be planted in step 3."
+    },
+    {
+      "text": "You cannot sell a field with one card unless all your fields have just one card."
+    },
+    {
+      "text": "Donations need not be accepted, and cards leave your hand only once an offer is accepted."
+    },
+    {
+      "text": "A third bean field can be bought once, at any time, by discarding the top coins from your earnings."
+    }
+  ],
+  "not_covered": [
+    "Two-player Bean Duel variant (different turn structure, deck and ending)."
+  ],
+  "unverified": [
+    "Coin values on each bean's beanometer are printed on the cards, not in the text, except the Stink Bean example."
+  ]
+}

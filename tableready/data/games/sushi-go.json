@@ -1,0 +1,140 @@
+{
+  "name": "Sushi Go!",
+  "kind": "card",
+  "publisher": "Gamewright",
+  "designer": "Phil Walker-Harding",
+  "players": {
+    "min": 2,
+    "max": 5,
+    "covered": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "edition": "Base game, 2014 Gamewright rules (copy)",
+  "status": "complete",
+  "source": {
+    "title": "Sushi Go! rules of play (2014), copy",
+    "url": "https://www.world-of-board-games.com.sg/docs/Sushi-Go.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Cards in the deck",
+      "value": "108"
+    },
+    {
+      "label": "Cards dealt each round",
+      "value": {
+        "2": "10",
+        "3": "9",
+        "4": "8",
+        "5": "7"
+      }
+    },
+    {
+      "label": "Rounds",
+      "value": "3"
+    },
+    {
+      "label": "Maki most / second",
+      "value": "6 / 3"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Shuffle all the cards. Put the rest of the deck facedown in the middle after dealing.",
+      "group": "table"
+    },
+    {
+      "text": "Choose a scorekeeper and get paper and a pencil.",
+      "group": "table"
+    },
+    {
+      "text": "Deal a hand to each player, held secretly.",
+      "group": "each player",
+      "by_count": {
+        "2": "Deal 10 cards.",
+        "3": "Deal 9 cards.",
+        "4": "Deal 8 cards.",
+        "5": "Deal 7 cards."
+      }
+    },
+    {
+      "text": "Everyone starts together; no start player is named in the rules.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Everyone picks a card at once, reveals together, then passes their hand left.",
+    "steps": [
+      "Choose 1 card from your hand and put it facedown in front of you.",
+      "When everyone has chosen, all reveal together.",
+      "Pass the rest of your hand facedown to the left and pick up the hand from your right.",
+      "Repeat until hands are empty, then score the round.",
+      "Chopsticks: if you have them in front of you, call 'Sushi Go!' and take a second card on a later turn. Put the chopsticks back in your hand before passing.",
+      "Wasabi: a nigiri chosen after a wasabi goes on that wasabi and triples in value."
+    ]
+  },
+  "round_end": [
+    "Score the round.",
+    "Everyone announces scores and the scorekeeper records them.",
+    "Discard all cards faceup beside the draw pile, except puddings, which stay in front of you.",
+    "Deal new hands of the same size from the draw pile."
+  ],
+  "end": "After the third round is scored, ignore any leftover cards and score puddings. The highest total wins.",
+  "scoring": [
+    {
+      "text": "Tempura: each set of 2 scores 5. A single is worth 0."
+    },
+    {
+      "text": "Sashimi: each set of 3 scores 10. One or two are worth 0."
+    },
+    {
+      "text": "Dumplings: 1, 2, 3, 4, 5 or more score 1, 3, 6, 10, 15."
+    },
+    {
+      "text": "Maki rolls: most icons scores 6, second most scores 3. Ties split the points, dropping any remainder."
+    },
+    {
+      "text": "Nigiri: squid 3, salmon 2, egg 1; triple if on a wasabi."
+    },
+    {
+      "text": "Wasabi and chopsticks score nothing by themselves."
+    },
+    {
+      "text": "Puddings, after round 3: most scores 6; fewest, including none, loses 6; ties split, dropping remainders."
+    }
+  ],
+  "tiebreak": "The tied player with the most pudding cards wins.",
+  "missed": [
+    {
+      "text": "Each wasabi takes only one nigiri, and only a nigiri you take after the wasabi is out can go on it."
+    },
+    {
+      "text": "You may hold several chopsticks, but you can use only one per turn."
+    },
+    {
+      "text": "If players tie for most maki rolls, nobody gets the second-place 3 points."
+    },
+    {
+      "text": "Puddings are kept across rounds and scored once at the end."
+    },
+    {
+      "text": "In a 2-player game no one loses points for having the fewest puddings.",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "Passed-on chopsticks may be taken by another player once you put them back in your hand."
+    }
+  ],
+  "not_covered": [
+    "The two-player dummy-hand variant and the pass-both-ways variant are not covered."
+  ],
+  "slug": "sushi-go"
+}

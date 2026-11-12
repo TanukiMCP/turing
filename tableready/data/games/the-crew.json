@@ -1,0 +1,126 @@
+{
+  "slug": "the-crew",
+  "name": "The Crew: The Quest for Planet Nine",
+  "kind": "card",
+  "publisher": "Kosmos",
+  "players": {
+    "min": 2,
+    "max": 5,
+    "covered": [
+      3,
+      4,
+      5
+    ]
+  },
+  "age": "10+",
+  "edition": "Base game, English rulebook with 50-mission logbook",
+  "status": "partial",
+  "source": {
+    "title": "The Crew: The Quest for Planet Nine rulebook (university library copy)",
+    "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/The%20Crew%20-%20The%20Quest%20for%20Planet%20Nine.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Playing cards",
+      "value": "40 (36 colour cards 1-9 plus rockets 1-4)"
+    },
+    {
+      "label": "Cards per player",
+      "value": {
+        "3": "14, 13 and 13",
+        "4": "10",
+        "5": "8"
+      }
+    },
+    {
+      "label": "Missions",
+      "value": "50"
+    },
+    {
+      "label": "Radio communications",
+      "value": "1 per player per attempt"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the distress signal token face down.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the 36 task cards into a face-down pile and keep the task tokens handy.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the 40 playing cards and deal them all face down.",
+      "group": "table",
+      "by_count": {
+        "3": "One player gets 1 extra card; after the last trick one card stays unplayed.",
+        "4": "Each player gets 10 cards.",
+        "5": "Each player gets 8 cards."
+      }
+    },
+    {
+      "text": "Put your radio communication token green side up in front of you and keep a reminder card ready.",
+      "group": "each player"
+    },
+    {
+      "text": "Turn up as many task cards as the mission requires. Whoever holds the rocket 4 is the commander and takes the commander token.",
+      "group": "to start"
+    },
+    {
+      "text": "Starting with the commander and going clockwise, each player takes one task card in turn until all are claimed. Some players may hold several or none.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Trick-taking where the right players must win specific cards. Follow suit; rockets are trumps.",
+    "steps": [
+      "The commander leads the first trick; after that, the winner of the previous trick leads.",
+      "Everyone plays one card clockwise. You must follow the suit of the first card if you can; otherwise play anything.",
+      "The highest card of the led suit wins, unless a rocket was played: then the highest rocket wins. Rockets may only be played on a colour trick if you cannot follow suit.",
+      "The winner sets the trick aside face down; only the most recent won trick may be looked at.",
+      "If the winner takes a card matching a task card they hold, they turn that task face down. You are never forced to win a trick.",
+      "Before a trick starts (never during), you may communicate once: lay one colour card face up and put your radio token on it, at the top if it is your highest of that colour, in the middle if it is your only one, at the bottom if it is your lowest. Then take a reminder card into your hand."
+    ]
+  },
+  "end": "You win the mission when every task is fulfilled. You lose at once if anyone wins a card belonging to another player's task, or breaks a mission special rule or task token condition; then reshuffle, redeal, and retry the mission.",
+  "scoring": [
+    {
+      "text": "There is no point score. After each successful mission, write the number of attempts it took in the logbook."
+    },
+    {
+      "text": "If you used the distress signal on the mission, add 1 to the attempts you record."
+    }
+  ],
+  "missed": [
+    {
+      "text": "You cannot talk about, show or hint at your cards. Only the radio token may give information."
+    },
+    {
+      "text": "Rockets can never be communicated, and a token stays where placed even if its statement stops being true."
+    },
+    {
+      "text": "The radio token can be used only once per attempt and only before a trick, not during it. Flip it red once used and play the card to discard the reminder."
+    },
+    {
+      "text": "A task is lost if another player wins that card, even by accident."
+    },
+    {
+      "text": "A distress signal is declared after dealing and before anyone communicates: all pass one card (never a rocket) the same direction. It stays active for every attempt of that mission."
+    },
+    {
+      "text": "A task token such as 'first' means first among the pending tasks, not necessarily in the first trick."
+    }
+  ],
+  "not_covered": [
+    "Two-player variant (rulebook p.19).",
+    "The 50 mission descriptions and their special rules in the logbook.",
+    "Details of each task token beyond the order conditions."
+  ],
+  "unverified": [
+    "Player range 3-5 is read from the materials list (3-5, with a 2-player variant on p.19); publisher is inferred from the Kosmos Helper App mention.",
+    "At 3 players the text says only that one player receives one more card than the others."
+  ]
+}

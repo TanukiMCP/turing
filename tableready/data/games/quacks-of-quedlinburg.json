@@ -1,0 +1,147 @@
+{
+  "slug": "quacks-of-quedlinburg",
+  "name": "The Quacks of Quedlinburg",
+  "kind": "board",
+  "publisher": "Schmidt Spiele",
+  "designer": "Wolfgang Warsch",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "age": "10+",
+  "edition": "Base game, English rules v1 (file path dated 2018)",
+  "status": "partial",
+  "source": {
+    "title": "The Quacks of Quedlinburg English rules v1, copy",
+    "url": "https://gusandco.net/wp-content/uploads/2018/10/Quacksalber_Rules_English_v1.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Rounds",
+      "value": "9"
+    },
+    {
+      "label": "Explosion",
+      "value": "white chips total more than 7"
+    },
+    {
+      "label": "Starting bag",
+      "value": "9 chips"
+    },
+    {
+      "label": "Rubies per droplet move or flask refill",
+      "value": "2"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Shuffle the fortuneteller cards into a face-down pile. Lay out the scoring track with the flame on round 1 and the four seals on 0.",
+      "group": "table"
+    },
+    {
+      "text": "Sort all chips into three groups by value (1, 2 and 4).",
+      "group": "table"
+    },
+    {
+      "text": "Lay out the orange and black ingredient books. Use the black book page for your player count.",
+      "group": "table",
+      "by_count": {
+        "2": "Use the 2-player page of the black book.",
+        "3": "Use the 3- and 4-player page of the black book.",
+        "4": "Use the 3- and 4-player page of the black book."
+      }
+    },
+    {
+      "text": "Choose one 5-ingredient set of the other books (green, blue, red, yellow, purple). Lay out only green, blue and red; yellow and purple wait.",
+      "group": "table"
+    },
+    {
+      "text": "Take a pot (plain side up), bag, scoring marker and flask. Put your droplet on 0, the flask full on the large trivet and the rat stone on the small trivet.",
+      "group": "each player"
+    },
+    {
+      "text": "Put 4 white 1-chips, 2 white 2-chips, 1 white 3-chip, 1 orange 1-chip and 1 green 1-chip in your bag.",
+      "group": "each player"
+    },
+    {
+      "text": "The last person to cook something starts and holds the fortuneteller cards.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Each of the 9 rounds is played by everyone at once: read a card, count rats, draw chips into your pot, then score and buy.",
+    "steps": [
+      "Read the top fortuneteller card aloud and discard it. It applies to everyone.",
+      "From round 2: everyone except the leader counts the rat-tails between themselves and the leader on the score track and sets their rat stone that many spaces ahead of the droplet.",
+      "Draw chips one at a time, placing each as far along the pot track as its value. After each, choose to draw on or stop.",
+      "If your white chips total more than 7, the pot explodes and you must stop; the last chip still stays.",
+      "Once per round you may use the flask to put the last chip back, but not if that chip exploded the pot.",
+      "Evaluation: roll the bonus die if eligible, resolve chip actions, take rubies, then score points or buy chips. Finally spend rubies and pass the cards on."
+    ]
+  },
+  "round_end": [
+    "Spend rubies as you wish: 2 rubies move your droplet 1 space, 2 rubies refill your flask.",
+    "Take the rat stone out of the pot. Pass the fortuneteller cards clockwise; that player starts next round and the flame moves on.",
+    "Before round 2 reveal the yellow book, before round 3 the purple book, and before round 6 everyone adds 1 white 1-chip to their bag."
+  ],
+  "end": "After round 9. In the last round everyone draws together on the command 'Stir!'. After it you may buy 1 victory point for 5 coins or 2 rubies, as often as you like.",
+  "scoring": [
+    {
+      "text": "Your scoring field is the one just after your last chip, even if the pot exploded."
+    },
+    {
+      "text": "Bonus die: the non-exploded player with the highest field (ties by furthest chip) rolls it. Tied players all roll."
+    },
+    {
+      "text": "Then resolve black, green and purple chip actions, starting with the start player."
+    },
+    {
+      "text": "Get a ruby if your field shows one."
+    },
+    {
+      "text": "Exploded pots choose either the victory points or the coins of their field. Others take both."
+    },
+    {
+      "text": "Buy 1 or 2 chips of different colours with your coins. Spare coins are lost."
+    },
+    {
+      "text": "The player furthest along the scoring track wins."
+    }
+  ],
+  "tiebreak": "The player with the fullest pot in the last round; otherwise the tie stands.",
+  "missed": [
+    {
+      "text": "Only white chips count towards the explosion total; other colours never do."
+    },
+    {
+      "text": "An exploded pot still gets the field's rubies and can take points or coins, but not both, and cannot roll the bonus die."
+    },
+    {
+      "text": "Never look into your bag. Players who stop lay their bag on the table."
+    },
+    {
+      "text": "Chip actions are optional, and blue, red and yellow work immediately; green, purple and black work at round end."
+    },
+    {
+      "text": "You can buy at most 2 chips per round, and they must be different colours."
+    },
+    {
+      "text": "The flask can be used once per round and must be refilled with rubies."
+    }
+  ],
+  "not_covered": [
+    "Detailed effects and costs of every ingredient book (the final pages)",
+    "Test-tube side of the pot",
+    "Point, ruby and coin values per pot field (printed on the pot board)"
+  ],
+  "unverified": [
+    "Publisher is not named in the rulebook text; Schmidt Spiele is the original publisher per search listings"
+  ]
+}

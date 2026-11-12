@@ -1,0 +1,70 @@
+{
+  "slug": "lords-of-waterdeep",
+  "name": "Lords of Waterdeep",
+  "kind": "board",
+  "publisher": "Wizards of the Coast",
+  "designer": "Peter Lee and Rodney Thompson",
+  "players": {"min": 2, "max": 5, "covered": [2, 3, 4, 5]},
+  "age": "12+",
+  "edition": "Base game, 2012 Wizards of the Coast rulebook",
+  "status": "complete",
+  "source": {
+    "title": "Lords of Waterdeep rulebook (2012), copy",
+    "url": "https://cdn.shopify.com/s/files/1/2546/6116/files/rules-lords-of-waterdeep.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Rounds", "value": "8"},
+    {"label": "Agents per player", "value": {"2": "4", "3": "3", "4": "2", "5": "2"}},
+    {"label": "Extra Agent", "value": "1 more per player from round 5"},
+    {"label": "Starting Quests / Intrigue / Lord", "value": "2 / 2 / 1 each"},
+    {"label": "Starting Gold", "value": "4 for the first player, then 1 more per seat"}
+  ],
+  "setup": [
+    {"text": "Unfold the board. Place 3 VP tokens on each space of the rounds track.", "group": "table"},
+    {"text": "Put the Adventurer cubes and Gold tokens in a supply by the board.", "group": "table"},
+    {"text": "Shuffle the Quest cards. Put 1 face up on each of the 4 Cliffwatch Inn spaces and keep the rest as a face-down deck there.", "group": "table"},
+    {"text": "Shuffle the Building tiles. Turn 3 face up in Builder's Hall and keep the rest as a face-down stack.", "group": "table"},
+    {"text": "Shuffle the Intrigue deck and place it face down by Waterdeep Harbor.", "group": "table"},
+    {"text": "Choose a colour. Take that colour's Agents, player mat, score marker and control markers. Put the score marker on 0.", "group": "each player"},
+    {"text": "Put your starting Agents in your pool, and 1 more Agent of your colour on the round 5 space of the rounds track.", "group": "each player",
+     "by_count": {"2": "Start with 4 Agents.", "3": "Start with 3 Agents.", "4": "Start with 2 Agents.", "5": "Start with 2 Agents."}},
+    {"text": "Deal each player 2 face-up Quests, 2 face-down Intrigue cards and 1 face-down Lord card. Keep Lords secret and box the unused ones.", "group": "each player"},
+    {"text": "Give the First Player marker to whoever visited another city most recently.", "group": "to start"},
+    {"text": "Hand out starting Gold: 4 to the first player, 5 to the next on their left, and so on, each seat getting 1 more than the one before.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Players take turns assigning one Agent each, in order from the First Player, until everyone's pool is empty. After assigning you may complete one Quest.",
+    "steps": [
+      "Start of round: move that round's 3 VP tokens onto the face-up Buildings in Builder's Hall, one per tile, and carry out any start-of-round effects of Buildings in play. In round 5 each player adds their extra Agent.",
+      "Assign an Agent to any empty action space on a Building in play, then take that action once. You may not pass while you have Agents, unless no action is possible.",
+      "Builder's Hall: pay a face-up Building's Gold cost, score its VP, place it with your control marker, then refill the space. Its owner gains a benefit whenever another player uses it.",
+      "Cliffwatch Inn: take a face-up Quest (with 2 Gold, an Intrigue card, or after replacing all four), then refill the Quest row.",
+      "Waterdeep Harbor: play one Intrigue card. After all Agents are assigned, each Agent there is reassigned to another space, starting from space 1.",
+      "After assigning, you may complete one Quest: pay its Adventurers and Gold from your Tavern, take the reward, and turn the card face down. Only one Quest per turn, however many Agents you place.",
+      "A player with no Agents left is skipped until the round ends."
+    ]
+  },
+  "round_end": [
+    "After all Agents are placed and reassigned, everyone returns their Agents to their pool.",
+    "The player holding the First Player marker starts the next round."
+  ],
+  "end": "The game ends after the 8th round, then final scoring.",
+  "scoring": [
+    {"text": "Quest rewards, Building VP and VP from effects are added to your track as they happen."},
+    {"text": "Final scoring: 1 VP for each Adventurer in your Tavern."},
+    {"text": "Final scoring: 1 VP for every 2 Gold in your Tavern, rounded down."},
+    {"text": "Reveal your Lord card and score its bonus VP. Plot Quest names are a different colour and keep an ongoing effect once complete."}
+  ],
+  "tiebreak": "The player with the most Gold wins.",
+  "missed": [
+    {"text": "You may complete at most one Quest per turn, even if you assign or reassign several Agents."},
+    {"text": "Cliffwatch Inn and Waterdeep Harbor have three action spaces, but you still place only one Agent per turn."},
+    {"text": "You cannot pass your turn when you have an Agent and a legal action."},
+    {"text": "A Mandatory Quest played on you blocks all other Quests until you complete it."},
+    {"text": "You cannot reassign an Agent back to Waterdeep Harbor. The Ambassador, if placed at Waterdeep Harbor, cannot be reassigned at round end."},
+    {"text": "If the supply lacks enough Adventurers to hire, you take only what is available."},
+    {"text": "The Lord cards stay hidden until final scoring."}
+  ]
+}

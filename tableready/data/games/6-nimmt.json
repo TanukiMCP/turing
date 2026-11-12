@@ -1,0 +1,116 @@
+{
+  "slug": "6-nimmt",
+  "name": "6 nimmt!",
+  "kind": "card",
+  "publisher": "AMIGO",
+  "designer": "Wolfgang Kramer",
+  "players": {
+    "min": 2,
+    "max": 10,
+    "covered": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "age": "8+",
+  "play_time": "about 45 minutes",
+  "edition": "30th anniversary edition rulebook, 2024 (version 1.0), base game section",
+  "status": "complete",
+  "source": {
+    "title": "6 nimmt! 30th anniversary rulebook (02401)",
+    "url": "https://blog.amigo-spiele.de/content/ap/rule/02401-GB-AmigoRule.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Number cards",
+      "value": "104"
+    },
+    {
+      "label": "Cards dealt to each player",
+      "value": "10"
+    },
+    {
+      "label": "Cards a row holds before the next one forces a take",
+      "value": "5"
+    },
+    {
+      "label": "Game ends at",
+      "value": "66 points or more"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Shuffle the 104 number cards.",
+      "group": "table"
+    },
+    {
+      "text": "Turn four cards face up in a column. Each starts a row. Put the rest aside for later rounds.",
+      "group": "table"
+    },
+    {
+      "text": "Get the notepad and pencil ready to record penalty points.",
+      "group": "table"
+    },
+    {
+      "text": "Deal 10 cards to each player.",
+      "group": "each player"
+    }
+  ],
+  "turn": {
+    "summary": "Everyone picks a card, all are revealed, and cards are placed lowest first into the rows. Taking a row costs points.",
+    "steps": [
+      "Everyone chooses a card and puts it face down in front of them. Reveal them once all have chosen.",
+      "From the lowest card up, each player places theirs at the end of a row. It must be higher than the row's last card, and go in the row where the difference is smallest.",
+      "If your card would be the sixth in a row, take the five cards into your bull pile; your card becomes the first of the row.",
+      "If your card is lower than every row's last card, take any row of your choice and start it with your card.",
+      "Repeat until all 10 cards have been played."
+    ]
+  },
+  "round_end": [
+    "Count the bullheads on your bull pile and write them down as negative points, then start a new round."
+  ],
+  "end": "Play rounds until someone reaches 66 points or more. You may agree another target or a set number of rounds.",
+  "scoring": [
+    {
+      "text": "Each bullhead on the cards you took is one negative point."
+    },
+    {
+      "text": "Most cards have 1 bullhead. Numbers ending in 5 have 2, multiples of 10 have 3, doubles (11, 22, 33...) have 5, and 55 has 7."
+    },
+    {
+      "text": "The fewest points wins."
+    }
+  ],
+  "tiebreak": "Players tied on the lowest total share the win.",
+  "missed": [
+    {
+      "text": "Placement order goes by card value, lowest first, so a lower card can change which row a higher one must take."
+    },
+    {
+      "text": "Always use the smallest difference among the rows where your card is higher. You cannot choose another row."
+    },
+    {
+      "text": "The sixth card in a row triggers the take, not the fifth."
+    },
+    {
+      "text": "Cards you take go in your bull pile, never your hand."
+    },
+    {
+      "text": "With a low card you may choose which row to take; usually pick the one with the fewest bullheads."
+    }
+  ],
+  "not_covered": [
+    "Pro variant for 2-6 players.",
+    "Four special fan cards.",
+    "Cooperative 'Beat the Buffalo' variant for 1-6 players."
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "name": "Patchwork",
+  "kind": "board",
+  "publisher": "Lookout Games / Mayfair Games",
+  "designer": "Uwe Rosenberg",
+  "players": {
+    "min": 2,
+    "max": 2,
+    "covered": [
+      2
+    ]
+  },
+  "edition": "Base game, 2014 English rulebook",
+  "status": "complete",
+  "source": {
+    "title": "Patchwork rulebook (2014), library-hosted copy",
+    "url": "https://lot.ahml.info/Patchwork.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Starting buttons",
+      "value": "5"
+    },
+    {
+      "label": "Penalty per empty quilt space",
+      "value": "-2"
+    },
+    {
+      "label": "7x7 special tile",
+      "value": "7 points"
+    },
+    {
+      "label": "Patch actions",
+      "value": "5 steps"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the central time board in the middle of the table.",
+      "group": "table"
+    },
+    {
+      "text": "Place the regular patches in a circle or oval around the time board.",
+      "group": "table"
+    },
+    {
+      "text": "Put the neutral token between the smallest patch, the 1x2, and the next patch clockwise.",
+      "group": "table"
+    },
+    {
+      "text": "Put the special patches on their marked spaces of the time board.",
+      "group": "table"
+    },
+    {
+      "text": "Lay out the special tile.",
+      "group": "table"
+    },
+    {
+      "text": "Keep the remaining buttons in a supply nearby.",
+      "group": "table"
+    },
+    {
+      "text": "Take a quilt board, a time token and 5 buttons. Put your time token on the start space.",
+      "group": "each player"
+    },
+    {
+      "text": "The player who last used a needle goes first.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "The player whose time token is furthest back takes the turn, so you can go several times in a row. Choose one action each turn.",
+    "steps": [
+      "If both tokens are on one space, the player whose token is on top moves first.",
+      "Action A, advance: move your time token to the space directly in front of your opponent's token and take 1 button per space moved.",
+      "Action B, take and place a patch, in 5 steps.",
+      "1. Choose one of the three patches clockwise after the neutral token.",
+      "2. Move the neutral token next to the chosen patch.",
+      "3. Pay the buttons shown on the patch to the supply.",
+      "4. Put the patch on your quilt board without overlap. You may turn it.",
+      "5. Move your time token forward by the number on the patch. If you land on your opponent's space, place your token on top."
+    ]
+  },
+  "round_end": [
+    "Whenever you move onto or past a marked time-board space, resolve it: take the special patch and place it at once, or take button income."
+  ],
+  "end": "The game ends when both time tokens have reached the last space of the time board. A token that would go past it stops there.",
+  "scoring": [
+    {
+      "text": "Count your remaining buttons and add 7 if you have the special tile."
+    },
+    {
+      "text": "Subtract 2 for each empty space on your quilt board."
+    },
+    {
+      "text": "Highest score wins."
+    }
+  ],
+  "tiebreak": "The player who reached the final space of the time board first.",
+  "missed": [
+    {
+      "text": "Turns are not alternate; you move again if your token is still behind."
+    },
+    {
+      "text": "You choose only from the next three patches clockwise from the neutral token."
+    },
+    {
+      "text": "Button income pays the sum of button symbols on your patches each time you pass an income space."
+    },
+    {
+      "text": "Special patches are the only way to fill single spaces and are placed immediately."
+    },
+    {
+      "text": "The first player to fill a 7x7 square on their quilt gets the 7-point special tile."
+    },
+    {
+      "text": "When advancing, you only gain buttons for spaces actually moved, even if the track ends."
+    }
+  ],
+  "unverified": [
+    "Button symbol values on patches and the exact marked track spaces are printed as images, not in the text."
+  ],
+  "slug": "patchwork"
+}

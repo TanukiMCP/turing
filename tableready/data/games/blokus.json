@@ -1,0 +1,114 @@
+{
+  "slug": "blokus",
+  "name": "Blokus",
+  "kind": "board",
+  "publisher": "Mattel",
+  "designer": "Bernard Tavitian",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "age": "5+",
+  "play_time": "20-30 minutes",
+  "edition": "Blokus (classic) instruction sheet R1983, 2008 design, file R1983-0825",
+  "status": "complete",
+  "source": {
+    "title": "Blokus instruction sheet R1983",
+    "url": "https://service.mattel.com//instruction_sheets/R1983%20-%20Blokus.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Pieces per colour",
+      "value": "21"
+    },
+    {
+      "label": "Board squares",
+      "value": "400 (20 by 20)"
+    },
+    {
+      "label": "All-pieces bonus",
+      "value": "+15"
+    },
+    {
+      "label": "Smallest-piece-last bonus",
+      "value": "+5 more"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Place the 20 by 20 board between you.",
+      "group": "table"
+    },
+    {
+      "text": "Each player picks a colour and puts its 21 pieces at their side of the board. Turn order is blue, yellow, red, green.",
+      "group": "each player",
+      "by_count": {
+        "2": "Each player takes two colours: one gets blue and red, the other yellow and green.",
+        "3": "Each player takes one colour. The fourth colour is shared and played in turn by all three.",
+        "4": "Each player takes one colour."
+      }
+    },
+    {
+      "text": "Blue goes first, then yellow, red and green. Your first piece must cover one of the board's corner squares.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Place one of your pieces on the board so it touches your own pieces only at a corner.",
+    "steps": [
+      "Choose one of your remaining pieces and place it on the board.",
+      "Your first piece must cover a corner square of the board.",
+      "Each later piece must touch at least one of your own pieces at a corner only, never along an edge.",
+      "Pieces of different colours may touch in any way, and a placed piece cannot be moved.",
+      "With two players, play your two colours in the turn order. With three, one player after another also plays the shared colour in its turn."
+    ]
+  },
+  "end": "The game ends when no player can lay down any more pieces, including players who have placed all of theirs.",
+  "scoring": [
+    {
+      "text": "Count the unit squares in your unplaced pieces: each is minus 1 point."
+    },
+    {
+      "text": "Plus 15 if all your pieces are on the board, and plus 5 more if your last piece was the single-square piece."
+    },
+    {
+      "text": "With two players, add the scores of your two colours. With three players, ignore the shared colour's score."
+    }
+  ],
+  "missed": [
+    {
+      "text": "Same-colour pieces may touch only at corners; edge contact is not allowed. Other colours have no such limit."
+    },
+    {
+      "text": "The 5-point bonus only counts if the single square is the last piece you place."
+    },
+    {
+      "text": "Unplaced squares cost one point each, so try to dump your big pieces early."
+    },
+    {
+      "text": "In the four-player game the order is blue, yellow, red, green, whatever the seating.",
+      "only": [
+        4
+      ]
+    },
+    {
+      "text": "In a three-player game the shared colour is played alternately by each player, and its score is ignored.",
+      "only": [
+        3
+      ]
+    }
+  ],
+  "not_covered": [
+    "Team and one-player brainteaser variations."
+  ],
+  "unverified": [
+    "The sheet does not say outright what happens on the turn of a player who cannot place a piece; entry treats them as blocked, with play continuing until everyone is blocked."
+  ]
+}

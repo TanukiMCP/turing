@@ -1,0 +1,140 @@
+{
+  "slug": "dixit",
+  "name": "Dixit",
+  "kind": "card",
+  "publisher": "Libellud",
+  "designer": "Jean-Louis Roubira",
+  "players": {
+    "min": 3,
+    "max": 8,
+    "covered": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "edition": "Base game, refreshed edition (rulebook credits 2021; 84 cards, 8 voting dials)",
+  "status": "complete",
+  "source": {
+    "title": "Dixit Refresh rulebook (US/UK/AU)",
+    "url": "https://cdn.svc.asmodee.net/production-libellud/uploads/2022/03/DIXIT_REFRESH_RULES_US-UK-AU_BD.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Cards in hand",
+      "value": {
+        "3": "7",
+        "4": "6",
+        "5": "6",
+        "6": "6",
+        "7": "6",
+        "8": "6"
+      }
+    },
+    {
+      "label": "Cards in the deck",
+      "value": "84"
+    },
+    {
+      "label": "Points to end the game",
+      "value": "30"
+    },
+    {
+      "label": "Storyteller scores (some but not all find the card)",
+      "value": "3"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the game board in the middle with its scoring track and numbered card slots.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle all 84 cards.",
+      "group": "table"
+    },
+    {
+      "text": "Keep the leftover cards face down as the draw pile after dealing.",
+      "group": "table"
+    },
+    {
+      "text": "Choose a colour and take the matching voting dial and rabbit pawn.",
+      "group": "each player"
+    },
+    {
+      "text": "Put your rabbit on the start space of the scoring track.",
+      "group": "each player"
+    },
+    {
+      "text": "Deal each player cards face down.",
+      "group": "each player",
+      "by_count": {
+        "3": "Deal 7 cards each.",
+        "4": "Deal 6 cards each.",
+        "5": "Deal 6 cards each.",
+        "6": "Deal 6 cards each.",
+        "7": "Deal 6 cards each.",
+        "8": "Deal 6 cards each."
+      }
+    },
+    {
+      "text": "The first player to come up with a clue becomes the storyteller for turn one.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "One player is the storyteller each turn. They give a clue for a card, everyone adds a matching card, then all vote for the storyteller's card.",
+    "steps": [
+      "The storyteller picks a card from their hand and says a clue (a word, phrase, sound or mime) without showing the card.",
+      "Every other player secretly hands the storyteller the card from their hand that best fits the clue; the storyteller shuffles them with their own card.",
+      "The storyteller lays the cards face up by the numbered slots, in random order.",
+      "Every other player secretly sets their dial to the number of the card they think is the storyteller's. You cannot vote for your own card. Reveal the dials together and place them on the cards.",
+      "The storyteller reveals their card and everyone scores (see Scoring), moving their rabbit one space per point.",
+      "Put all cards used in the turn on the discard pile and everyone draws back up to a full hand. The player to the left of the storyteller is the next storyteller."
+    ]
+  },
+  "round_end": [
+    "If the draw pile cannot supply everyone, shuffle the remaining cards with the discard pile to make a new draw pile."
+  ],
+  "end": "The game ends straight away at the end of a turn in which at least one player has reached or passed 30 points.",
+  "scoring": [
+    {
+      "text": "If every voter found the storyteller's card, or nobody did: the storyteller scores 0 and each other player scores 2."
+    },
+    {
+      "text": "If some but not all voters found it: the storyteller scores 3, and each player who found it scores 3. Players who missed it score nothing from the vote."
+    },
+    {
+      "text": "Bonus: each non-storyteller scores 1 for every vote placed on their own card."
+    }
+  ],
+  "tiebreak": "Tied players with the most points share the win.",
+  "missed": [
+    {
+      "text": "A clue that is too obvious or too obscure can leave the storyteller with 0. At least one voter, but not all, must find the card."
+    },
+    {
+      "text": "The storyteller never votes, and nobody may vote for their own card."
+    },
+    {
+      "text": "The bonus point for a vote on your own decoy applies only to non-storytellers."
+    },
+    {
+      "text": "The game ends immediately once someone reaches 30 at the end of a turn; it does not wait for a full round."
+    },
+    {
+      "text": "With 3 players, each non-storyteller supplies 2 cards for the clue, giving 5 cards on the board, and you draw 2 cards at turn end. Voters still get the 1-point bonus if any vote lands on either of their cards.",
+      "only": [
+        3
+      ]
+    }
+  ],
+  "unverified": [
+    "Minimum of 3 players is inferred from the 3-player rules section; the text does not state a player range."
+  ]
+}

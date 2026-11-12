@@ -1,0 +1,112 @@
+{
+  "slug": "takenoko",
+  "name": "Takenoko",
+  "kind": "board",
+  "publisher": "Bombyx / Matagot",
+  "designer": "Antoine Bauza",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "edition": "Base game, English rulebook dated November 2020",
+  "status": "complete",
+  "source": {
+    "title": "Takenoko rulebook (English, 2020), library-hosted copy",
+    "url": "https://www.dover.nh.gov/Assets/government/city-operations/library/borrow/library-of-things/TAKENOKO_rulebook_EN.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Objectives that trigger the last round",
+      "value": {
+        "2": "9",
+        "3": "8",
+        "4": "7"
+      }
+    },
+    {
+      "label": "Actions per turn",
+      "value": "2 (different)"
+    },
+    {
+      "label": "Objective cards in hand, max",
+      "value": "5"
+    },
+    {
+      "label": "Bamboo per plot, max",
+      "value": "4"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the pond tile in the middle, with the gardener and the panda on it.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the other plot tiles into a face-down draw pile.",
+      "group": "table"
+    },
+    {
+      "text": "Sort the irrigation channels and improvement tokens beside the board as a reserve.",
+      "group": "table"
+    },
+    {
+      "text": "Set the Emperor card aside. Split the objective cards into plot, gardener and panda, and shuffle each into its own face-down pile.",
+      "group": "table"
+    },
+    {
+      "text": "Take an individual board, 2 action tokens and one objective card of each category. Keep them hidden.",
+      "group": "each player"
+    },
+    {
+      "text": "The tallest player starts. Play runs clockwise.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Roll the weather (from round 2), then take two different actions in any order. Complete objectives whenever you can.",
+    "steps": [
+      "Weather: from the second round, roll the weather die and apply it. Sun gives a third, different action. Rain lets you add a bamboo section to any plot. Wind allows two identical actions. Storm lets you move the panda to any plot, where it eats a section. Clouds let you take an improvement. The remaining face lets you choose any weather.",
+      "Choose two different actions and put your two action tokens on them: take 3 plots and place 1; take an irrigation channel; move the gardener; move the panda; draw an objective card.",
+      "Place plots next to the pond or next to two plots already in play. Place channels on borders between plots, in networks starting at the pond.",
+      "The gardener or panda moves in a straight line over plots. Gardener: grows bamboo on the stop plot and adjacent plots of the same colour. Panda: eats one section on the stop plot and you keep it.",
+      "Complete objectives at any time during your turn by laying the card face up. This is not an action."
+    ]
+  },
+  "end": "When a player completes their 9th (2 players), 8th (3) or 7th (4) objective, they take the Emperor card and everyone else gets one last turn. The player may complete more objectives that turn.",
+  "scoring": [
+    {
+      "text": "Add the points printed on the objectives you completed. Objectives still in hand count for nothing."
+    }
+  ],
+  "tiebreak": "Most points on panda objectives; if still tied, the victory is shared.",
+  "missed": [
+    {
+      "text": "Bamboo grows only on irrigated plots, and never beyond 4 sections."
+    },
+    {
+      "text": "The gardener and panda must move at least one space to give their benefit."
+    },
+    {
+      "text": "They cannot cross an empty space between plots but can cross or stop on the pond."
+    },
+    {
+      "text": "Each plot can have only one improvement, either printed or a token."
+    },
+    {
+      "text": "An enclosure stops the panda eating there; a watershed irrigates its plot but cannot start a new irrigation network."
+    },
+    {
+      "text": "You cannot draw an objective while holding 5 cards; complete one first."
+    },
+    {
+      "text": "Weather is ignored in the first round."
+    }
+  ]
+}

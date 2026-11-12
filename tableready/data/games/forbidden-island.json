@@ -1,0 +1,64 @@
+{
+  "slug": "forbidden-island",
+  "name": "Forbidden Island",
+  "kind": "board",
+  "publisher": "Gamewright",
+  "designer": "Matt Leacock",
+  "players": {"min": 2, "max": 4, "covered": [2, 3, 4]},
+  "age": "10+",
+  "edition": "Base game rulebook, copyright 2010 Gamewright",
+  "status": "complete",
+  "source": {
+    "title": "Forbidden Island rules (English), retailer copy",
+    "url": "https://world-of-board-games.com.sg/docs/Forbidden-Island.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Island tiles", "value": "24"},
+    {"label": "Actions per turn", "value": "3"},
+    {"label": "Cards to capture a treasure", "value": "4 matching"},
+    {"label": "Starting hand", "value": "2 Treasure cards"},
+    {"label": "Hand limit", "value": "5"}
+  ],
+  "setup": [
+    {"text": "Shuffle the 24 island tiles and lay them face up in a pattern: a 4 by 4 square, then 2 more tiles against each of the 2 middle tiles on every side. Leave small gaps.", "group": "table"},
+    {"text": "Put the 4 treasure figurines around the island.", "group": "table"},
+    {"text": "Split the cards into the Flood deck (blue back), Treasure deck (red back) and the 6 Adventurer cards.", "group": "table"},
+    {"text": "Shuffle the Flood deck. Draw 6 cards one at a time into a discard pile, flipping each matching tile to its flooded side.", "group": "table"},
+    {"text": "Place the Water Level marker on the Water Meter at the difficulty you want. Novice is advised for a first co-operative game.", "group": "table"},
+    {"text": "Draw 1 Adventurer card at random and read your power aloud.", "group": "each player"},
+    {"text": "Put the pawn of your colour on the tile showing its icon. Starting on a flooded tile is fine.", "group": "each player"},
+    {"text": "Deal 2 Treasure cards face up. Swap any Waters Rise! card for a new one, then shuffle it back into the Treasure deck.", "group": "each player"},
+    {"text": "The player who most recently visited an island goes first. Play passes left.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Take up to 3 actions, draw 2 Treasure cards, then draw Flood cards equal to the water level.",
+    "steps": [
+      "Spend up to 3 actions on any mix of: move, shore up, give a Treasure card, capture a treasure.",
+      "Move to an adjacent tile (not diagonal), or shore up an adjacent tile or your own by flipping it back over.",
+      "Give a Treasure card to someone on your tile for 1 action per card. Special Action cards cannot be given.",
+      "Capture a treasure for 1 action by discarding 4 matching Treasure cards while on either of its two tiles.",
+      "Draw 2 Treasure cards one at a time. Waters Rise! cards are resolved straight away and not kept.",
+      "Draw Flood cards equal to the water level. Flip a tile if it is dry. Remove it from the game if it is already flooded."
+    ]
+  },
+  "round_end": [
+    "Waters Rise!: move the marker up one mark, shuffle the Flood discard pile and put it on top of the Flood draw pile, then discard the card."
+  ],
+  "end": "You win together by holding all 4 treasures, getting every pawn to Fools' Landing, then discarding a Helicopter Lift card. You lose if both tiles for an uncollected treasure sink, Fools' Landing sinks, a pawn has no tile to swim to, or the water level reaches the skull.",
+  "scoring": [
+    {"text": "No points. The team wins or loses together."}
+  ],
+  "missed": [
+    {"text": "Special Action cards (Helicopter Lift, Sandbags) cost no action and can be played at any time, even on another player's turn."},
+    {"text": "If you must discard down to 5 cards, you can still use a Special Action card before discarding it."},
+    {"text": "You cannot play Sandbags to save a tile after its Flood card has been revealed."},
+    {"text": "A Waters Rise! card gives no replacement card. If you draw two in a row, shuffle the Flood discard pile once but move the marker up twice."},
+    {"text": "You can capture a treasure while on a flooded tile, and you can win from a flooded Fools' Landing."},
+    {"text": "A pawn on a tile that sinks must swim to an adjacent tile, even a flooded one. If it cannot, everyone loses."},
+    {"text": "When the Flood draw pile runs out, shuffle its discard pile into a new draw pile and keep drawing. Do the same for the Treasure deck."}
+  ],
+  "not_covered": ["Adventurer powers beyond the movement and shoring exceptions listed in the turn steps."],
+  "unverified": ["Starting Water Meter setting for each difficulty (Novice, Normal, Elite, Legendary) and the number of Flood cards drawn at each level are printed on the meter, not in the text."]
+}

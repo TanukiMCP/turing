@@ -1,0 +1,69 @@
+{
+  "slug": "catan",
+  "name": "Catan",
+  "kind": "board",
+  "publisher": "Catan Studio",
+  "designer": "Klaus Teuber",
+  "players": {
+    "min": 3,
+    "max": 4,
+    "covered": [3, 4]
+  },
+  "edition": "Base game, Game Rules & Almanac (2020 printing, text dated 2015 Catan GmbH)",
+  "status": "complete",
+  "source": {
+    "title": "Catan Game Rules & Almanac (base game, 2020)",
+    "url": "https://www.catan.com/sites/default/files/2021-06/catan_base_rules_2020_200707.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Points to win", "value": "10 on your own turn"},
+    {"label": "Pieces each", "value": "5 settlements, 4 cities, 15 roads"},
+    {"label": "Discard on a 7 if you hold more than", "value": "7 cards (discard half, rounded down)"},
+    {"label": "Bank trade rate", "value": "4:1, or 3:1 / 2:1 at a harbour"},
+    {"label": "Longest Road / Largest Army", "value": "5 road pieces / 3 Knight cards, 2 points each"}
+  ],
+  "setup": [
+    {"text": "Build the frame, lay the 19 terrain hexes and place the number tokens. For a first game use the Starting Set-up for Beginners map in the booklet; otherwise build the island at random.", "group": "table"},
+    {"text": "Sort the resource cards into 5 face-up stacks. Shuffle the development cards and place them face down. Put the Longest Road and Largest Army cards and the 2 dice beside the board.", "group": "table"},
+    {"text": "Put the robber on the desert.", "group": "table"},
+    {"text": "In a random map, keep the red-number tokens (6 and 8) off adjacent hexes, and skip the desert when placing tokens.", "group": "table"},
+    {"text": "Take a colour with its 5 settlements, 4 cities and 15 roads, plus that colour's Building Costs card.", "group": "each player", "by_count": {"3": "Nobody uses the red position marked on the beginner map.", "4": "All four colours are used."}},
+    {"text": "Everyone rolls both dice. The highest roll is the starting player and places 1 settlement and 1 adjoining road, then the others follow clockwise.", "group": "to start"},
+    {"text": "Round two runs in reverse: the player who went last places again first, and play continues counterclockwise, so the starting player places last. Each second settlement must obey the Distance Rule and need not touch the first, and its road must touch it.", "group": "to start"},
+    {"text": "After placing your second settlement, take 1 resource card for each terrain hex touching it. The player who placed last then takes the first turn.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Roll for production, then trade and build in any order that suits you, playing at most one development card.",
+    "steps": [
+      "Roll both dice. Every settlement next to a hex showing that number earns 1 card of its resource, and every city earns 2. If the bank is short of a resource and more than one player would receive it, nobody gets any.",
+      "Trade. You may swap cards with other players, but you must be part of every trade. You may also trade with the bank at 4:1, or at 3:1 or 2:1 if you have a settlement or city on a matching harbour.",
+      "Build with your cards: road (brick, lumber), settlement (brick, lumber, wool, grain), city (3 ore, 2 grain, replacing a settlement) or buy a development card (ore, wool, grain).",
+      "A new road must join one of your own roads, settlements or cities. A new settlement must join your own road and sit at least two paths from any other settlement or city.",
+      "You may play 1 development card at any point in your turn, even before rolling, but not one you bought this turn (a victory point card is the exception).",
+      "Rolling a 7: nobody collects. Anyone with 8 or more cards discards half, rounded down. You then move the robber to a different hex and steal 1 random card from a player with a building there."
+    ]
+  },
+  "end": "The game ends when a player has 10 or more victory points during their own turn. If you reach 10 on someone else's turn, play on until you hold 10 on your own turn.",
+  "scoring": [
+    {"text": "Each settlement is worth 1 point and each city 2 points."},
+    {"text": "Longest Road card: 2 points, for a continuous road of at least 5 pieces. A branching network counts only its single longest branch."},
+    {"text": "Largest Army card: 2 points, for the first player to play 3 Knight cards. Another player takes it by playing more Knights than the holder."},
+    {"text": "Each victory point development card is worth 1 point. Keep them hidden until you can win."},
+    {"text": "Everyone starts with 2 points from their 2 settlements, so 8 more are needed."}
+  ],
+  "tiebreak": "None is given: only the player whose turn it is can win by reaching 10 points.",
+  "missed": [
+    {"text": "The Distance Rule applies to every settlement, including the start: all 3 neighbouring intersections must be empty, even of your own buildings."},
+    {"text": "The robber must move to a different hex when you roll a 7 or play a Knight. It cannot stay where it is."},
+    {"text": "Only 8 or more cards triggers a discard on a 7, and you discard half rounded down: 9 cards means 4."},
+    {"text": "Other players may only trade with the player whose turn it is, not with each other. You cannot give cards away or swap like for like."},
+    {"text": "A development card cannot be played on the turn it was bought. You may play only one per turn, but any number of victory point cards."},
+    {"text": "Taking Longest Road or Largest Army from another player is a 4-point swing, because they lose 2 and you gain 2."}
+  ],
+  "not_covered": [
+    "Variable board set-up beyond the red-token note, and the Almanac's tactics tips.",
+    "Harbour positions and the printed building-cost pictures; costs here are taken from the rule text."
+  ]
+}

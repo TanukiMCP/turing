@@ -1,0 +1,64 @@
+{
+  "slug": "scrabble",
+  "name": "Scrabble",
+  "kind": "board",
+  "publisher": "Hasbro",
+  "players": {"min": 2, "max": 4, "covered": [2, 3, 4]},
+  "age": "8+",
+  "edition": "Classic Crossword Game F4204, instruction sheet dated 2023 (2021 copyright)",
+  "status": "complete",
+  "source": {
+    "title": "Scrabble Classic Crossword Game instructions F4204",
+    "url": "https://instructions.hasbro.com/api/download/F4204_en-us_scrabble-board-game-classic-word-game-for-kids-ages-8-and-up-fun-family-game-for-2-4-players-the-classic-crossword-game.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Tiles in the set", "value": "100 (2 blanks)"},
+    {"label": "Tiles on your rack", "value": "7"},
+    {"label": "Bingo bonus", "value": "50 points"},
+    {"label": "Passes to end the game", "value": "All players pass twice in turn"}
+  ],
+  "setup": [
+    {"text": "Open the board and put all the letter tiles in the bag.", "group": "table"},
+    {"text": "Pick a scorekeeper, who needs pen and paper. Have a dictionary ready for challenges; the sheet suggests the Official SCRABBLE Players Dictionary.", "group": "table"},
+    {"text": "Take a tile rack and keep it in front of you.", "group": "each player"},
+    {"text": "Everyone draws one tile; the letter nearest to A goes first and a blank beats any letter. Play goes clockwise.", "group": "to start"},
+    {"text": "Put those tiles back in the bag. In playing order, each player draws 7 tiles onto their rack and keeps them hidden.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Place tiles in one line to form at least one new word, score it, then refill your rack to 7.",
+    "steps": [
+      "Place tiles in a single row across or down, never diagonally. The first word must be at least two letters long and cover the centre square.",
+      "Every later word must join up with tiles already on the board. After the first word you may place just one tile on a turn.",
+      "All touching tiles must form complete words. Add up every word you form or change, including premium squares you covered. The scorekeeper writes it down.",
+      "Refill your rack to seven tiles. Played tiles may not be moved or replaced.",
+      "If you cannot or will not play, swap some or all tiles (drawing before returning the old ones) or pass. Neither scores."
+    ]
+  },
+  "end": "The game ends when all tiles are drawn and one player empties their rack, or when all players pass twice in turn.",
+  "scoring": [
+    {"text": "A word is worth the sum of its tile values, with premium squares applied. Blank tiles are worth zero."},
+    {"text": "Premium squares only count on the turn a tile first covers them. Letter premiums multiply that tile, then word premiums multiply the total. Two word premiums in one word multiply together."},
+    {"text": "A letter on a premium square that sits in two words counts its premium in both words."},
+    {"text": "A blank on a double or triple word square still doubles or triples the word. A blank on a letter premium adds nothing."},
+    {"text": "Playing all 7 tiles in one turn is a bingo: add 50 points."},
+    {"text": "At the end, subtract your unplayed tile values from your score. If you used all your tiles, add everyone else's unplayed values to your score."}
+  ],
+  "tiebreak": "The player with the higher score before adding or subtracting unplayed tiles wins.",
+  "missed": [
+    {"text": "A challenge must be made before the next player starts their turn. If the word is not in the dictionary, take your tiles back and your turn ends. If it is, you score and the challenger loses their next turn."},
+    {"text": "Not allowed: proper nouns, foreign words, abbreviations, acronyms, prefixes or suffixes on their own, hyphenated words, words needing apostrophes, and offensive words."},
+    {"text": "You may extend a word at both ends in one turn, such as TEA to STEAL."},
+    {"text": "A blank must be named when played and cannot change afterwards."},
+    {"text": "If you took more than seven tiles, another player removes the extras at random without looking."},
+    {"text": "Use the dictionary only for challenges, not to look up words while playing."}
+  ],
+  "not_covered": [
+    "Optional variants on the sheet: exchanging a blank and Finish Line Scrabble"
+  ],
+  "unverified": [
+    "Letter values and the number of each letter, printed on the tiles and board only",
+    "Positions of premium squares, shown only on the board"
+  ]
+}

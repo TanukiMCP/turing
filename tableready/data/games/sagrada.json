@@ -1,0 +1,73 @@
+{
+  "slug": "sagrada",
+  "name": "Sagrada",
+  "kind": "board",
+  "publisher": "Floodgate Games",
+  "designer": "Daryl Andrews and Adrian Adamescu",
+  "players": {"min": 1, "max": 4, "covered": [2, 3, 4]},
+  "age": "10+",
+  "play_time": "30-45 minutes",
+  "edition": "Base game rulebook v1.2",
+  "status": "partial",
+  "source": {
+    "title": "Sagrada Rule Book v1.2",
+    "url": "https://media.floodgate.games/rule-books/Sagrada-Rule-Book.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Rounds", "value": "10"},
+    {"label": "Dice drawn each round", "value": {"2": "5", "3": "7", "4": "9"}},
+    {"label": "Dice in the bag", "value": "90"},
+    {"label": "Turns per player each round", "value": "2"},
+    {"label": "Open space penalty", "value": "-1 point each"}
+  ],
+  "setup": [
+    {"text": "Put the Round Track near the middle.", "group": "table"},
+    {"text": "Shuffle the Tool cards and put 3 face up in the middle.", "group": "table"},
+    {"text": "Shuffle the Public Objective cards (blue die on back) and put 3 face up.", "group": "table"},
+    {"text": "Put all 90 dice in the bag.", "group": "table"},
+    {"text": "Take 1 Private Objective card (grey die on back) face down. You may look at it in secret.", "group": "each player"},
+    {"text": "Take 2 Window Pattern cards and a Window Frame board. Pick one pattern, either side, and slide it into the bottom of the board.", "group": "each player"},
+    {"text": "Take Favor tokens equal to the difficulty number on your chosen window.", "group": "each player"},
+    {"text": "Take the score marker matching your board colour and put it beside the Round Track.", "group": "each player"},
+    {"text": "Choose a random start player and give them the dice bag.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Each round the start player draws dice and rolls them into a pool. Everyone then takes two turns, in a snake order.",
+    "steps": [
+      "The start player pulls the right number of dice from the bag at random and rolls them to form the Draft Pool.",
+      "On your turn you may draft 1 die and place it on your window, and/or use 1 Tool card. Both are optional, in either order, and you may pass.",
+      "Place dice by the rules: your first die goes on an edge or corner space; every later die must touch a placed die, including diagonally.",
+      "A die must match the colour or value of its space. White spaces accept anything.",
+      "A die may never sit next to a die of the same colour or value, side by side.",
+      "To use a Tool card, put 1 Favor token on it if it has none, otherwise 2, then use its ability.",
+      "Turns go clockwise. After the last player's first turn, play runs back in reverse order for second turns."
+    ]
+  },
+  "round_end": [
+    "Put leftover dice from the pool on the Round Track, covering that round's number.",
+    "Pass the bag clockwise. That player is the next start player."
+  ],
+  "end": "The game ends after round 10. Flip the Round Track to its score side and score.",
+  "scoring": [
+    {"text": "Score each Public Objective card. You can score from the same card more than once."},
+    {"text": "Row and column objectives only score for complete rows or columns with no open spaces."},
+    {"text": "Add your Private Objective: the sum of the values of your dice in the colour it names."},
+    {"text": "Add 1 point per unspent Favor token."},
+    {"text": "Lose 1 point for each open space on your window."}
+  ],
+  "tiebreak": "Most Private Objective points, then most Favor tokens left, then reverse player order in the final round.",
+  "missed": [
+    {"text": "Dice count as the same if they share a value, not just a colour, so two 3s of different colours still cannot be orthogonally adjacent."},
+    {"text": "Diagonal contact is enough for a die to touch a previous one, but the no-matching rule applies only to side-by-side dice."},
+    {"text": "The first Tool card use costs 1 Favor token. Once a token is on it, using it costs 2."},
+    {"text": "You may choose not to draft a die on a turn."},
+    {"text": "Setup is the same for 2, 3 and 4 players. Only the number of dice drawn changes."},
+    {"text": "If someone finds an illegal die in a window, they remove dice of their choice until it is legal. Those dice leave play and the open spaces cost points."}
+  ],
+  "not_covered": [
+    "Solo play (1 player), which uses a Target Score and different tool rules.",
+    "Individual Tool card abilities, public and private objective card details, which are printed on the cards."
+  ]
+}

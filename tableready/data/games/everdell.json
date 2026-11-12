@@ -1,0 +1,152 @@
+{
+  "slug": "everdell",
+  "name": "Everdell",
+  "kind": "board",
+  "publisher": "Starling Games",
+  "designer": "James A. Wilson",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "edition": "Base game, Starling Games rulebook (printing and year not stated in the text)",
+  "status": "complete",
+  "source": {
+    "title": "Everdell rulebook (English), copy",
+    "url": "https://cdn.1j1ju.com/medias/c6/cd/89-everdell-rulebook.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Meadow cards",
+      "value": "8"
+    },
+    {
+      "label": "Hand limit",
+      "value": "8 cards"
+    },
+    {
+      "label": "City spaces",
+      "value": "15"
+    },
+    {
+      "label": "Workers: start / end",
+      "value": "2 / 6"
+    },
+    {
+      "label": "Forest cards",
+      "value": {
+        "2": "3",
+        "3": "4",
+        "4": "4"
+      }
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the board in the middle and the Ever Tree on its stump.",
+      "group": "table"
+    },
+    {
+      "text": "Pile the twigs, resin, pebbles and berries by the river, and put the point tokens and occupied tokens beside the board.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the Forest cards and lay them on the forest clearings, then box the rest.",
+      "group": "table",
+      "by_count": {
+        "2": "Use 3 Forest cards.",
+        "3": "Use 4 Forest cards.",
+        "4": "Use 4 Forest cards."
+      }
+    },
+    {
+      "text": "Lay the 4 basic Event tiles along the river. Shuffle the special Events, put 4 on the lower branches of the Ever Tree and box the rest.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the main deck, deal 8 cards face up into the Meadow, and put the deck inside the Ever Tree.",
+      "group": "table"
+    },
+    {
+      "text": "The forest locations marked with the four-player symbol are used only with 4 players.",
+      "group": "table",
+      "only": [
+        4
+      ]
+    },
+    {
+      "text": "Pick a colour and take 2 workers of it.",
+      "group": "each player"
+    },
+    {
+      "text": "Draw your starting hand according to seat order.",
+      "group": "each player",
+      "by_count": {
+        "2": "First player draws 5 cards, second player 6.",
+        "3": "First player draws 5 cards, second 6, third 7.",
+        "4": "First player draws 5 cards, second 6, third 7, fourth 8."
+      }
+    },
+    {
+      "text": "Put your other 4 workers on the upper branches of the Ever Tree: 1 on spring, 1 on summer and 2 on autumn.",
+      "group": "each player"
+    },
+    {
+      "text": "The most humble player goes first. Play runs clockwise.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "On your turn do exactly one of three things: place a worker, play a card, or prepare for season.",
+    "steps": [
+      "Place a worker: put one on any free spot on the board, a Destination card, the Haven, an Event you can achieve, or (autumn only) a Journey space, and take its effect at once.",
+      "Exclusive spots hold one worker; shared spots (open ring) hold any number. Visiting an opponent's Destination with the open-ring symbol gives its owner 1 point token.",
+      "Play a card: pay its cost to the supply, from your hand or the Meadow, and add it to your city. Refill the Meadow straight away if you took from it.",
+      "A Critter can be played free if its matching Construction is in your city and has no occupied token. Put an occupied token on that Construction.",
+      "Prepare for season: allowed only once all your workers are placed. Bring all your workers home, then gain the new season's workers and bonuses (spring: 1 worker and activate Production; summer: 1 worker and draw up to 2 Meadow cards; autumn: 2 workers and activate Production)."
+    ]
+  },
+  "end": "When you cannot or do not want to act any more, you pass. Others carry on until everyone has passed, then you total points. Autumn is the last season you can prepare for.",
+  "scoring": [
+    {
+      "text": "Add the base points of every card in your city."
+    },
+    {
+      "text": "Add your point tokens, the bonus points on purple Prosperity cards, and points for workers on Journey spaces."
+    },
+    {
+      "text": "Add the points on every Event you achieved."
+    }
+  ],
+  "tiebreak": "Most achieved Events; then most leftover resources.",
+  "missed": [
+    {
+      "text": "Your city holds at most 15 cards, but Event cards do not count against that limit."
+    },
+    {
+      "text": "You can never hold more than 8 cards. If you are told to draw past 8, stop at 8; cards you must give to a full-handed opponent are discarded instead."
+    },
+    {
+      "text": "Common cards can be duplicated in your city; you may have only one copy of each Unique card."
+    },
+    {
+      "text": "Only one player can achieve a given Event, and you can only place a worker on it if you meet every requirement and can pay."
+    },
+    {
+      "text": "Journeys are available in autumn only, and you must discard cards equal to the Journey's points."
+    },
+    {
+      "text": "A passed player cannot be given cards or resources; discard them instead."
+    }
+  ],
+  "not_covered": [
+    "Solo game against Rugwort",
+    "Individual card effects in the card index"
+  ]
+}

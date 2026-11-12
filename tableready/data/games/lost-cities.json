@@ -1,0 +1,115 @@
+{
+  "slug": "lost-cities",
+  "name": "Lost Cities",
+  "kind": "card",
+  "publisher": "Kosmos / Thames & Kosmos",
+  "designer": "Reiner Knizia",
+  "players": {
+    "min": 2,
+    "max": 2,
+    "covered": [
+      2
+    ]
+  },
+  "age": "10+",
+  "edition": "The Original Card Game, base game with 5 expeditions, 2018 Thames & Kosmos rulebook",
+  "status": "complete",
+  "source": {
+    "title": "Lost Cities: The Original Card Game manual (2018)",
+    "url": "https://www.thamesandkosmos.com/manuals/full/691821_LC_Card_Game.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Cards in hand",
+      "value": "8"
+    },
+    {
+      "label": "Cards in the base game",
+      "value": "60"
+    },
+    {
+      "label": "Expedition colours",
+      "value": "5"
+    },
+    {
+      "label": "Games in a match",
+      "value": "3"
+    },
+    {
+      "label": "Cost of each expedition",
+      "value": "20"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the board between the players with the base game side up (five discard spaces).",
+      "group": "table"
+    },
+    {
+      "text": "Box the 12 purple cards (9 expedition and 3 wager). Shuffle the other 60.",
+      "group": "table"
+    },
+    {
+      "text": "Have pen and paper ready to tally scores.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the 60 cards, deal 8 face down to each player, and put the rest face down as the draw pile beside the board.",
+      "group": "each player"
+    },
+    {
+      "text": "The oldest player begins, then you alternate. In later games the player with the most points starts.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Play one card, then draw one card.",
+    "steps": [
+      "Play a card by either adding it to one of your expedition columns on your side of the board, or discarding it on the pile of its colour.",
+      "Each new card in a column must be higher than the last card you placed there. Overlap cards so every number shows.",
+      "Wager cards go only at the start of a column, and several may be stacked there.",
+      "Then draw the top card of the draw pile, or the top card of any discard pile."
+    ]
+  },
+  "end": "The game ends as soon as a player draws the last card from the draw pile. Score both players, then repeat for three games in total.",
+  "scoring": [
+    {
+      "text": "For each column, add the card values and subtract 20. A colour with no cards placed scores nothing."
+    },
+    {
+      "text": "One, two or three wager cards multiply that result by 2, 3 or 4."
+    },
+    {
+      "text": "A column of 8 or more cards earns a 20 point bonus."
+    },
+    {
+      "text": "Add the column totals together. After three games the highest overall score wins."
+    }
+  ],
+  "missed": [
+    {
+      "text": "You must play a card before you draw. Passing is not allowed."
+    },
+    {
+      "text": "You cannot draw the card you just discarded."
+    },
+    {
+      "text": "Once you place a number card in a column, you can no longer add wager cards to it."
+    },
+    {
+      "text": "The 20 point bonus is not multiplied by wager cards."
+    },
+    {
+      "text": "A column can score negative, and wagers multiply a negative result too."
+    },
+    {
+      "text": "Cards you discard go to the pile of their colour, not to a pile of your choice."
+    }
+  ],
+  "not_covered": [
+    "Long game with six expeditions (only mentioned briefly)",
+    "Four-player and solo rules are separate downloads"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "small-world",
+  "name": "Small World",
+  "kind": "board",
+  "publisher": "Days of Wonder",
+  "designer": "Philippe Keyaerts",
+  "players": {"min": 2, "max": 5, "covered": [2, 3, 4, 5]},
+  "age": "8+",
+  "play_time": "40-80 minutes",
+  "edition": "Base game, English rulebook copyright 2009-2018",
+  "status": "partial",
+  "source": {
+    "title": "Small World rules EN 2018",
+    "url": "https://cdn.svc.asmodee.net/staging-daysofwonder/uploads/2024/07/7901-SW-rules-EN-2018_lowres.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Starting Victory coins", "value": "5 (all 1s)"},
+    {"label": "Race and power combos on display", "value": "6"},
+    {"label": "Game turns", "value": "8, 9 or 10, set by the map"},
+    {"label": "Tokens to conquer an empty Region", "value": "2"}
+  ],
+  "setup": [
+    {"text": "Put the map that matches your player count in the middle. Choose by the player-count symbol next to its Game Turn track.", "group": "table"},
+    {"text": "Put the Game Turn marker on the first spot of the track.", "group": "table"},
+    {"text": "Open the storage tray of Race tokens beside the board.", "group": "table"},
+    {"text": "Shuffle the Race banners and lay 5 face up in a column, with the rest stacked at the bottom. Do the same with the Special Power badges and put one beside each banner. The top of the stacks forms a sixth combo.", "group": "table"},
+    {"text": "Put a Lost Tribe token on each Region showing a Lost Tribe symbol.", "group": "table"},
+    {"text": "Put a Mountain token on each Region showing a Mountain.", "group": "table"},
+    {"text": "Keep the remaining coins in a stash beside the board.", "group": "table"},
+    {"text": "Take five 1-value Victory coins.", "group": "each player"},
+    {"text": "The player with the most pointed ears goes first. Play goes clockwise.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "First turn: pick a combo, conquer Regions, score. Later turns: expand your race, or put it in decline and pick a new one.",
+    "steps": [
+      "Pick a combo. The top one is free. Each lower one costs 1 more coin, paid by putting a coin on every combo above it. Take any coins already on your pick.",
+      "Take Race tokens equal to the banner number plus the badge number. Refill the column so 6 combos show.",
+      "Your first conquest with a new race must be a border Region.",
+      "To conquer, spend 2 tokens, plus 1 per Encampment, Fortress, Mountain or Troll Lair, plus 1 per Lost Tribe or enemy token there. Each later Region must border one you hold unless a power says otherwise.",
+      "On a later turn, leave 1 token in each Region you hold and pick up the rest to use for new conquests.",
+      "For your last attempt, if short by 3 or fewer tokens, name the target Region first, then roll the Reinforcement die and add it to the tokens in hand.",
+      "Enemies you conquer take back their tokens, permanently discard 1, and redeploy the rest at the end of your turn.",
+      "Finish by redeploying your tokens freely among your Regions, leaving at least 1 in each.",
+      "Score 1 coin per Region you occupy, plus any bonuses from your active race and power. Declined tokens also score 1 per Region.",
+      "To go into decline, flip your banner, keep 1 token flipped in each Region and remove the rest, discard the badge, and score. You make no conquests that turn."
+    ]
+  },
+  "round_end": [
+    "After everyone has played, the first player moves the Game Turn marker one step."
+  ],
+  "end": "When the marker reaches the last spot, everyone plays one final turn. Then reveal all coins.",
+  "scoring": [
+    {"text": "Keep your coins hidden. The most coins at the end wins."}
+  ],
+  "tiebreak": "Most Race tokens on the board, active and in decline together.",
+  "missed": [
+    {"text": "You can only have one declined race on the map. Putting a new race into decline removes the old declined tokens first."},
+    {"text": "A race going into decline cannot conquer anything that turn."},
+    {"text": "A Region with a Mountain but no tokens counts as empty, but the Mountain still adds 1 to the cost to conquer it."},
+    {"text": "You must name the target before rolling the Reinforcement die, and the target does not have to be the weakest Region."},
+    {"text": "You must always keep at least 1 Race token available to start a conquest, whatever your powers."},
+    {"text": "You may conquer a Region holding your own declined tokens. You lose that token."},
+    {"text": "Lone Race tokens in a Fortress or on a Mountain, or with a Troll Lair, count as alone for the Sorcerer power."}
+  ],
+  "not_covered": [
+    "Which map and Lost Tribe or Mountain layout belongs to each player count.",
+    "Race tokens per player and the number of game turns for each count; the rulebook gives these as pictures.",
+    "Player Summary sheet details."
+  ],
+  "unverified": ["Game turn counts (8, 9 or 10) per player count: the text only says it depends on the map."]
+}

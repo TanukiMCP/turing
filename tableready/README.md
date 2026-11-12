@@ -70,6 +70,15 @@ node tableready/tests/behaviour.js
 
 ## Current contents
 
-Nine games: Ark Nova (partial), Azul, Cascadia, Exploding Kittens, Kutná Hora
-(partial), Phase 10, Ticket to Ride, UNO and Wingspan. Five were written from
-the publisher's own file and four from library or third-party copies of it.
+57 games: 48 complete and 9 partial (35 board, 20 card, 2 dice). 26 were
+written from the publisher's own file and 31 from library, retailer or other
+copies of it.
+
+Partial entries: Ark Nova, Carcassonne, Kutná Hora: The City of Silver, Risk (classic), Sagrada, Small World, The Crew: The Quest for Planet Nine, The Quacks of Quedlinburg, Ticket to Ride: Europe.
+
+Two games in the first batch were skipped because no readable English rulebook
+could be fetched: Hanabi (the publisher's PDF has no text layer) and Coup (the
+copies found would not download).
+
+`players.not_playable` lists counts a game does not allow (for example Sequence
+with 5, 7 or 11 players); `kind` is `board`, `card` or `dice`.

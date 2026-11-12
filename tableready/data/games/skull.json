@@ -1,0 +1,102 @@
+{
+  "slug": "skull",
+  "name": "Skull",
+  "kind": "card",
+  "publisher": "éditions « lui-même »",
+  "designer": "Hervé Marly",
+  "players": {
+    "min": 3,
+    "max": 6,
+    "covered": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "edition": "2011 edition titled Skull & Roses (6 packs of 4 cards, 6 mats)",
+  "status": "complete",
+  "source": {
+    "title": "Skull & Roses rulebook (2011), copy hosted by a game database",
+    "url": "https://cdn.1j1ju.com/medias/a9/9e/3a-skull-roses-rulebook.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Cards each",
+      "value": "4 (3 Roses, 1 Skull)"
+    },
+    {
+      "label": "Bets to win",
+      "value": "2"
+    },
+    {
+      "label": "Maximum players in a box",
+      "value": "6"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Choose who goes first.",
+      "group": "table"
+    },
+    {
+      "text": "Take a game mat and put it in front of you with the Skull side up.",
+      "group": "each player"
+    },
+    {
+      "text": "Take a pack of 4 cards with the same back: 3 Roses and 1 Skull. Keep them hidden in your hand.",
+      "group": "each player"
+    },
+    {
+      "text": "Everyone secretly picks one card from their hand and places it face down on their mat.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Each hand has four phases: place cards, challenge, reveal, then a new hand.",
+    "steps": [
+      "Placing: starting with the first player and going clockwise, each player either adds one more card face down on top of their own stack or issues a challenge. The first player may challenge instead of adding a second card.",
+      "A player with no cards left in hand must challenge. Once someone challenges, nobody can place more cards.",
+      "Challenge: the challenger says how many cards they will flip from all stacks together. Going clockwise, each other player either raises the bid by any amount or passes and pushes their mat to the middle. A player who passes cannot bid again.",
+      "Reveal: the last bidder left is the challenger. They flip all their own stack first, from the top down, then freely choose other players' cards to flip one at a time until they reach their number.",
+      "Won bet: if only Roses appear, flip your mat to the Roses side. Lost bet: if a Skull appears, stop flipping and lose a card.",
+      "The challenger starts the next hand and everyone takes their cards back."
+    ]
+  },
+  "round_end": [
+    "Lost bet: the challenger shuffles their cards face down. If the Skull belonged to another player, that player picks one at random without touching it; if the challenger flipped their own Skull, they choose which to discard by looking. The discard stays hidden, so only the challenger knows what it was.",
+    "A challenger who loses their last card is out. If they flipped their own Skull, they choose the next first player; otherwise the owner of the revealed Skull starts."
+  ],
+  "end": "The first player to win a second bet wins the game.",
+  "scoring": [
+    {
+      "text": "There are no points. Win two bets to win the game."
+    }
+  ],
+  "missed": [
+    {
+      "text": "Challenge numbers can jump by more than 1, and a bid may be as low as one card."
+    },
+    {
+      "text": "The challenger must flip all their own cards first, from the top of their stack, before touching any other player's."
+    },
+    {
+      "text": "A player on one card must challenge if first or when their turn comes in the placing phase."
+    },
+    {
+      "text": "If a player accidentally reveals a card from their mat, it stays visible until the end of the round."
+    },
+    {
+      "text": "The challenger never reveals the cards left unflipped; the other players' strategy stays secret."
+    },
+    {
+      "text": "If your last remaining card is flipped and is a Skull, you are eliminated."
+    }
+  ],
+  "unverified": [
+    "Player range 3-6 inferred from 6 packs and the advice about 3-player games; text has no explicit range.",
+    "The rulebook is the 2011 Skull & Roses printing, not the later Space Cowboys Skull printing."
+  ]
+}

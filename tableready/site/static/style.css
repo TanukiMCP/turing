@@ -150,6 +150,8 @@ section { margin-top: 2rem; }
 .fact dt { flex: 1 1 auto; }
 .fact dd { margin: 0; text-align: right; flex: 0 1 auto; }
 .fact .value { font: var(--t-value); font-variant-numeric: tabular-nums; }
+.fact .value.long, .per.is-chosen .value.long { font: 600 1.0625rem/1.35 var(--font); }
+.fact dt { min-width: 38%; }
 .facts.compact .fact dd { font: var(--t-body); max-width: 65%; overflow-wrap: anywhere; }
 .facts.compact dt { color: var(--muted); flex: 0 0 6.5rem; }
 .facts.compact a { display: inline-block; }

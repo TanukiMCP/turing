@@ -1,0 +1,117 @@
+{
+  "slug": "machi-koro",
+  "name": "Machi Koro",
+  "kind": "card",
+  "publisher": "IDW Games",
+  "designer": "Masao Suganuma",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "edition": "Base game, IDW Games rulebook, copyright 2014 Grounding Inc.",
+  "status": "complete",
+  "source": {
+    "title": "Machi Koro rulebook (IDW), library-hosted copy",
+    "url": "https://concordlibrary.org/uploads/library-of-things/e8-machi-koro-rulebook.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Starting coins",
+      "value": "3"
+    },
+    {
+      "label": "Landmarks to win",
+      "value": "4"
+    },
+    {
+      "label": "Starting Establishments",
+      "value": "2"
+    },
+    {
+      "label": "Builds per turn",
+      "value": "1"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Make the marketplace: stacks of Establishments and Major Establishments, one stack per type, ordered by activation number.",
+      "group": "table"
+    },
+    {
+      "text": "Make a bank with the remaining coins.",
+      "group": "table"
+    },
+    {
+      "text": "Return unused starting cards to the box when playing with fewer than 4.",
+      "group": "table",
+      "only": [
+        2,
+        3
+      ]
+    },
+    {
+      "text": "Put a Wheat Field and a Bakery face up in front of you, and your four Landmarks (Train Station, Shopping Mall, Amusement Park, Radio Tower) face down.",
+      "group": "each player"
+    },
+    {
+      "text": "Take 3 coins.",
+      "group": "each player"
+    },
+    {
+      "text": "Choose a starting player. Play runs clockwise.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Roll, earn income, then optionally build one thing.",
+    "steps": [
+      "Roll one die. After you build the Train Station you may roll one or two dice, which are summed.",
+      "Earn income from any Establishments with that number. Red takes coins from the roller. Blue pays from the bank on anyone's turn. Green pays from the bank on your turn only. Purple takes from other players on your turn only.",
+      "Resolve in this order: red, then green and blue, then purple.",
+      "Build: you may pay to buy one Establishment from the marketplace, or pay to complete one Landmark by turning it face up."
+    ]
+  },
+  "end": "The first player to complete all four of their Landmarks wins.",
+  "scoring": [
+    {
+      "text": "There are no points. The first player with all four Landmarks built wins."
+    }
+  ],
+  "missed": [
+    {
+      "text": "You cannot go below zero coins. If you cannot pay in full, pay what you have and the rest is cancelled."
+    },
+    {
+      "text": "When you owe several players, pay in reverse turn order (counter-clockwise)."
+    },
+    {
+      "text": "Owning several copies of one Establishment multiplies its effect."
+    },
+    {
+      "text": "You can build only one card per turn, either an Establishment or a Landmark."
+    },
+    {
+      "text": "Landmarks can be built in any order, and have no effect until face up."
+    },
+    {
+      "text": "The Shopping Mall bonus applies to each of your cards separately."
+    },
+    {
+      "text": "You may never build a second copy of a card with the one-per-town symbol."
+    }
+  ],
+  "not_covered": [
+    "Cost and effect of each Establishment and Landmark (printed on the cards, not in the rulebook text)",
+    "Number of copies per stack"
+  ],
+  "unverified": [
+    "Which cards carry the one-per-town symbol, shown only as an icon in the rulebook"
+  ]
+}

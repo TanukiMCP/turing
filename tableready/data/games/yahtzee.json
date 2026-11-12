@@ -1,0 +1,114 @@
+{
+  "slug": "yahtzee",
+  "name": "Yahtzee",
+  "kind": "dice",
+  "publisher": "Hasbro",
+  "players": {
+    "min": 2,
+    "max": 6,
+    "covered": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "age": "8+",
+  "edition": "Yahtzee Classic game guide, item 00950, (c) 2014",
+  "status": "complete",
+  "source": {
+    "title": "Yahtzee game guide (00950)",
+    "url": "https://consumercare.hasbro.com/api/download/00950_nl-be",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Dice",
+      "value": "5"
+    },
+    {
+      "label": "Rolls per turn",
+      "value": "up to 3"
+    },
+    {
+      "label": "Turns per player",
+      "value": "13"
+    },
+    {
+      "label": "Upper section bonus",
+      "value": "35 points"
+    },
+    {
+      "label": "YAHTZEE (5 of a kind)",
+      "value": "50 points"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the shaker, five dice and score cards where everyone can reach them.",
+      "group": "table"
+    },
+    {
+      "text": "Write your name on a score card, in turn order (one column each).",
+      "group": "each player"
+    },
+    {
+      "text": "Roll a die to see who starts. Play continues clockwise.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Roll the five dice up to three times, then fill in exactly one empty box.",
+    "steps": [
+      "First roll: roll all five dice. If you already have the combination you want, score it now.",
+      "Second roll: set aside the dice you want to keep and re-roll the rest, or re-roll them all.",
+      "Third roll: again re-roll any or all dice, including ones you set aside before. You must score after this roll.",
+      "Write one score in one empty box in your column. If nothing fits, you must write a zero in one empty box."
+    ]
+  },
+  "end": "The game ends after 13 rounds, when every box on every score card is filled. The highest grand total wins.",
+  "scoring": [
+    {
+      "text": "Upper section: for Aces to Sixes, add up only the dice showing that number."
+    },
+    {
+      "text": "Bonus: 35 points if your upper section reaches the bonus line (63, which is three of each number)."
+    },
+    {
+      "text": "3 of a Kind and 4 of a Kind: score the total of all five dice."
+    },
+    {
+      "text": "Full House (3 of a kind plus a pair): 25. Small Straight (4 in a row): 30. Large Straight (5 in a row): 40."
+    },
+    {
+      "text": "YAHTZEE (5 of a kind): 50. Chance: total of all five dice, any roll."
+    },
+    {
+      "text": "Extra YAHTZEE: mark the YAHTZEE bonus box (100 points) and also fill one empty box as normal."
+    }
+  ],
+  "missed": [
+    {
+      "text": "You must fill in one box every turn, and a filled box cannot be used again."
+    },
+    {
+      "text": "You can fill boxes in any order, but you never get to skip a turn."
+    },
+    {
+      "text": "A bonus YAHTZEE needs a score in the YAHTZEE box that is not zero. If you already scored zero there, no 100 points."
+    },
+    {
+      "text": "For an extra YAHTZEE, fill the matching upper box first. If that is full, use 3 or 4 of a Kind. If those are full, use Chance or take any combination box at its normal score (Full House is 25)."
+    },
+    {
+      "text": "A single matching die in the upper section is better than a zero."
+    }
+  ],
+  "unverified": [
+    "The text says 'over 63' for the bonus, but also says three of each number reaches it, which totals exactly 63. Entry treats 63 as enough.",
+    "The 2+ players figure is the only count given; the maximum of 6 is a working limit, not stated.",
+    "The text layout is scrambled, and a line about reusing a roll as a Small Straight if the Large Straight is already scored was left out as unclear."
+  ]
+}

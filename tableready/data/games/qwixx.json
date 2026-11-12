@@ -1,0 +1,100 @@
+{
+  "slug": "qwixx",
+  "name": "Qwixx",
+  "kind": "dice",
+  "publisher": "Gamewright",
+  "designer": "Steffen Benndorf",
+  "players": {
+    "min": 2,
+    "max": 5,
+    "covered": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "age": "8+",
+  "edition": "Dice game, Gamewright 2014 English rules",
+  "status": "complete",
+  "source": {
+    "title": "Qwixx rules (Gamewright 2014), retailer-hosted copy",
+    "url": "https://world-of-board-games.com.sg/docs/Qwixx.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Dice",
+      "value": "6 (2 white, 4 coloured)"
+    },
+    {
+      "label": "Penalty boxes to end game",
+      "value": "4"
+    },
+    {
+      "label": "Crosses needed before locking a row",
+      "value": "5"
+    },
+    {
+      "label": "Rows locked to end game",
+      "value": "2"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the six dice in the middle.",
+      "group": "table"
+    },
+    {
+      "text": "Take a score sheet and something to write with.",
+      "group": "each player"
+    },
+    {
+      "text": "The first player to roll a 6 is the first active player.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "The active player rolls all dice. Everyone may mark the white sum; then only the active player may mark a white plus coloured die.",
+    "steps": [
+      "Roll all six dice and say the total of the two white dice. Everyone, you included, may cross out that number in one row of any colour.",
+      "Then only the active player may add one white die to one coloured die and cross out that sum in the row of that colour.",
+      "If the active player crosses nothing in either step, they cross a penalty box.",
+      "You must cross numbers left to right in each row. Skipped numbers can never be crossed later."
+    ]
+  },
+  "round_end": [
+    "The player to the left becomes active and rolls all the remaining dice."
+  ],
+  "end": "The game ends at once when someone crosses a fourth penalty box or when two rows have been locked (two dice removed). A third row may lock at the same time as the second.",
+  "scoring": [
+    {
+      "text": "For each row, count crosses (including a lock) and score: 1 cross 1, 2 crosses 3, 3 crosses 6, 4 crosses 10, 5 crosses 15, 6 crosses 21, 7 crosses 28, 8 crosses 36, 9 crosses 45, 10 crosses 55, 11 crosses 66, 12 crosses 78."
+    },
+    {
+      "text": "Subtract 5 for each crossed penalty box. The highest total wins."
+    }
+  ],
+  "missed": [
+    {
+      "text": "To cross the far-right number (red 12, yellow 12, green 2, blue 2) you must already have five crosses in that row."
+    },
+    {
+      "text": "Crossing that number also lets you cross the lock. The row is closed for everyone and its die is removed immediately."
+    },
+    {
+      "text": "The lock counts as a cross when scoring."
+    },
+    {
+      "text": "Only the active player takes penalties; others never do for passing."
+    },
+    {
+      "text": "If a row is locked in the first action, other players can lock the same row at the same time if they have five crosses."
+    }
+  ],
+  "unverified": [
+    "Row direction (red and yellow rising to 12, green and blue falling to 2) is inferred from the lock numbers and colour list because the printed rows are partly icons.",
+    "Tie-break is not stated in the rulebook text."
+  ]
+}

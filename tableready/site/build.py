@@ -98,6 +98,11 @@ def page(title, description, body, depth, body_class):
 """
 
 
+def value_class(value):
+    """Short values take the large numeral size; phrases drop to text size."""
+    return "value long" if len(str(value)) > 14 else "value"
+
+
 def key_numbers(game):
     rows = []
     for number in game["key_numbers"]:
@@ -106,14 +111,14 @@ def key_numbers(game):
             per = "".join(
                 f'<span class="per" data-count="{e(n)}">'
                 f'<span class="per-label">{e(count_phrase([int(n)]))}</span> '
-                f'<span class="value">{e(v)}</span></span>'
+                f'<span class="{value_class(v)}">{e(v)}</span></span>'
                 for n, v in sorted(value.items(), key=lambda kv: int(kv[0]))
             )
             rows.append(f'<div class="fact dep"><dt>{e(number["label"])}</dt><dd>{per}</dd></div>')
         else:
             rows.append(
                 f'<div class="fact"><dt>{e(number["label"])}</dt>'
-                f'<dd><span class="value">{e(value)}</span></dd></div>'
+                f'<dd><span class="{value_class(value)}">{e(value)}</span></dd></div>'
             )
     return f'<dl class="facts">{"".join(rows)}</dl>'
 
@@ -156,11 +161,14 @@ def count_control(game):
             f'<label class="count-option"><input type="radio" name="players" value="{n}"{disabled}>'
             f"<span>{n}</span></label>"
         )
-    uncovered = [n for n in range(players["min"], players["max"] + 1) if n not in covered]
+    unplayable = players.get("not_playable", [])
+    uncovered = [n for n in range(players["min"], players["max"] + 1) if n not in covered and n not in unplayable]
     note = ""
+    if unplayable:
+        note += f'<p class="count-note">The game can\'t be played with {count_phrase(unplayable)}.</p>'
     if uncovered:
         what = "Solo play" if uncovered == [1] else f"Play with {count_phrase(uncovered)}"
-        note = f'<p class="count-note">{what} isn\'t covered yet.</p>'
+        note += f'<p class="count-note">{what} isn\'t covered yet.</p>'
     return (
         '<fieldset class="count js-only" hidden>'
         "<legend>How many players?</legend>"
@@ -213,7 +221,7 @@ def game_page(game):
         extra += f'<h3 class="group">Not checked against the rulebook text</h3><ul class="plain">{lis}</ul>'
 
     players = game["players"]
-    body = f"""<main class="game" data-slug="{e(game['slug'])}" data-min="{players['min']}" data-max="{players['max']}" data-covered="{','.join(str(n) for n in players['covered'])}">
+    body = f"""<main class="game" data-slug="{e(game['slug'])}" data-min="{players['min']}" data-max="{players['max']}" data-covered="{','.join(str(n) for n in players['covered'])}" data-unplayable="{','.join(str(n) for n in players.get('not_playable', []))}">
 <div class="lead">
 <h1>{e(game['name'])}</h1>
 <p class="meta">{e(' · '.join(meta_bits))}<br>{e(game['edition'])} · checked {e(nice_date(source['retrieved']))}</p>
@@ -242,7 +250,7 @@ def game_page(game):
 def home_page(games):
     rows = []
     for game in games:
-        kind = "card game" if game["kind"] == "card" else "board game"
+        kind = {"card": "card game", "dice": "dice game"}.get(game["kind"], "board game")
         tag = ' <span class="tag">Partial</span>' if game["status"] == "partial" else ""
         rows.append(
             f'<li class="game-row" data-name="{e(game["name"].lower())}">'

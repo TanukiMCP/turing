@@ -1,0 +1,145 @@
+{
+  "name": "Kingdomino",
+  "kind": "board",
+  "publisher": "Blue Orange",
+  "age": "8+",
+  "play_time": "15 min",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "edition": "Base game, Blue Orange multilingual rules (English section); print year not stated in the text",
+  "status": "complete",
+  "source": {
+    "title": "Kingdomino rules (multilingual)",
+    "url": "https://blueorangegames.eu/wp-content/uploads/2017/04/KINGDOMINO_rules_ML.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Kingdom grid",
+      "value": "5x5"
+    },
+    {
+      "label": "Dominoes in play",
+      "value": {
+        "2": "24",
+        "3": "36",
+        "4": "48"
+      }
+    },
+    {
+      "label": "Turns",
+      "value": {
+        "2": "6",
+        "3": "12",
+        "4": "12"
+      }
+    },
+    {
+      "label": "Kings each",
+      "value": {
+        "2": "2",
+        "3": "1",
+        "4": "1"
+      }
+    },
+    {
+      "label": "Dominoes in each line",
+      "value": {
+        "2": "4",
+        "3": "3",
+        "4": "4"
+      }
+    }
+  ],
+  "setup": [
+    {
+      "text": "Shuffle the dominoes and stack them as a draw pile with the numbered sides facing out.",
+      "group": "table",
+      "by_count": {
+        "2": "Use 24 dominoes chosen at random.",
+        "3": "Use 36 dominoes chosen at random.",
+        "4": "Use all 48 dominoes."
+      }
+    },
+    {
+      "text": "Draw dominoes equal to the kings in play and line them up by number, lowest next to the box, then flip them to show the terrain.",
+      "group": "table",
+      "by_count": {
+        "2": "Draw 4 dominoes.",
+        "3": "Draw 3 dominoes.",
+        "4": "Draw 4 dominoes."
+      }
+    },
+    {
+      "text": "Take a starting tile and the castle in your colour. Put the castle on the tile, in front of you.",
+      "group": "each player"
+    },
+    {
+      "text": "Take the kings of your colour.",
+      "group": "each player",
+      "by_count": {
+        "2": "Take both kings of your colour.",
+        "3": "Take 1 king.",
+        "4": "Take 1 king."
+      }
+    },
+    {
+      "text": "One player holds all the kings, and players draw one at random in turn, placing it on a domino of their choice. One king per domino.",
+      "group": "to start"
+    },
+    {
+      "text": "Then draw a new line from the pile, ordered by number, and flip it. In a 2-player game each player picks 2 dominoes, one for each king.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Players act in the order their kings sit on the first line, lowest number first. Each does two actions.",
+    "steps": [
+      "Add the domino your king is on to your kingdom, following the connection rules.",
+      "Move your king to a domino in the new line.",
+      "When everyone has acted, form a new line and start the next turn.",
+      "In a 2-player game, each player does both actions twice per turn, once per king.",
+      "Connection rule: join it to your starting tile, which matches any terrain, or match at least 1 terrain of another domino, horizontally or vertically.",
+      "If a domino cannot be placed legally or fit in your 5x5 grid, discard it."
+    ]
+  },
+  "end": "After the last dominoes are lined up, everyone takes one final turn. Each player should then have a kingdom in a 5x5 grid, though it may be incomplete after discards.",
+  "scoring": [
+    {
+      "text": "A territory is a group of squares of the same terrain joined horizontally or vertically."
+    },
+    {
+      "text": "Multiply the squares in a territory by the crowns in it. A territory with no crowns scores 0."
+    },
+    {
+      "text": "Add up the scores of all your territories. Highest total wins."
+    }
+  ],
+  "tiebreak": "Largest single territory wins; then most crowns; if still tied, share the win.",
+  "missed": [
+    {
+      "text": "Only horizontal and vertical joins count; diagonal neighbours do not."
+    },
+    {
+      "text": "Discarded dominoes score no points."
+    },
+    {
+      "text": "Each domino can hold only one king, so the last player picks whatever is left."
+    },
+    {
+      "text": "Crowns in a territory all count, so a territory can contain several."
+    }
+  ],
+  "unverified": [
+    "The optional extra rules (Dynasty, Middle Kingdom, Harmony, Mighty Duel) are not covered."
+  ],
+  "slug": "kingdomino"
+}

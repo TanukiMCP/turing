@@ -1,0 +1,116 @@
+{
+  "slug": "just-one",
+  "name": "Just One",
+  "kind": "card",
+  "publisher": "Repos Production",
+  "designer": "Ludovic Roudy, Bruno Sautter",
+  "players": {
+    "min": 3,
+    "max": 7,
+    "covered": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "edition": "2025 edition rulebook (110 cards, 7 easels)",
+  "status": "complete",
+  "source": {
+    "title": "Just One English rules (2025), retailer-hosted copy",
+    "url": "https://www.greathobbies.com/manuals/a/asm/asmjoen02_english_rules.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Cards in the game deck",
+      "value": "13"
+    },
+    {
+      "label": "Phases per round",
+      "value": "5"
+    },
+    {
+      "label": "Easels each",
+      "value": {
+        "3": "2 (1 for the guesser)",
+        "4": "2 (1 for the guesser)",
+        "5": "1",
+        "6": "1",
+        "7": "1"
+      }
+    },
+    {
+      "label": "Perfect score",
+      "value": "13"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Shuffle the cards and make a face-down deck of 13 random cards in the middle. The rest stay in the box.",
+      "group": "table"
+    },
+    {
+      "text": "Take an easel, an erasable pencil of the same colour and a cloth.",
+      "group": "each player",
+      "by_count": {
+        "3": "Take two easels, except the active player who takes one.",
+        "4": "Take two easels, except the active player who takes one.",
+        "5": "Take one easel.",
+        "6": "Take one easel.",
+        "7": "Take one easel."
+      }
+    },
+    {
+      "text": "Pick a random player to be the first active player.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "The cooperative group helps the active player guess a secret word by writing one-word clues. Matching clues cancel.",
+    "steps": [
+      "Select: the active player takes the top card without looking and stands it on their easel facing the others, then names a number from 1 to 5. That word is the Mystery Word.",
+      "Write clues: everyone but the active player secretly writes one valid single-word clue on their easel.",
+      "Compare: the active player closes their eyes. The others show easels and cancel identical or invalid clues, laying those easels down.",
+      "Guess: the active player opens their eyes and makes one guess from the remaining clues, or passes.",
+      "End of round: erase clues. The player to the left becomes the active player."
+    ]
+  },
+  "round_end": [
+    "Correct guess: place the card face up beside the deck.",
+    "Pass: the card goes back in the box.",
+    "Wrong guess: the card and the top card of the deck both go back in the box. If the deck is empty, remove a won card if you can.",
+    "If every clue is cancelled, the Mystery Word card goes in the box and you go straight to the end of the round."
+  ],
+  "end": "The game ends when the 13-card deck is empty.",
+  "scoring": [
+    {
+      "text": "Count the cards you won out of 13 and read off your level: 0-3 Eek, 4-6 Not bad, 7-8 Average, 9-10 Good, 11 Very good, 12 Impressive, 13 Perfect."
+    }
+  ],
+  "missed": [
+    {
+      "text": "If you do not know the Mystery Word, the active player may choose a different number."
+    },
+    {
+      "text": "Invalid clues are cancelled too: foreign translations, same-family words, made-up words and homophones of the Mystery Word."
+    },
+    {
+      "text": "Identical clues include same family, singular and plural, and spelling mistakes."
+    },
+    {
+      "text": "A wrong guess costs two cards: the Mystery Word and the next card from the deck."
+    },
+    {
+      "text": "The active player may pass instead of guessing; that loses only the current card."
+    },
+    {
+      "text": "Valid clues include compound words, proper nouns, numbers, onomatopoeia, acronyms and special characters."
+    }
+  ],
+  "unverified": [
+    "Player range 3-7 is inferred from the 3 and 4 player variant and the 7 easels listed; the rulebook text gives no explicit range."
+  ]
+}

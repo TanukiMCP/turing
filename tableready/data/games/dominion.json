@@ -1,0 +1,68 @@
+{
+  "slug": "dominion",
+  "name": "Dominion",
+  "kind": "card",
+  "publisher": "Rio Grande Games",
+  "players": {
+    "min": 2,
+    "max": 6,
+    "covered": [2, 3, 4, 5, 6]
+  },
+  "edition": "Second edition base game, rulebook file dated 2021 (DominionRules2021)",
+  "status": "complete",
+  "source": {
+    "title": "Dominion rules (2nd edition, 2021 file)",
+    "url": "https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2nd.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Starting deck", "value": "7 Copper and 3 Estate (10 cards)"},
+    {"label": "Hand size", "value": "5 cards"},
+    {"label": "Supply piles", "value": "17: 7 Base piles and 10 Kingdom piles"},
+    {"label": "Game ends when empty", "value": {"2": "3 piles or Provinces", "3": "3 piles or Provinces", "4": "3 piles or Provinces", "5": "4 piles or Provinces", "6": "4 piles or Provinces"}},
+    {"label": "Province pile", "value": {"2": "8 cards", "3": "12 cards", "4": "12 cards", "5": "15 cards", "6": "18 cards"}}
+  ],
+  "setup": [
+    {"text": "Lay out the 7 Base piles: Copper, Silver, Gold, Estate, Duchy, Province and Curse. Use every Copper, Silver and Gold, apart from the Coppers players already hold.", "group": "table"},
+    {"text": "Set the size of the Estate, Duchy and Province piles.", "group": "table", "by_count": {"2": "8 of each.", "3": "12 of each.", "4": "12 of each.", "5": "12 Estates, 12 Duchies, 15 Provinces. You need extra Base cards.", "6": "12 Estates, 12 Duchies, 18 Provinces. You need extra Base cards."}},
+    {"text": "Set the size of the Curse pile.", "group": "table", "by_count": {"2": "10 Curses.", "3": "20 Curses.", "4": "30 Curses.", "5": "40 Curses.", "6": "50 Curses."}},
+    {"text": "Choose 10 Kingdom cards, at random from the Randomizer cards or from a recommended set, and make a pile of 10 of each. For a first game use Cellar, Market, Merchant, Militia, Mine, Moat, Remodel, Smithy, Village and Workshop.", "group": "table"},
+    {"text": "If Gardens, or any other Victory card, is in the Kingdom, its pile holds 8 copies with 2 players and 12 with more.", "group": "table"},
+    {"text": "Put the Trash mat nearby.", "group": "table"},
+    {"text": "Take 3 Estates and 7 Coppers, shuffle them face down as your deck, and draw 5 cards.", "group": "each player"},
+    {"text": "Choose the starting player at random. If the last game was not a tie, the winner of it goes last, so the player on their left starts.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Each turn has Action, Buy and Clean-up phases, in that order.",
+    "steps": [
+      "Action phase: you may play one Action card from your hand. Cards giving +Actions let you play more. Using your Actions is optional.",
+      "Buy phase: play any number of Treasure cards for coins, then buy one card from the Supply costing up to that many coins. Your bought card goes to your discard pile. +Buy lets you buy more cards, but you split the coins between them.",
+      "Play all Treasures before buying: you cannot play more after buying.",
+      "Clean-up: put every card in play and in your hand onto your discard pile, then draw 5 new cards. Shuffle your discard pile first if your deck has fewer than 5. Unused Actions, Buys and coins are lost."
+    ]
+  },
+  "end": "The game ends at the end of a turn when the Province pile is empty or when 3 Supply piles are empty (4 piles with 5 or 6 players). Any piles count, including Curses and Coppers.",
+  "scoring": [
+    {"text": "Gather all your cards, from hand, deck, discard, play area and set-aside, and add up their victory points. The most points wins."},
+    {"text": "Curse cards are worth -1 each and Estates 1 each. Duchies are worth 3 and Provinces 6 (see unverified)."},
+    {"text": "Gardens is worth 1 point per 10 cards you own, rounded down. With 37 cards each Gardens is worth 3."}
+  ],
+  "tiebreak": "Tied players: whoever had fewer turns wins. If turns are equal as well, the win is shared.",
+  "missed": [
+    {"text": "Buying a card does not use up your Treasures. They are still in play and return to your deck at Clean-up."},
+    {"text": "Coins from +coin on cards do not give you a Copper. They only add to what you can spend this turn."},
+    {"text": "When you gain or buy a card, it goes to your discard pile, not your hand and not played."},
+    {"text": "Only shuffle when you must draw or otherwise use cards from an empty deck. Your discard pile is shuffled and placed under what is left of your deck."},
+    {"text": "A card played because another card told you to does not use one of your Action plays."},
+    {"text": "If an Action card cannot be fully done, do as much as you can. You may still play it."},
+    {"text": "Players may not look through or count their discard pile or another player's deck, but the number of cards in hands and the top discard are public."}
+  ],
+  "not_covered": [
+    "Individual Kingdom card rulings and the Recommended Sets list.",
+    "Expansion cards."
+  ],
+  "unverified": [
+    "Duchy (3 points) and Province (6 points) values are printed as card icons in the rulebook text. They are read from the garbled card images in the extract, so check them on the cards."
+  ]
+}

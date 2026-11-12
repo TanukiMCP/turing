@@ -1,0 +1,188 @@
+{
+  "slug": "risk",
+  "name": "Risk (classic)",
+  "kind": "board",
+  "publisher": "Hasbro",
+  "players": {
+    "min": 2,
+    "max": 5,
+    "covered": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "age": "10+",
+  "edition": "Classic Risk, 2010 Hasbro rulebook (item 28720)",
+  "status": "partial",
+  "source": {
+    "title": "Risk rules (2010) copy hosted by Wizards of the Coast",
+    "url": "https://media.wizards.com/2015/downloads/ah/Risk_rules.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Territories on the map",
+      "value": "42"
+    },
+    {
+      "label": "Starting troops each",
+      "value": {
+        "2": "Dealt from 12 cards",
+        "3": "35",
+        "4": "30",
+        "5": "25"
+      }
+    },
+    {
+      "label": "Minimum troops at turn start",
+      "value": "3"
+    },
+    {
+      "label": "Most dice per battle",
+      "value": "3 attack, 2 defence"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Give each player an army colour and keep the rest of each army as an off-board troop pile.",
+      "group": "table",
+      "only": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "text": "Leave the Cease Fire card out of the deck. It is not used in the classic game.",
+      "group": "table"
+    },
+    {
+      "text": "Roll a die to decide who goes first. Play runs clockwise.",
+      "group": "table",
+      "only": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "text": "Each player counts out a starting pool of troops.",
+      "group": "each player",
+      "by_count": {
+        "3": "Take 35 troops.",
+        "4": "Take 30 troops.",
+        "5": "Take 25 troops.",
+        "2": "No starting pool: your troops come from the dealt cards."
+      }
+    },
+    {
+      "text": "In turn order, each player puts one troop from their pool on an empty territory to claim it. Repeat until all 42 territories are claimed.",
+      "group": "to start",
+      "only": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "text": "Keep going in turn order, adding one troop at a time from your pool to territories you already hold, until every pool is empty. Then the first player takes the first turn.",
+      "group": "to start",
+      "only": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "text": "Each player picks a colour. The three remaining colours are neutral armies.",
+      "group": "table",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "Remove the Cease Fire card, shuffle the territory cards, then deal 12 to each player and 6 to each neutral army.",
+      "group": "table",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "Place 1 troop on each territory shown by a 1-star card and 2 troops on each shown by a 2-star card, in the owner's colour. Do this for the neutral armies too.",
+      "group": "table",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "Shuffle all the cards together into one deck. Set one troop of each neutral army to the side and tuck three face-down cards under each without looking.",
+      "group": "table",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "Roll to see who goes first.",
+      "group": "to start",
+      "only": [
+        2
+      ]
+    }
+  ],
+  "turn": {
+    "summary": "Your turn has four parts in order: place troops, attack, manoeuvre, then draw a card if you conquered something.",
+    "steps": [
+      "Take 3 troops, plus bonus troops for territories held (12-14 territories +1, 15-17 +2, and so on up to +10 for 40-42), for any whole continent held, and for cards you hand in. Place all of them on territories you control.",
+      "Attack as many times as you like, or not at all. Pick one of your territories, and an enemy territory joined to it by a border or sea line. Attack with 1 to 3 troops, always leaving at least 1 behind.",
+      "Attacker rolls one black die per attacking troop; defender rolls one red die per defending troop, using 1 or 2 troops. Pair dice from highest to lowest. A higher attack die removes a defender; equal or higher defence removes an attacker.",
+      "If the defending territory is emptied, move in your surviving attackers, plus as many more as you wish from the attacking territory, keeping 1 behind.",
+      "Manoeuvre once at the end: move any number of troops from one of your territories to another that is linked to it through a chain of your own territories.",
+      "If you conquered at least one territory this turn, draw one card. Never draw more than one per turn."
+    ]
+  },
+  "end": "In the classic game, a player wins by controlling all 42 territories, which means every opponent is eliminated. In the two-player game you also win by holding 30 territories at the end of your turn.",
+  "scoring": [
+    {
+      "text": "There are no points. The winner is the last player standing with every territory."
+    }
+  ],
+  "missed": [
+    {
+      "text": "The defender wins ties on each pair of dice."
+    },
+    {
+      "text": "Unpaired extra dice are ignored. The lowest dice are the ones dropped."
+    },
+    {
+      "text": "You must leave at least 1 troop in the territory you attack from. The defender may use their last troop to fight."
+    },
+    {
+      "text": "You can only draw one card per turn, however many territories you took."
+    },
+    {
+      "text": "If you wipe out a player's last territory, you take all of their cards."
+    },
+    {
+      "text": "In a two-player game you may add 3 troops to one neutral army at the start of your turn, spread across its territories. Only one neutral army per turn.",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "In a two-player game, conquering a neutral army's last territory gives you the 3 cards that were hidden under its troop.",
+      "only": [
+        2
+      ]
+    }
+  ],
+  "not_covered": [
+    "Introductory Game (shorter variant with the Cease Fire card, territory targets and dealt starting territories).",
+    "Exact bonus troops for cards handed in, for each continent, and when a hand-in is compulsory: the chart and continent values are printed on the board, not in the rulebook text."
+  ],
+  "unverified": [
+    "Troops-for-cards chart and per-continent bonus values (printed on the board). The territory bonus bands (12-14 = +1 up to 40-42 = +10) are in the text."
+  ]
+}

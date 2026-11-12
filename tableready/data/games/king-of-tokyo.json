@@ -1,0 +1,144 @@
+{
+  "name": "King of Tokyo",
+  "kind": "board",
+  "publisher": "IELLO",
+  "designer": "Richard Garfield",
+  "players": {
+    "min": 2,
+    "max": 6,
+    "covered": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "age": "8+",
+  "play_time": "30 min",
+  "edition": "Base game, original edition (rulebook ref. 51032, lot 09_2012A, copyright 2010-2012)",
+  "status": "complete",
+  "source": {
+    "title": "King of Tokyo instructions (2012), library-hosted copy",
+    "url": "https://lot.ahml.info/King_of_Tokyo_Instructions.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Victory points to win",
+      "value": "20"
+    },
+    {
+      "label": "Starting life",
+      "value": "10"
+    },
+    {
+      "label": "Dice rolled",
+      "value": "6 black"
+    },
+    {
+      "label": "Rolls per turn",
+      "value": "1 roll plus 2 rerolls"
+    },
+    {
+      "label": "Cost to sweep the face-up cards",
+      "value": "2 energy"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Place the Tokyo board in the middle of the table. Nobody starts in Tokyo.",
+      "group": "table",
+      "by_count": {
+        "2": "Use Tokyo City only.",
+        "3": "Use Tokyo City only.",
+        "4": "Use Tokyo City only.",
+        "5": "Use both Tokyo City and Tokyo Bay.",
+        "6": "Use both Tokyo City and Tokyo Bay."
+      }
+    },
+    {
+      "text": "Shuffle the power cards into a deck and turn the top 3 face up beside it.",
+      "group": "table"
+    },
+    {
+      "text": "Put the 6 black dice in the middle. Set the 2 green dice aside; only certain cards use them.",
+      "group": "table"
+    },
+    {
+      "text": "Make a pool of energy cubes and keep the counters beside the cards.",
+      "group": "table"
+    },
+    {
+      "text": "Choose a monster. Take its figure and board, then set life to 10 and victory points to 0.",
+      "group": "each player"
+    },
+    {
+      "text": "Everyone rolls the 6 black dice. The most attack faces goes first. Play passes to the left.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Roll, resolve the dice, optionally buy cards, then end your turn.",
+    "steps": [
+      "Roll all 6 dice, then reroll any or all of them, twice. You may keep or reroll dice again on the second reroll.",
+      "Resolve the final dice. Number faces score victory points, energy faces give energy cubes, heart faces heal, attack faces deal damage.",
+      "Triples of a number score that number in points, and each extra matching die adds 1.",
+      "Attack: from inside Tokyo, hit every monster outside it. From outside, hit every monster in Tokyo. Each damage costs 1 life.",
+      "If Tokyo is empty, the first monster to roll an attack takes it without dealing damage.",
+      "Buy any of the 3 face-up cards by paying energy, in any order and as often as you can afford. You may pay 2 energy to discard all 3 and reveal new ones.",
+      "Refill bought cards from the deck at once.",
+      "Resolve any end-of-turn effects, then pass the dice left."
+    ]
+  },
+  "end": "The game ends when a monster reaches 20 victory points, or when only one monster is left alive. That monster wins.",
+  "scoring": [
+    {
+      "text": "Gain 1 point when you take control of Tokyo."
+    },
+    {
+      "text": "Gain 2 points when you start your turn in Tokyo."
+    },
+    {
+      "text": "Gain points from dice triples and from some cards."
+    },
+    {
+      "text": "A monster on 0 life is out of the game."
+    }
+  ],
+  "missed": [
+    {
+      "text": "A monster in Tokyo cannot heal with heart dice, but can heal with cards."
+    },
+    {
+      "text": "A monster attacked in Tokyo may yield its place to the attacker. It still takes the damage."
+    },
+    {
+      "text": "If an attack on Tokyo eliminates the monster there, the attacker takes control of Tokyo."
+    },
+    {
+      "text": "Damage from a discard card is not an attack, so nobody may yield Tokyo because of it."
+    },
+    {
+      "text": "Life cannot go above 10 unless a card says so."
+    },
+    {
+      "text": "You can reach 20 points and be eliminated in the same turn through cards; you must survive the turn to win."
+    },
+    {
+      "text": "With 5 or 6 monsters, an attacker outside Tokyo must take over Tokyo City first if it is empty or abandoned, then Tokyo Bay. A monster never holds both. If play drops below 5 monsters, the monster in Tokyo Bay must leave.",
+      "only": [
+        5,
+        6
+      ]
+    }
+  ],
+  "not_covered": [
+    "The effects of individual power cards are not listed."
+  ],
+  "unverified": [
+    "The exact number faces on the dice (1, 2 and 3) and the triple scoring are printed mostly as icons; they are inferred from the surrounding text and worked example."
+  ],
+  "slug": "king-of-tokyo"
+}

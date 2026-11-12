@@ -1,0 +1,134 @@
+{
+  "name": "Splendor",
+  "kind": "board",
+  "publisher": "Space Cowboys",
+  "designer": "Marc André",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "edition": "Base game, 2014 rulebook (English translation)",
+  "status": "complete",
+  "source": {
+    "title": "Splendor rulebook (2014), library-hosted copy",
+    "url": "https://lot.ahml.info/Splendor.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Prestige points that trigger the end",
+      "value": "15"
+    },
+    {
+      "label": "Tokens of each gem colour",
+      "value": {
+        "2": "4",
+        "3": "5",
+        "4": "7"
+      }
+    },
+    {
+      "label": "Noble tiles revealed",
+      "value": {
+        "2": "3",
+        "3": "4",
+        "4": "5"
+      }
+    },
+    {
+      "label": "Token limit at end of turn",
+      "value": "10"
+    },
+    {
+      "label": "Reserved cards limit",
+      "value": "3"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Shuffle the three development decks separately and stack them in a column, level 1 at the bottom to level 3 at the top.",
+      "group": "table"
+    },
+    {
+      "text": "Reveal 4 cards from each level.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the noble tiles and reveal one more than the number of players. Return the rest to the box.",
+      "group": "table",
+      "by_count": {
+        "2": "Reveal 3 noble tiles.",
+        "3": "Reveal 4 noble tiles.",
+        "4": "Reveal 5 noble tiles."
+      }
+    },
+    {
+      "text": "Sort the gem tokens by colour into 6 piles within reach of everyone. Leave the gold alone.",
+      "group": "table",
+      "by_count": {
+        "2": "Take 3 tokens of each gem colour out of the game, leaving 4 of each.",
+        "3": "Take 2 tokens of each gem colour out of the game, leaving 5 of each.",
+        "4": "Use all 7 tokens of each gem colour."
+      }
+    },
+    {
+      "text": "The youngest player goes first; play passes clockwise.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Do exactly one of four actions, then check whether a noble visits you.",
+    "steps": [
+      "Take 3 gem tokens of three different colours.",
+      "Or take 2 gem tokens of the same colour, but only if at least 4 of that colour are in the pile.",
+      "Or reserve 1 card and take 1 gold token. Take the card from the face-up display or blind from the top of a deck.",
+      "Or buy 1 card, either face up in the middle or one you reserved on an earlier turn.",
+      "Refill any gap in the display at once from the same level's deck.",
+      "End your turn with no more than 10 tokens, gold included. Return extras, including ones you just took.",
+      "Check the nobles: if you hold enough bonuses for one, take its tile. You get at most one per turn."
+    ]
+  },
+  "end": "When a player reaches 15 prestige points, finish the round so that everyone has had the same number of turns. The player with the most prestige points then wins.",
+  "scoring": [
+    {
+      "text": "Each development card shows its prestige points, if any."
+    },
+    {
+      "text": "Each noble tile you have is worth 3 prestige points."
+    },
+    {
+      "text": "Count your nobles in the final total."
+    }
+  ],
+  "tiebreak": "The tied player who bought the fewest development cards wins.",
+  "missed": [
+    {
+      "text": "Each card you own gives a bonus of its colour that counts as a token of that colour when paying. Enough bonuses can make a card free."
+    },
+    {
+      "text": "A gold token replaces any colour when buying a card."
+    },
+    {
+      "text": "Taking 2 tokens of one colour needs at least 4 of that colour in the pile before you take them."
+    },
+    {
+      "text": "With no gold left you can still reserve a card; you just get no gold."
+    },
+    {
+      "text": "A noble visit is automatic, cannot be refused and is not an action. Only bonuses count towards it, not tokens. If several nobles qualify, choose one."
+    },
+    {
+      "text": "Reserved cards stay in hand and can only be bought by you. You cannot discard them."
+    }
+  ],
+  "not_covered": [
+    "Solo play is not in this rulebook."
+  ],
+  "slug": "splendor"
+}

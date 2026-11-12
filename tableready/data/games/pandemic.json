@@ -1,0 +1,70 @@
+{
+  "slug": "pandemic",
+  "name": "Pandemic",
+  "kind": "board",
+  "publisher": "Z-Man Games",
+  "designer": "Matt Leacock",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [2, 3, 4]
+  },
+  "edition": "Base game, Z-Man Games rulebook with 5 role cards (undated copy, not the 10th Anniversary or Legacy rules)",
+  "status": "complete",
+  "source": {
+    "title": "Pandemic rules (Z-Man Games), library-hosted copy",
+    "url": "https://aadl.org/files/catalog_guides/Pandemic_Rules.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Starting hand", "value": {"2": "4 cards", "3": "3 cards", "4": "2 cards"}},
+    {"label": "Actions per turn", "value": "4"},
+    {"label": "Cards drawn after actions", "value": "2"},
+    {"label": "Hand limit", "value": "7"},
+    {"label": "Outbreaks that lose the game", "value": "8"}
+  ],
+  "setup": [
+    {"text": "Place the board in the middle. Put 1 Research Station in Atlanta and keep the rest beside the board.", "group": "table"},
+    {"text": "Put the Outbreaks Marker on 0 and the Infection Rate Marker on the first space (marked 2). Put the 4 Cure Markers near the Cures Discovered area. Sort the disease cubes into four colour piles.", "group": "table"},
+    {"text": "Shuffle the Infection cards into a face-down draw pile. Turn over 3 and put 3 cubes of the matching colour on each pictured city. Turn over 3 more for 2 cubes each, then 3 more for 1 cube each. Keep all 9 in the Infection discard pile.", "group": "table"},
+    {"text": "Take the 6 Epidemic cards out of the Player deck for now.", "group": "table"},
+    {"text": "Deal each player 1 random Role card and take that pawn. Put every pawn in Atlanta and return unused roles and pawns to the box. Everyone takes a Reference card.", "group": "each player"},
+    {"text": "Shuffle the remaining Player cards and deal each player a starting hand.", "group": "each player", "by_count": {"2": "Deal 4 cards each.", "3": "Deal 3 cards each.", "4": "Deal 2 cards each."}},
+    {"text": "Build the Player draw pile. Split the remaining Player cards into 4 equal piles for the Introductory game, 5 for Normal or 6 for Heroic. Shuffle one Epidemic card into each pile and stack them, larger piles on top. Return spare Epidemic cards to the box.", "group": "to start"},
+    {"text": "The player who was most recently sick goes first.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "Do up to 4 actions, draw 2 player cards, then infect cities. You win or lose together.",
+    "steps": [
+      "Take 4 actions from the list below. You may repeat an action, pass, or do fewer. Unused actions are lost.",
+      "Move: Drive to an adjacent city. Direct Flight by discarding the card of your destination. Charter Flight by discarding the card of your current city, then go anywhere. Shuttle Flight between two Research Stations.",
+      "Build a Research Station by discarding the card of your current city. If all 6 stations are out, move an existing one here.",
+      "Discover a Cure at a Research Station by discarding 5 cards of one colour.",
+      "Treat Disease: remove 1 cube from your city. If that colour is cured, remove every cube of it there.",
+      "Share Knowledge: give or take the card of the city you share with another player, 1 action per card.",
+      "Draw 2 cards from the Player deck. For an Epidemic card, resolve it at once instead of keeping it. If the deck cannot supply 2 cards, you lose.",
+      "Discard down to 7 cards if you hold more. Event cards can be played instead of discarding.",
+      "Infector: draw as many Infection cards as the Infection Rate shows, one at a time, adding 1 cube of the card's colour to its city. A city that would get a 4th cube of a colour outbreaks instead. Discard the cards, then the next player goes."
+    ]
+  },
+  "round_end": [
+    "Epidemic, in order: move the Infection Rate Marker up one space; take the bottom Infection card and put 3 cubes on its city (an outbreak if it already has any of that colour and would exceed 3); shuffle the Infection discard pile and put it on top of the draw pile."
+  ],
+  "end": "The team wins at once when the fourth cure is discovered. It loses if the 8th outbreak happens, if cubes of a colour run out when needed, or if the Player deck cannot supply a draw.",
+  "scoring": [
+    {"text": "There is no scoring. Discover all four cures (blue, yellow, black, red) to win. You do not need to clear the cubes from the board."}
+  ],
+  "missed": [
+    {"text": "A city outbreaks only once per chain reaction. Each outbreak moves the Outbreaks Marker up one space."},
+    {"text": "An outbreak spreads one cube of the outbreaking colour to each adjacent city. A city that would exceed 3 of that colour then outbreaks in turn."},
+    {"text": "Epidemic infection takes the bottom card, not the top, and the discards are shuffled and placed on top, not mixed into the draw pile."},
+    {"text": "A cured disease can still spread. Only an eradicated colour (cured and no cubes left on the board) stops adding cubes; flip its Cure Marker to the sunset side."},
+    {"text": "Share Knowledge only moves the card matching the city you both stand in (the Researcher can give any card). Check hand limits afterwards, as the receiver may need to discard."},
+    {"text": "Normal and Heroic games forbid showing your hand to others, but you may tell them which cards you hold. The Introductory game lets you play open hands."}
+  ],
+  "not_covered": [
+    "The special powers of each role beyond the few mentioned in the actions, and the text of the Event cards.",
+    "Solo play: the rulebook text gives starting hands for 2 to 4 players only."
+  ]
+}

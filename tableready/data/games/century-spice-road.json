@@ -1,0 +1,146 @@
+{
+  "slug": "century-spice-road",
+  "name": "Century: Spice Road",
+  "kind": "card",
+  "publisher": "Plan B Games",
+  "designer": "Emerson Matsuuchi",
+  "players": {
+    "min": 2,
+    "max": 5,
+    "covered": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "edition": "Base game, English rules, copyright 2024 Plan B Games Inc.",
+  "status": "complete",
+  "source": {
+    "title": "Century: Spice Road rules (English, 2024), distributor-hosted",
+    "url": "https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2024/09/EN-Century-Spice-Road-Rules_2024_compressed.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Point cards to trigger the end",
+      "value": {
+        "2": "6",
+        "3": "6",
+        "4": "5",
+        "5": "5"
+      }
+    },
+    {
+      "label": "Caravan limit",
+      "value": "10 cubes"
+    },
+    {
+      "label": "Merchant cards in the row",
+      "value": "6"
+    },
+    {
+      "label": "Point cards in the row",
+      "value": "5"
+    },
+    {
+      "label": "Coins in each pile",
+      "value": {
+        "2": "4",
+        "3": "6",
+        "4": "8",
+        "5": "10"
+      }
+    }
+  ],
+  "setup": [
+    {
+      "text": "Shuffle the Point cards into a deck and lay 5 face up in a row beside it.",
+      "group": "table"
+    },
+    {
+      "text": "Put a pile of gold coins above the first Point card and a pile of silver coins above the second.",
+      "group": "table",
+      "by_count": {
+        "2": "4 coins in each pile.",
+        "3": "6 coins in each pile.",
+        "4": "8 coins in each pile.",
+        "5": "10 coins in each pile."
+      }
+    },
+    {
+      "text": "Shuffle the other Merchant cards into a deck and lay 6 face up in a row beside it.",
+      "group": "table"
+    },
+    {
+      "text": "Sort the cubes by colour into bowls in this order: yellow, red, green, brown.",
+      "group": "table"
+    },
+    {
+      "text": "Take the 10 purple-bordered starting Merchant cards. Each player gets one 'Create 2' and one 'Upgrade 2' as a starting hand. Box the spares.",
+      "group": "each player"
+    },
+    {
+      "text": "Deal one Caravan card each, including the one with the first player symbol.",
+      "group": "each player"
+    },
+    {
+      "text": "Put starting cubes on your Caravan card by seat.",
+      "group": "each player",
+      "by_count": {
+        "2": "1st: 3 yellow. 2nd: 4 yellow.",
+        "3": "1st: 3 yellow. 2nd: 4 yellow. 3rd: 4 yellow.",
+        "4": "1st: 3 yellow. 2nd and 3rd: 4 yellow. 4th: 3 yellow and 1 red.",
+        "5": "1st: 3 yellow. 2nd and 3rd: 4 yellow. 4th and 5th: 3 yellow and 1 red."
+      }
+    },
+    {
+      "text": "The player whose Caravan card has the first player symbol goes first. Play runs clockwise.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Take one of four actions each turn.",
+    "steps": [
+      "Play: put a card from your hand face up in front of you and use it. Spice cards give cubes, Upgrade cards raise cubes one level at a time, Trade cards swap cubes (repeatable).",
+      "Acquire: put one cube of any colour on each Merchant card to the left of the card you want, then take it. The leftmost card is free. Take any cubes on it, then slide the row left and refill.",
+      "Rest: take all your played cards back into your hand.",
+      "Claim: if your caravan holds every cube shown on a Point card, return them, take the card face down and refill the row. Take the coin above it if it was the first or second card.",
+      "At the end of your turn, discard cubes of your choice back to the bowls until you hold 10 or fewer."
+    ]
+  },
+  "end": "When a player takes their 5th Point card (6th with 2 or 3 players), everyone finishes the current round. Then you count points.",
+  "scoring": [
+    {
+      "text": "Add the points on your Point cards."
+    },
+    {
+      "text": "Each gold coin is worth 3 points and each silver coin 1."
+    },
+    {
+      "text": "Each cube that is not yellow scores 1 point."
+    }
+  ],
+  "tiebreak": "The tied player who took the last turn wins.",
+  "missed": [
+    {
+      "text": "Upgrade is optional. You may use one or both upgrades, and can upgrade the same cube twice."
+    },
+    {
+      "text": "Your caravan can hold only 10 cubes; extras are returned at the end of your turn."
+    },
+    {
+      "text": "When you take the last gold coin, slide the silver pile above the leftmost Point card."
+    },
+    {
+      "text": "The game does not stop mid-round: players after the one who triggered the end still take their turns."
+    },
+    {
+      "text": "When acquiring, cubes already sitting on the card you take go to your caravan."
+    },
+    {
+      "text": "Only non-yellow cubes score at the end; yellow cubes are worth nothing."
+    }
+  ]
+}

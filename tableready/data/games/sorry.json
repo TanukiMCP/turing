@@ -1,0 +1,99 @@
+{
+  "slug": "sorry",
+  "name": "Sorry!",
+  "kind": "board",
+  "publisher": "Hasbro",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "age": "6+",
+  "edition": "Classic Sorry!, item 00390, instructions (c) 1934, 2003",
+  "status": "complete",
+  "source": {
+    "title": "Sorry! instructions (00390)",
+    "url": "https://instructions.hasbro.com/api/download/00390_en-us_sorry-game.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Pawns each",
+      "value": "4"
+    },
+    {
+      "label": "Cards that start a pawn",
+      "value": "1 and 2"
+    },
+    {
+      "label": "Goal",
+      "value": "All 4 pawns HOME by exact count"
+    },
+    {
+      "label": "Cards missing from the deck",
+      "value": "6 and 9"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the board down and place the shuffled deck face down on 'Place Pack Here' as the draw pile.",
+      "group": "table"
+    },
+    {
+      "text": "Take the four pawns of one colour and put all four on your START. For a faster game put three on START and the fourth on the circle just below it.",
+      "group": "each player"
+    },
+    {
+      "text": "Choose the first player. Play passes to the left and pawns move clockwise unless a card says otherwise.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Draw the top card, move as it says if you can, then discard it face up.",
+    "steps": [
+      "Take the top card and carry out its move if you are able. A card is mandatory: if you can move, you must.",
+      "Only a 1 or a 2 takes a pawn out of START. A 1 puts it on the circle by your START and ends your turn. A 2 does the same or moves a pawn 2, then you draw again.",
+      "Cards: 3, 5, 8 and 12 move a pawn forward that many; 4 moves backward 4; 7 is one pawn forward 7 or split between two pawns; 10 is forward 10 or back 1; 11 is forward 11 or a switch with an opponent's pawn; SORRY! takes a pawn from START to an opponent's square and bumps it.",
+      "Landing on a square held by an opponent bumps that pawn back to its START. You may jump over pawns, counting each as one space.",
+      "If you cannot move, you forfeit the turn. If the draw pile runs out, reshuffle the discards."
+    ]
+  },
+  "end": "The game ends when one player gets all four of their pawns HOME. If you play again, the winner goes first.",
+  "scoring": [
+    {
+      "text": "The standard game has no points. The first to bring all four pawns HOME wins."
+    }
+  ],
+  "missed": [
+    {
+      "text": "A pawn must reach HOME by exact count, and once HOME it never moves again."
+    },
+    {
+      "text": "Landing on the triangle at the start of a slide of another colour sends you to the end of the slide, bumping everything on it, including your own pawns. Your own colour's slide does nothing."
+    },
+    {
+      "text": "Only you can enter your own SAFETY ZONE. You cannot go forward past your zone entry square, but a backward move or a SORRY! or switch played on you can carry you past it."
+    },
+    {
+      "text": "A pawn moved back at least two spaces past your START can go straight into your SAFETY ZONE later, without circling the board."
+    },
+    {
+      "text": "You may not use a 7 to start a pawn. If part of a 7 takes a pawn HOME, you must be able to use the rest on another pawn."
+    },
+    {
+      "text": "The 11 only works on pawns on the open track, not those on START, HOME or a SAFETY ZONE. You may forfeit if you cannot move 11 and do not want to switch."
+    },
+    {
+      "text": "Two of your own pawns may never share a square. If your only move would do that, you forfeit."
+    }
+  ],
+  "not_covered": [
+    "Team rules variation.",
+    "Adult 'play for points' variation with a five-card hand."
+  ]
+}

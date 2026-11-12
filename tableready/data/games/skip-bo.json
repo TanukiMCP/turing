@@ -1,0 +1,126 @@
+{
+  "slug": "skip-bo",
+  "name": "Skip-Bo",
+  "kind": "card",
+  "publisher": "Mattel",
+  "players": {
+    "min": 2,
+    "max": 6,
+    "covered": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "age": "7+",
+  "edition": "Skip-Bo instruction sheet 42050 (file 42050-0520), (c) 2003",
+  "status": "complete",
+  "source": {
+    "title": "Skip-Bo instruction sheet 42050",
+    "url": "https://service.mattel.com/instruction_sheets/42050-0520.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Stock pile cards dealt",
+      "value": {
+        "2": "30",
+        "3": "30",
+        "4": "30",
+        "5": "20",
+        "6": "20"
+      }
+    },
+    {
+      "label": "Hand size",
+      "value": "5"
+    },
+    {
+      "label": "Cards in the deck",
+      "value": "162 (144 numbered 1-12, 18 Skip-Bo)"
+    },
+    {
+      "label": "Building pile ends at",
+      "value": "12"
+    },
+    {
+      "label": "Points to win a series",
+      "value": "500"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Shuffle the 162-card deck. Each player draws a card and the highest deals (Skip-Bo cards do not count). The deal passes left each game. Remove any blank cards.",
+      "group": "table"
+    },
+    {
+      "text": "Deal each player a face-down stock pile.",
+      "group": "each player",
+      "by_count": {
+        "2": "Deal 30 cards.",
+        "3": "Deal 30 cards.",
+        "4": "Deal 30 cards.",
+        "5": "Deal 20 cards.",
+        "6": "Deal 20 cards."
+      }
+    },
+    {
+      "text": "Turn the top card of your stock pile face up, without looking at the rest.",
+      "group": "each player"
+    },
+    {
+      "text": "The dealer puts the rest of the deck face down in the middle as the draw pile. Building piles and discard piles start empty and grow during play.",
+      "group": "table"
+    },
+    {
+      "text": "The player to the dealer's left goes first.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Draw up to five cards, play as many as you can onto the middle building piles, then end by discarding one card.",
+    "steps": [
+      "Draw cards to bring your hand to 5 (on your very first turn, draw 5).",
+      "Play the top card of your stock pile, the top of any of your discard piles, or a card from your hand onto a building pile. Piles go up in order 1 to 12, and a Skip-Bo card can stand in for any number.",
+      "Start a building pile only with a 1 or a Skip-Bo. Up to four building piles can be open. When a pile reaches 12, take it away and start a fresh one.",
+      "If you play all five cards from your hand, draw five more and carry on.",
+      "End your turn by discarding one hand card onto one of your four discard piles. You can also end a turn this way when you cannot or do not want to play."
+    ]
+  },
+  "round_end": [
+    "If the draw pile runs out, shuffle the completed building piles to make a new one."
+  ],
+  "end": "A game ends as soon as one player plays the last card of their stock pile. That player wins the game.",
+  "scoring": [
+    {
+      "text": "Optional: the winner of each game scores 5 points for each card left in opponents' stock piles, plus 25 for winning."
+    },
+    {
+      "text": "The first player to reach 500 points wins the series."
+    }
+  ],
+  "missed": [
+    {
+      "text": "Use stock pile cards first: the winner is the one who empties the stock pile, not the hand."
+    },
+    {
+      "text": "You may only play the top card of a discard pile, though you can stack any cards on it in any order."
+    },
+    {
+      "text": "Skip-Bo cards are wild, can start a building pile, and may be played as any number."
+    },
+    {
+      "text": "A player who draws too many cards must shuffle the extra cards into their own stock pile."
+    },
+    {
+      "text": "If someone plays out of turn and it is spotted before their turn is over, play goes back at once; that player then skips the draw on their next turn. If nobody notices, the turn stands."
+    }
+  ],
+  "not_covered": [
+    "Partnership (team) rules.",
+    "Short-game variants."
+  ]
+}

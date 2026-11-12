@@ -68,9 +68,9 @@ const ok = (name, cond, extra) => { cond ? pass++ : fail++; console.log((cond ? 
   await p.fill('#find', 'kutna');
   ok('search ignores accents', JSON.stringify(await vis('.game-row a')) === JSON.stringify(['Kutná Hora: The City of Silver']));
   await p.fill('#find', 'zzz');
-  ok('no-match state names the term', await p.isVisible('.no-match') && /No game matches “zzz”\. 9 games/.test(await p.innerText('.no-match')));
+  ok('no-match state names the term', await p.isVisible('.no-match') && /No game matches “zzz”\. \d+ games/.test(await p.innerText('.no-match')));
   await p.click('.clear-search');
-  ok('clear search restores list and focuses field', (await vis('.game-row a')).length === 9 && await p.evaluate(() => document.activeElement.id === 'find'));
+  ok('clear search restores list and focuses field', (await vis('.game-row a')).length >= 9 && await p.evaluate(() => document.activeElement.id === 'find'));
   await p.click('.game-row a >> text=Wingspan');
   ok('row link opens the game page', /games\/wingspan\//.test(p.url()) && (await p.innerText('h1')) === 'Wingspan');
   await p.click('.site-name');

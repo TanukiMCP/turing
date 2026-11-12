@@ -1,0 +1,65 @@
+{
+  "slug": "ticket-to-ride-europe",
+  "name": "Ticket to Ride: Europe",
+  "kind": "board",
+  "publisher": "Days of Wonder",
+  "designer": "Alan R. Moon",
+  "players": {"min": 2, "max": 5, "covered": [2, 3, 4, 5]},
+  "age": "8+",
+  "play_time": "30-60 minutes",
+  "edition": "Base game rulebook, copyright 2004-2019",
+  "status": "partial",
+  "source": {
+    "title": "Ticket to Ride Europe rules (English), copy",
+    "url": "https://www.szellemlovas.hu/szabalyok/TicketToRideEuropeEN.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {"label": "Trains each", "value": "45"},
+    {"label": "Stations each", "value": "3"},
+    {"label": "Starting hand", "value": "4 Train cards"},
+    {"label": "Game ends when someone has", "value": "2 trains or fewer at the end of their turn"},
+    {"label": "European Express bonus", "value": "10 points"}
+  ],
+  "setup": [
+    {"text": "Put the board in the middle of the table.", "group": "table"},
+    {"text": "Shuffle the Train cards, then turn the top 5 face up beside the board. Keep the rest as a face-down draw deck.", "group": "table"},
+    {"text": "Put the European Express bonus card and the Summary card face up beside the board.", "group": "table"},
+    {"text": "Split the Destination Tickets into the 6 long routes (blue background) and the regular ones. Shuffle each pile separately.", "group": "table"},
+    {"text": "Take a set of 45 trains, the 3 matching stations and your scoring marker. Put the marker on Start of the score track.", "group": "each player"},
+    {"text": "Draw 4 Train cards.", "group": "each player"},
+    {"text": "Deal each player 1 long route and 3 regular tickets. Return unused long routes to the box unseen.", "group": "each player"},
+    {"text": "Look at your tickets and keep at least 2 of them. Put discards in the box without showing anyone.", "group": "each player"},
+    {"text": "The player who has visited the most European countries starts. Play goes clockwise.", "group": "to start"}
+  ],
+  "turn": {
+    "summary": "On your turn do exactly one of four actions.",
+    "steps": [
+      "Draw Train cards: take 2, from the face-up row or the deck. Refill the row at once after each face-up pick.",
+      "Claim a route: play cards matching the route's colour and length, put a train on each space, then score it from the route table. One route per turn.",
+      "Draw Destination Tickets: take 3 from the top of the deck and keep at least 1. Discards go to the bottom of the ticket deck.",
+      "Build a station: on any city with no station, play 1 card (first), 2 same-colour cards (second) or 3 same-colour cards (third). One station per turn."
+    ]
+  },
+  "end": "When a player ends their turn with 2 or fewer trains left, everyone, including that player, takes one last turn. Then count the final scores.",
+  "scoring": [
+    {"text": "Score each route when you claim it, using the route table by length."},
+    {"text": "Add the value of each Destination Ticket you completed. Subtract the value of each one you did not."},
+    {"text": "Add 4 points for each station you never built."},
+    {"text": "The player or players with the longest continuous path of one colour of trains get 10 points. Ties all get it."}
+  ],
+  "tiebreak": "Most completed Destination Tickets, then fewest stations built, then holding the European Express card.",
+  "missed": [
+    {"text": "A face-up Locomotive is the only card you may take that turn. If one appears as the replacement for your first pick, you cannot take it second."},
+    {"text": "A Locomotive drawn blind from the deck still counts as one normal card, so you can draw a second."},
+    {"text": "If 3 of the 5 face-up cards are Locomotives, discard all five and turn up five new cards."},
+    {"text": "For a ferry route you must play one Locomotive for each Locomotive symbol on it, plus the matching colour for the other spaces."},
+    {"text": "For a tunnel, turn up 3 cards from the deck. Each one matching your colour (or a Locomotive) forces you to play one more card. You may refuse and take your cards back, ending your turn."},
+    {"text": "A station lets you borrow one opponent's route into that city for tickets only. You must use the same route for all tickets, and borrowed routes do not count for the longest path."},
+    {"text": "You may never own both routes of a double route. With 2 or 3 players, once one is claimed the other is closed.", "only": [2, 3]},
+    {"text": "Tickets you keep stay with you until the end. You cannot discard them in a later ticket draw."}
+  ],
+  "not_covered": ["Route scoring table (points per route length) is printed as a picture, not in the text."],
+  "unverified": ["Points awarded per route length (1 to 6 spaces) are in an image on the rules page, not the text layer."]
+}
