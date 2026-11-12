@@ -1,0 +1,129 @@
+{
+  "slug": "exploding-kittens",
+  "name": "Exploding Kittens",
+  "kind": "card",
+  "publisher": "Exploding Kittens",
+  "players": {
+    "min": 2,
+    "max": 5,
+    "covered": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "edition": "Original Edition, 56 cards",
+  "status": "complete",
+  "source": {
+    "title": "Exploding Kittens Original Edition instructions",
+    "url": "https://cdn.shopify.com/s/files/1/0345/9180/1483/files/ekoe-instructions-english.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Exploding Kittens in the deck",
+      "value": {
+        "2": "1",
+        "3": "2",
+        "4": "3",
+        "5": "4"
+      }
+    },
+    {
+      "label": "Cards each",
+      "value": "7 + 1 Defuse"
+    },
+    {
+      "label": "Spare Defuses shuffled in",
+      "value": {
+        "2": "2",
+        "3": "2",
+        "4": "2",
+        "5": "1"
+      }
+    },
+    {
+      "label": "Cards in the box",
+      "value": "56"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Take the 4 Exploding Kittens out of the deck and set them aside.",
+      "group": "table"
+    },
+    {
+      "text": "Take out the 6 Defuses and deal 1 to each player.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle spare Defuses back into the deck and remove any others from the game.",
+      "group": "table",
+      "by_count": {
+        "2": "Shuffle 2 back in; remove the other 2.",
+        "3": "Shuffle 2 back in; remove the other 1.",
+        "4": "Shuffle the 2 spares back in.",
+        "5": "Shuffle the 1 spare back in."
+      }
+    },
+    {
+      "text": "Shuffle the deck and deal 7 cards face down to each player. Everyone now holds 8 cards.",
+      "group": "table"
+    },
+    {
+      "text": "Put Exploding Kittens back into the deck: one fewer than the number of players. Remove the rest.",
+      "group": "table",
+      "by_count": {
+        "2": "Insert 1 Exploding Kitten.",
+        "3": "Insert 2 Exploding Kittens.",
+        "4": "Insert 3 Exploding Kittens.",
+        "5": "Insert all 4 Exploding Kittens."
+      }
+    },
+    {
+      "text": "Shuffle the deck and put it face down as the draw pile, leaving room for a discard pile.",
+      "group": "table"
+    },
+    {
+      "text": "Pick someone to go first; play runs clockwise.",
+      "group": "table"
+    }
+  ],
+  "turn": {
+    "summary": "Play or pass, then draw.",
+    "steps": [
+      "Play as many cards as you like, one at a time, following each card's text. Or play none.",
+      "End your turn by drawing the top card of the draw pile.",
+      "If you draw an Exploding Kitten, show it. Play a Defuse or you are out."
+    ]
+  },
+  "end": "Players explode one by one. The last player left wins.",
+  "scoring": [
+    {
+      "text": "There is no scoring: the last player who has not exploded wins."
+    }
+  ],
+  "missed": [
+    {
+      "text": "After a Defuse, put the Exploding Kitten back anywhere in the draw pile, in secret, without reordering the other cards."
+    },
+    {
+      "text": "An Attack ends your turn without drawing and makes the next player take 2 turns. Attacks stack: an attacked player who plays an Attack passes on their remaining turns plus 2."
+    },
+    {
+      "text": "A Nope can be played at any time, even out of turn, and can be played on another Nope."
+    },
+    {
+      "text": "There is no hand limit. If you run out of cards you simply draw at the end of your next turn."
+    },
+    {
+      "text": "Faster variant: before inserting the Kittens, remove about a third of the deck at random.",
+      "only": [
+        2,
+        3
+      ]
+    }
+  ]
+}

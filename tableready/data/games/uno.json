@@ -1,0 +1,119 @@
+{
+  "slug": "uno",
+  "name": "UNO",
+  "kind": "card",
+  "publisher": "Mattel",
+  "players": {
+    "min": 2,
+    "max": 10,
+    "covered": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "age": "7+",
+  "edition": "Classic 108-card deck, instruction sheet 53641",
+  "status": "complete",
+  "source": {
+    "title": "UNO instruction sheet 53641",
+    "url": "https://service.mattel.com/instruction_sheets/53641.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Cards dealt",
+      "value": "7"
+    },
+    {
+      "label": "Cards in the deck",
+      "value": "108"
+    },
+    {
+      "label": "Points to win",
+      "value": "500"
+    },
+    {
+      "label": "Penalty for no 'UNO'",
+      "value": "draw 2"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Everyone draws a card; the highest number deals. Action cards count as zero.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle and deal 7 cards to each player.",
+      "group": "table"
+    },
+    {
+      "text": "Put the rest face down as the draw pile and turn its top card over to start the discard pile.",
+      "group": "table"
+    },
+    {
+      "text": "If the first card is a Wild Draw Four, put it back in the deck and turn another. Other action cards take effect.",
+      "group": "table"
+    },
+    {
+      "text": "The player to the dealer's left goes first.",
+      "group": "table"
+    }
+  ],
+  "turn": {
+    "summary": "Match the top discard by number, colour or symbol, or play a Wild.",
+    "steps": [
+      "If you cannot play, draw one card. If that card is playable you may play it at once; otherwise your turn ends.",
+      "You may choose not to play a playable card, but then you must draw, and you may only play the card you drew.",
+      "When you are down to one card, say 'UNO'."
+    ]
+  },
+  "end": "A hand ends when one player has no cards left. Hands continue until someone reaches 500 points.",
+  "scoring": [
+    {
+      "text": "The player who went out scores the cards left in everyone else's hands."
+    },
+    {
+      "text": "Number cards score face value. Draw Two, Reverse and Skip score 20 each. Wild and Wild Draw Four score 50 each."
+    },
+    {
+      "text": "Alternative: each player keeps a running total of the points they are caught holding; when someone reaches 500, the lowest total wins."
+    }
+  ],
+  "missed": [
+    {
+      "text": "A Reverse acts like a Skip, and after playing a Skip or Reverse you play again straight away.",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "After a Draw Two or Wild Draw Four, the turn comes straight back to you.",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "Wild Draw Four may only be played when you hold no card matching the colour of the discard pile. Holding a matching number or action card does not stop you."
+    },
+    {
+      "text": "A Wild Draw Four can be challenged by the player who must draw. If it was played illegally, its player draws 4. If it was legal, the challenger draws 6."
+    },
+    {
+      "text": "If the last card played is a Draw Two or Wild Draw Four, the next player still draws, and those cards count in the scoring."
+    },
+    {
+      "text": "You can only be caught for not saying 'UNO' between your second-to-last card touching the pile and the next player starting their turn."
+    },
+    {
+      "text": "Playing a wrong card or suggesting a play to someone costs 2 cards."
+    }
+  ]
+}

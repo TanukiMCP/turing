@@ -1,0 +1,103 @@
+{
+  "slug": "ark-nova",
+  "name": "Ark Nova",
+  "kind": "board",
+  "publisher": "Feuerland Spiele / Capstone Games",
+  "players": {
+    "min": 1,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "edition": "Base game, English rules, January 2022 file",
+  "status": "partial",
+  "source": {
+    "title": "Ark Nova rules (EN), 2022-01",
+    "url": "https://www.feuerland-spiele.de/fileadmin/game/Arche_Nova/Arche_Nova_Rules_EN_Low_2022_01.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Cards in the display",
+      "value": "6"
+    },
+    {
+      "label": "Bonus tiles in play",
+      "value": "4 of 9"
+    },
+    {
+      "label": "Action cards each",
+      "value": "5"
+    },
+    {
+      "label": "Actions per turn",
+      "value": "1"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the game board in the middle of the table.",
+      "group": "table"
+    },
+    {
+      "text": "Put the Break token on the start space of the Break track marked for your player count.",
+      "group": "table",
+      "by_count": {
+        "2": "Use the start space marked with the 2-player symbol.",
+        "3": "Use the start space marked with the 3-player symbol.",
+        "4": "Use the start space marked with the 4-player symbol."
+      }
+    },
+    {
+      "text": "Shuffle the Zoo cards into a face-down deck on the board and deal 6 face down to the display spaces. Turn them face up at the end of setup.",
+      "group": "table"
+    },
+    {
+      "text": "Put the 2 organizers beside the board as the general supply.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the 9 Bonus tiles and place one face up on each of the 4 blank yellow bonus spaces. Box the other 5.",
+      "group": "table"
+    }
+  ],
+  "turn": {
+    "summary": "Take exactly one action with one of your 5 Action cards.",
+    "steps": [
+      "The slot an Action card sits in sets how strong that action is.",
+      "Breaks interrupt play from time to time: discard down to your hand limit, recall workers and collect income."
+    ]
+  },
+  "end": "The end is triggered when your Conservation and Appeal counters are in the same scoring area or have passed each other. If that happens at the end of your turn, every other player takes one more turn. If it happens during a break, every player takes one more turn.",
+  "scoring": [
+    {
+      "text": "Add conservation points or appeal from your Final Scoring cards and from cards with an end-of-game icon. A single Final Scoring card can give at most 4 conservation points."
+    },
+    {
+      "text": "If nobody reached 10 conservation points, everyone discards one Final Scoring card first."
+    },
+    {
+      "text": "Find the lowest appeal value in the scoring area where your Conservation counter sits; that is your target. Your victory points are your appeal minus that target."
+    }
+  ],
+  "tiebreak": "Most supported Conservation Projects; if still tied, the win is shared.",
+  "missed": [
+    {
+      "text": "Your score is positive only if your Appeal and Conservation counters have crossed."
+    },
+    {
+      "text": "The player who triggers the end on their own turn does not get another turn."
+    }
+  ],
+  "not_covered": [
+    "Player setup (zoo map, starting cards and money) is not transcribed yet.",
+    "Solo game."
+  ],
+  "unverified": [
+    "Player count range and the labels on the Break track for 2 and 4 players are printed as icons; only the 3-player case was read as text."
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "slug": "kutna-hora",
+  "name": "Kutná Hora: The City of Silver",
+  "kind": "board",
+  "publisher": "Czech Games Edition",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "edition": "Base game rulebook, English",
+  "status": "partial",
+  "source": {
+    "title": "Kutná Hora rulebook, third-party copy of the publisher file",
+    "url": "https://media.lavkaigr.ru/uploads/7665_qcVqguL.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Rounds",
+      "value": {
+        "2": "6",
+        "3": "6",
+        "4": "5"
+      }
+    },
+    {
+      "label": "Turns per round",
+      "value": "3"
+    },
+    {
+      "label": "Cards played per round",
+      "value": "5 of 6"
+    },
+    {
+      "label": "Starting groschen",
+      "value": "40 + seat position"
+    },
+    {
+      "label": "Guilds each",
+      "value": "3"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Set out the rounds track on the side for your player count and put the rounds counter on its first space.",
+      "group": "table",
+      "by_count": {
+        "2": "Use the six-round side.",
+        "3": "Use the six-round side.",
+        "4": "Use the five-round side."
+      }
+    },
+    {
+      "text": "Put the tax counter on 0 of the tax track.",
+      "group": "table"
+    },
+    {
+      "text": "Stack the 3 red patrician buildings on the marked square of the rounds track.",
+      "group": "table"
+    },
+    {
+      "text": "Sort the guild buildings into 6 stacks by colour. Shuffle the 6 corner-marked tiles and deal them to the six spaces in the two leftmost columns of the town hall board, then stack the other 3 tiles of each colour on its matching tile in random order.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the green, silver and yellow patrician buildings into three stacks and place each at the end of its row.",
+      "group": "table"
+    },
+    {
+      "text": "Assemble the Kutná Hora board on the side for your player count.",
+      "group": "table",
+      "by_count": {
+        "2": "Use the side with fewer squares.",
+        "3": "Use the side with more squares.",
+        "4": "Use the side with more squares."
+      }
+    },
+    {
+      "text": "Draw one mine setup card. Shuffle the rock tiles face down, deal them to the spaces the card shows, then turn them face up.",
+      "group": "table"
+    },
+    {
+      "text": "Stand the population deck (0–19) and ore deck (0–14) in their card stands, in number order, with the indicator arms on the left.",
+      "group": "table"
+    },
+    {
+      "text": "Build St. Barbara's Cathedral from its 11 tiles: 1–5 at the bottom, 6–10 in the middle, 11 on top.",
+      "group": "table"
+    },
+    {
+      "text": "Make a bank of coins, pelican tokens and exactly 3 patrician tokens of each colour.",
+      "group": "table"
+    },
+    {
+      "text": "Stack the 4 mining technology tiles face down in order with tile 1 on top.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the mine tiles by their backs and make one stack: I on top, II in the middle, III at the bottom. Put it on the prospecting board, leaving a space for discards.",
+      "group": "table"
+    },
+    {
+      "text": "Deal one event face down above each round space except the last: A events before the red patrician stack, B events after it.",
+      "group": "table",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "Take the pieces in your colour: 3 plot markers, 12 house tokens, 6 action cards, 1 miner in your pool and 8 more in reserve.",
+      "group": "each player"
+    },
+    {
+      "text": "Put 4 production markers on 0, your reputation marker on 0 and your score counter on 0.",
+      "group": "each player"
+    },
+    {
+      "text": "Give the starting player marker to whoever was most recently underground, or choose at random.",
+      "group": "to start"
+    },
+    {
+      "text": "Take starting groschen by turn order: 40 for the first player, then 41, 42 and 43.",
+      "group": "to start"
+    },
+    {
+      "text": "Draw a guild setup card and use the row for your player count. Players choose a set of 3 guilds in reverse turn order. For a first game use card 1.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Play action cards from your hand of six. Each card shows two actions and you use one of them.",
+    "steps": [
+      "On your first and second turns of a round, play 2 cards.",
+      "On your third turn, play 1 card. One card always goes unused.",
+      "A played card is out for the rest of the round, including the action you did not choose."
+    ]
+  },
+  "round_end": [
+    "The round ends when everyone has taken 3 turns.",
+    "Each player pays taxes or takes a reputation penalty."
+  ],
+  "end": "The game ends after the last round on the rounds track.",
+  "scoring": [
+    {
+      "text": "City: for each building, its owner scores 1 point for every matching dot on an adjacent building or board edge."
+    },
+    {
+      "text": "Mines: each row is worth more the more stars it holds. Players score by rank of stars in the row; players with no stars score nothing. Tied players each get the full value of the place and the next place is skipped."
+    },
+    {
+      "text": "Income: divide your final income by 10, round down, and score that many points."
+    }
+  ],
+  "missed": [
+    {
+      "text": "Starting money differs by seat: each later player gets 1 more groschen."
+    },
+    {
+      "text": "Event cards are used only with two players.",
+      "only": [
+        2
+      ]
+    }
+  ],
+  "unverified": [
+    "The mine tile stacking order (I, II, III) is shown with icons in the rulebook and was inferred from a later sentence."
+  ],
+  "not_covered": [
+    "What each action card does is not summarised yet.",
+    "Final scoring may include more than the three categories listed."
+  ]
+}

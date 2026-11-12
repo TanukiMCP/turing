@@ -1,0 +1,134 @@
+{
+  "slug": "wingspan",
+  "name": "Wingspan",
+  "kind": "board",
+  "publisher": "Stonemaier Games",
+  "designer": "Elizabeth Hargrave",
+  "players": {
+    "min": 1,
+    "max": 5,
+    "covered": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "edition": "Base game, first-printing rulebook (2018 file)",
+  "status": "complete",
+  "source": {
+    "title": "Wingspan rulebook, university-hosted copy of the publisher file",
+    "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Wingspan.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Rounds",
+      "value": "4"
+    },
+    {
+      "label": "Turns per round",
+      "value": "8, 7, 6, 5"
+    },
+    {
+      "label": "Bird cards dealt",
+      "value": "5"
+    },
+    {
+      "label": "Food to start",
+      "value": "5, one of each"
+    },
+    {
+      "label": "Bonus cards",
+      "value": "2, keep 1"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Shuffle the bird cards and turn 3 face up in the bird tray.",
+      "group": "table"
+    },
+    {
+      "text": "Put all food and egg tokens in the supply.",
+      "group": "table"
+    },
+    {
+      "text": "Roll the 5 food dice into the birdfeeder.",
+      "group": "table"
+    },
+    {
+      "text": "Choose a side of the goal board. Green is the default; blue gives 1 point per item and is suggested for new players.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the goal tiles and put one on each round space of the goal board.",
+      "group": "table"
+    },
+    {
+      "text": "Take a player mat, 8 action cubes in one colour, 2 random bonus cards, 5 random bird cards and 5 food tokens, one of each type.",
+      "group": "each player"
+    },
+    {
+      "text": "Keep up to 5 bird cards. Discard 1 food token for each bird you keep.",
+      "group": "each player"
+    },
+    {
+      "text": "Keep 1 bonus card and discard the other. You may look at your bonus cards while choosing birds.",
+      "group": "each player"
+    },
+    {
+      "text": "Pick the first player at random.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Place one action cube and take one of four actions.",
+    "steps": [
+      "Play a bird: pay its food and egg cost and place it on your mat. Only its 'when played' power triggers.",
+      "Gain food, lay eggs or draw bird cards: put the cube on the leftmost open slot of that row and take what it shows.",
+      "Then activate the brown powers in that row from right to left. Each one is optional."
+    ]
+  },
+  "round_end": [
+    "Remove your action cubes from your mat.",
+    "Score the round's goal, marking your result with one cube. That cube stays, which is why you have one fewer turn each round.",
+    "Discard the face-up birds in the tray and deal 3 new ones.",
+    "Pass the first player token clockwise."
+  ],
+  "end": "The game ends after round 4.",
+  "scoring": [
+    {
+      "text": "Points printed on your bird cards."
+    },
+    {
+      "text": "Points from your bonus card."
+    },
+    {
+      "text": "Points from end-of-round goals."
+    },
+    {
+      "text": "1 point for each egg, each cached food token and each tucked card."
+    }
+  ],
+  "tiebreak": "Most unused food tokens.",
+  "missed": [
+    {
+      "text": "If every die in the birdfeeder tray shows the same face, including when only one die is left, you may reroll all five before taking food."
+    },
+    {
+      "text": "If the birdfeeder tray is empty, roll all five dice back in."
+    },
+    {
+      "text": "Brown powers are always optional."
+    }
+  ],
+  "not_covered": [
+    "Solo play uses the separate Automa rulebook."
+  ],
+  "unverified": [
+    "The three 1-point items in final scoring (eggs, cached food, tucked cards) are printed as icons in the rulebook and were confirmed from a rules summary, not the rulebook text.",
+    "Goal tile placement is summarised from a sentence that was cut off in the extracted text.",
+    "This file is an early printing; the publisher says later printings corrected some wording."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "slug": "phase-10",
+  "name": "Phase 10",
+  "kind": "card",
+  "publisher": "Mattel",
+  "players": {
+    "min": 2,
+    "max": 6,
+    "covered": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "edition": "40th Anniversary card game, instruction sheet HHR41",
+  "status": "complete",
+  "source": {
+    "title": "Phase 10 40th Anniversary instruction sheet HHR41",
+    "url": "https://service.mattel.com/instruction_sheets/HHR41-Eng.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Cards dealt",
+      "value": "10"
+    },
+    {
+      "label": "Phases to finish",
+      "value": "10"
+    },
+    {
+      "label": "Cards in the deck",
+      "value": "108"
+    },
+    {
+      "label": "Phases per round",
+      "value": "1"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Choose a dealer. Give each player a Phase Reference Board and a Phase Tracker set to Phase 1.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle and deal 10 cards face down to each player.",
+      "group": "table"
+    },
+    {
+      "text": "Put the rest face down as the draw pile and turn the top card over beside it to start the discard pile.",
+      "group": "table"
+    },
+    {
+      "text": "The player to the dealer's left goes first; play runs clockwise.",
+      "group": "table"
+    }
+  ],
+  "turn": {
+    "summary": "Four steps, in order.",
+    "steps": [
+      "Draw one card, from the draw pile or the top of the discard pile.",
+      "Lay down your Phase if you hold all of it.",
+      "If your Phase is down, 'hit': add cards from your hand to any laid-down Phase they fit.",
+      "Discard one card to end your turn."
+    ]
+  },
+  "round_end": [
+    "The round ends when someone gets rid of their last card.",
+    "Everyone who laid down their Phase this round moves on to the next one; everyone else repeats the same Phase.",
+    "The deal passes to the left."
+  ],
+  "end": "The first player to complete Phase 10 at the end of a round wins.",
+  "scoring": [
+    {
+      "text": "The player who went out scores 0. Everyone else scores the cards left in hand: 5 for each 1–9, 10 for each 10–12, 15 for each Skip, 25 for each Wild. Low totals are better."
+    }
+  ],
+  "tiebreak": "If several players finish Phase 10 in the same round, the lowest total wins. If still tied, those players replay Phase 10 and the first to go out wins.",
+  "missed": [
+    {
+      "text": "The ten Phases, in order: 2 sets of 3; 1 set of 3 + 1 run of 4; 1 set of 4 + 1 run of 4; 1 run of 7; 1 run of 8; 1 run of 9; 2 sets of 4; 7 cards of one colour; 1 set of 5 + 1 set of 2; 1 set of 5 + 1 set of 3."
+    },
+    {
+      "text": "You need the whole Phase in hand before laying it down, and you get credit as soon as it is down, even if you don't go out."
+    },
+    {
+      "text": "A Skip is played in front of the player you choose; it counts as your discard. It can never be picked up from the discard pile or used in a Phase."
+    },
+    {
+      "text": "A Phase may use any number of Wilds as long as it has at least one numbered card. A played Wild stays where it is for the round."
+    },
+    {
+      "text": "If the dealer's first discard is a Skip, the first player is skipped."
+    }
+  ],
+  "unverified": [
+    "The 2–6 player range is taken from the six reference boards in the contents list; the sheet does not state a range in its text."
+  ]
+}

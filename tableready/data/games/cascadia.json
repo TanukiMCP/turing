@@ -1,0 +1,135 @@
+{
+  "slug": "cascadia",
+  "name": "Cascadia",
+  "kind": "board",
+  "publisher": "Flatout Games / AEG",
+  "designer": "Randy Flynn",
+  "players": {
+    "min": 1,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "age": "10+",
+  "edition": "Base game rulebook",
+  "status": "complete",
+  "source": {
+    "title": "Cascadia rules, library-hosted copy",
+    "url": "https://lot.ahml.info/Cascadia-Rules.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Habitat tiles used",
+      "value": {
+        "2": "43",
+        "3": "63",
+        "4": "83"
+      }
+    },
+    {
+      "label": "Turns each",
+      "value": "20"
+    },
+    {
+      "label": "Choices on offer",
+      "value": "4 pairs"
+    },
+    {
+      "label": "Scoring cards",
+      "value": "5"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put all Wildlife Tokens in the cloth bag and shake it.",
+      "group": "table"
+    },
+    {
+      "text": "Count out Habitat Tiles at random without looking at them, shuffle them into face-down stacks and box the rest.",
+      "group": "table",
+      "by_count": {
+        "2": "Use 43 tiles (remove 42).",
+        "3": "Use 63 tiles (remove 22).",
+        "4": "Use 83 tiles (remove 2)."
+      }
+    },
+    {
+      "text": "Pick 1 Wildlife Scoring Card at random for each of the five animals and lay them where everyone can see. For a first game use the cards marked A.",
+      "group": "table"
+    },
+    {
+      "text": "Deal each player one Starter Habitat Tile at random, face up. Box the others.",
+      "group": "table"
+    },
+    {
+      "text": "Turn 4 Habitat Tiles face up in the middle.",
+      "group": "table"
+    },
+    {
+      "text": "Draw 4 Wildlife Tokens and pair them, in order, with the 4 tiles.",
+      "group": "table"
+    },
+    {
+      "text": "Put the Nature Tokens within reach.",
+      "group": "table"
+    },
+    {
+      "text": "The player who most recently saw one of the game's animals goes first, or choose at random.",
+      "group": "table"
+    }
+  ],
+  "turn": {
+    "summary": "Take one tile-and-token pair and add both to your environment.",
+    "steps": [
+      "Check for overpopulation first: four matching tokens are replaced automatically; three matching tokens may be replaced if you choose, once per turn.",
+      "Take one of the four pairs. Or spend a Nature Token to take any tile with any token, or to replace any number of tokens.",
+      "Place the tile and token in your environment.",
+      "Refill the row with a new tile and a new token."
+    ]
+  },
+  "end": "The game ends when there is no face-down tile left to replace the one just taken. Every player takes exactly 20 turns.",
+  "scoring": [
+    {
+      "text": "Score each animal by its Wildlife Scoring Card."
+    },
+    {
+      "text": "For each of the five habitats, score 1 point per tile in your largest connected area."
+    },
+    {
+      "text": "Largest area bonus per habitat: 2 points; if tied, 1 point each. Nothing for second place.",
+      "only": [
+        2
+      ]
+    },
+    {
+      "text": "Largest area bonus per habitat: 3 points, and 1 point for second largest. Two players tied for largest get 2 each and nobody scores second. Three or four tied get 1 each. Ties for second score nothing.",
+      "only": [
+        3,
+        4
+      ]
+    },
+    {
+      "text": "1 point for each unused Nature Token."
+    }
+  ],
+  "tiebreak": "Most Nature Tokens; if still tied, the win is shared.",
+  "missed": [
+    {
+      "text": "Four matching tokens must be replaced, and this can happen several times in one turn."
+    },
+    {
+      "text": "Replacing three matching tokens is optional and allowed only once per turn."
+    },
+    {
+      "text": "Replaced tokens go back in the bag only after all replacements are finished."
+    }
+  ],
+  "not_covered": [
+    "Solo mode has its own setup and scoring."
+  ]
+}

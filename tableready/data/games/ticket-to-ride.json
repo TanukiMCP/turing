@@ -1,0 +1,136 @@
+{
+  "slug": "ticket-to-ride",
+  "name": "Ticket to Ride",
+  "kind": "board",
+  "publisher": "Days of Wonder",
+  "designer": "Alan R. Moon",
+  "players": {
+    "min": 2,
+    "max": 5,
+    "covered": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "age": "8+",
+  "play_time": "30–60 min",
+  "edition": "Base game (North America map), 2015 reprint rules",
+  "status": "complete",
+  "source": {
+    "title": "Ticket to Ride rules, 2015 reprint",
+    "url": "https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_rules_2015_en.pdf",
+    "host": "publisher",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Train cards dealt",
+      "value": "4"
+    },
+    {
+      "label": "Tickets dealt",
+      "value": "3, keep 2+"
+    },
+    {
+      "label": "Trains each",
+      "value": "45"
+    },
+    {
+      "label": "Face-up cards",
+      "value": "5"
+    },
+    {
+      "label": "Double routes",
+      "value": {
+        "2": "one side only",
+        "3": "one side only",
+        "4": "both open",
+        "5": "both open"
+      }
+    }
+  ],
+  "setup": [
+    {
+      "text": "Put the board in the middle of the table.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the Train Car cards and deal 4 to each player.",
+      "group": "table"
+    },
+    {
+      "text": "Put the rest of the Train Car deck beside the board and turn 5 cards face up.",
+      "group": "table"
+    },
+    {
+      "text": "Put the Longest Path bonus card face up beside the board.",
+      "group": "table"
+    },
+    {
+      "text": "Shuffle the Destination Tickets and deal 3 to each player. Everyone keeps at least 2; returned tickets go under the ticket deck. Tickets stay secret until final scoring.",
+      "group": "table"
+    },
+    {
+      "text": "Take 45 trains in one colour and the matching scoring marker. Put the marker on Start.",
+      "group": "each player"
+    },
+    {
+      "text": "The most experienced traveller goes first; play runs clockwise.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Do exactly one of three things.",
+    "steps": [
+      "Draw 2 Train Car cards, each from the face-up row or blind from the deck. Replace a face-up card as soon as you take it.",
+      "Claim one route: discard a set of matching cards equal to its length, place your trains on it and score it straight away. Grey routes take a set of any one colour.",
+      "Draw 3 Destination Tickets and keep at least 1; the rest go under the deck."
+    ]
+  },
+  "end": "When a player has 0, 1 or 2 trains left at the end of their turn, every player, including that one, takes one last turn.",
+  "scoring": [
+    {
+      "text": "Routes are scored as they are claimed: length 1 = 1, 2 = 2, 3 = 4, 4 = 7, 5 = 10, 6 = 15 points."
+    },
+    {
+      "text": "Reveal tickets: add the value of each completed ticket and subtract the value of each one not completed."
+    },
+    {
+      "text": "Longest continuous path scores 10 points. If players tie for it, each of them scores the 10."
+    }
+  ],
+  "tiebreak": "Most completed Destination Tickets, then whoever holds the Longest Path card.",
+  "missed": [
+    {
+      "text": "Only one route of each double route can be used; once one side is claimed the other is closed.",
+      "only": [
+        2,
+        3
+      ]
+    },
+    {
+      "text": "One player can never claim both routes of a double route.",
+      "only": [
+        4,
+        5
+      ]
+    },
+    {
+      "text": "Locomotives are wild. Taking a face-up locomotive is your whole draw, and you cannot take a face-up locomotive as your second card. A locomotive drawn blind still lets you draw two."
+    },
+    {
+      "text": "If three of the five face-up cards are locomotives, discard all five and turn up five new ones."
+    },
+    {
+      "text": "There is no hand limit, and you can claim only one route per turn."
+    },
+    {
+      "text": "A new route does not have to connect to your earlier routes."
+    },
+    {
+      "text": "When the deck runs out, shuffle the discards into a new deck."
+    }
+  ]
+}

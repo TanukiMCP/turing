@@ -1,0 +1,117 @@
+{
+  "slug": "azul",
+  "name": "Azul",
+  "kind": "board",
+  "publisher": "Plan B Games / Next Move",
+  "designer": "Michael Kiesling",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "covered": [
+      2,
+      3,
+      4
+    ]
+  },
+  "edition": "Base game, 2018 rulebook",
+  "status": "complete",
+  "source": {
+    "title": "Azul rulebook (2018), library-hosted copy",
+    "url": "https://www.dover.nh.gov/Assets/government/city-operations/library/borrow/library-of-things/azul-rulebook.pdf",
+    "host": "mirror",
+    "retrieved": "2026-11-12"
+  },
+  "key_numbers": [
+    {
+      "label": "Factory displays",
+      "value": {
+        "2": "5",
+        "3": "7",
+        "4": "9"
+      }
+    },
+    {
+      "label": "Tiles per display",
+      "value": "4"
+    },
+    {
+      "label": "Tiles in the bag",
+      "value": "100"
+    },
+    {
+      "label": "Start score",
+      "value": "0"
+    }
+  ],
+  "setup": [
+    {
+      "text": "Arrange the Factory displays in a circle in the middle of the table.",
+      "group": "table",
+      "by_count": {
+        "2": "Use 5 Factory displays.",
+        "3": "Use 7 Factory displays.",
+        "4": "Use 9 Factory displays."
+      }
+    },
+    {
+      "text": "Put all 100 tiles (20 of each colour) in the bag.",
+      "group": "table"
+    },
+    {
+      "text": "Return unused boards, markers and displays to the box.",
+      "group": "table"
+    },
+    {
+      "text": "Take a player board and turn it to the coloured wall side. Everyone must use the same side.",
+      "group": "each player"
+    },
+    {
+      "text": "Put your scoring marker on 0 of your score track.",
+      "group": "each player"
+    },
+    {
+      "text": "Whoever most recently visited Portugal takes the starting player marker and fills each Factory display with 4 tiles drawn from the bag.",
+      "group": "to start"
+    }
+  ],
+  "turn": {
+    "summary": "Each round has three phases: Factory offer, Wall-tiling, then preparing the next round. During the Factory offer you take tiles one of two ways.",
+    "steps": [
+      "Take all tiles of one colour from one Factory display and push the rest of that display into the centre, or take all tiles of one colour from the centre.",
+      "The first player to take from the centre in a round also takes the starting player marker and puts it on their floor line.",
+      "Add the tiles to one pattern line, filling right to left. A line holds one colour only. Tiles that don't fit go to your floor line.",
+      "When the displays and centre are empty, everyone tiles: move the rightmost tile of each full pattern line to the wall and score it, then clear those lines."
+    ]
+  },
+  "round_end": [
+    "Lose the points printed above each tile in your floor line, then clear it. Your score cannot drop below 0.",
+    "The player with the starting player marker refills every display with 4 tiles. If the bag is empty, refill it from the box lid."
+  ],
+  "end": "The game ends after the Wall-tiling phase in which at least one player has completed a horizontal row of 5 tiles on their wall.",
+  "scoring": [
+    {
+      "text": "A tile placed with nothing next to it scores 1 point."
+    },
+    {
+      "text": "Otherwise count the tiles linked to it in its row, including itself, and score that many; then do the same for its column."
+    },
+    {
+      "text": "End of game: 2 points for each complete horizontal row, 7 for each complete vertical column, 10 for each colour you have placed all 5 tiles of."
+    }
+  ],
+  "tiebreak": "More complete horizontal rows; if still tied, the win is shared.",
+  "missed": [
+    {
+      "text": "You cannot put a colour in a pattern line if that row of your wall already has that colour."
+    },
+    {
+      "text": "The starting player marker counts as a tile in your floor line and costs points."
+    },
+    {
+      "text": "If your floor line is full, further dropped tiles go to the box lid with no extra penalty."
+    },
+    {
+      "text": "You may choose to put tiles you take straight onto your floor line."
+    }
+  ]
+}
